@@ -5,7 +5,7 @@ function App() {
   return (
     <div class={styles.App}>
       <header class={styles.header}>
-        Test Deploy
+        Test Deploy 2
       </header>
     </div>
   );
