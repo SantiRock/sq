@@ -10,14 +10,6 @@ ul {
 
 }
 
-li {
-  margin-bottom: 13px;
-  width: fit-content;
-  font-size: 13px;
-  line-height: 1.7;
-  cursor: pointer;
-}
-
 h3 {
   margin-top: 0;
   margin-bottom: 21px;
@@ -25,16 +17,17 @@ h3 {
   cursor: pointer;
 }
 
-li:hover, h3:hover {
+a {
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+a:hover, h3:hover {
   color: rgb(142, 220, 196);
 }
 
-@media screen and (min-width: 374px) {
-  li {
-    font-size: 14px;
-  }
-  
-}
 
 @media screen and (min-width: 570px) {
   .container {

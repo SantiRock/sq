@@ -1,0 +1,25 @@
+.container {
+    margin-bottom: 33px;
+}
+
+.type {
+    color:rgb(142, 220, 196);
+}
+
+.proyecto {
+    margin-bottom: 13px;
+    width: fit-content;
+    font-size: 13px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.proyecto:hover {
+    color: rgb(142, 220, 196);
+  }
+
+@media screen and (min-width: 374px) {
+    .proyecto {
+      font-size: 14px;
+    } 
+}

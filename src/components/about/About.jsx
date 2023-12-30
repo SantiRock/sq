@@ -28,7 +28,7 @@ export function About () {
           {copied}
         </span>
       </div>
-      <p class={styles.msn}>He dividido los proyectos por secciones, solo debes dar click en la sección y luego en el nombre del proyecto.</p>
+      <p class={styles.msn}>Los proyectos estan divididos por secciones, solo debes dar click en la sección y luego en el nombre del proyecto.</p>
     </header>
     );
 }
