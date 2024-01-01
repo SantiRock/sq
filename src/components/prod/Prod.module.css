@@ -1,27 +1,7 @@
-h4 {
-    margin: 9px 0;
-    display: inline;
-}
-
-p {
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: justify;
-}
-
-.bold {
-    font-weight: bold;
-}
-
 .artists {
     margin-bottom: 1px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
-}
-
-.artista {
-    color:rgb(142, 220, 196);
 }
 
 .obra {
@@ -29,8 +9,3 @@ p {
     color:rgb(173, 173, 173);
 }
 
-@media screen and (min-width: 374px) {
-    .artists {
-      font-size: 14px;
-    } 
-}

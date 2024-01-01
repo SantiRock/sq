@@ -24,6 +24,17 @@ a {
   line-height: 1.7;
 }
 
+button {
+  color: rgb(142, 220, 196);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
 a:hover, h3:hover {
   color: rgb(142, 220, 196);
 }
