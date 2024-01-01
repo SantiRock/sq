@@ -10,14 +10,17 @@ function Gallery ({close_gallery, src, alt, credit, next, prev, clickclose}) {
               <div class={styles.gallery} onclick={clickclose}>
                 <button class={styles.btn} onclick={prev}>&lt;</button>
                 
-                <div class={styles.image_container}>
-                  <img
-                    class={styles.gallery_item}
-                    src={src}
-                    alt={alt}
-                  />
-                  <p class={styles.credit}>{credit}</p>
+                <div class={styles.image_cc}>
+                  <div class={styles.image_container}>
+                    <img
+                      class={styles.gallery_item}
+                      src={src}
+                      alt={alt}
+                    />
+                    <p class={styles.credit}>{credit}</p>
+                  </div>
                 </div>
+               
 
                 <button class={styles.btn} onclick={next}>&gt;</button>
               </div>
