@@ -8,7 +8,7 @@ import { Images } from "../images/Images";
 function CaribeSound () {
 
   return(
-    <>
+    <div class={styles.container}>
       <h4 class={styles.title}>CaribeSound </h4>
       <p><span class={styles.bold}>Fecha:</span> 22 de Junio de 2019</p>
       <p><span class={styles.bold}>Lugar:</span> Mix'Art Myrys, Toulouse, Francia</p>
@@ -20,15 +20,15 @@ function CaribeSound () {
       <p><span class={styles.bold}>Cover:</span> Entrada libre y necesaría</p>
       <p class={styles.bold}>Programación:</p>
       <ul>
-        <li class={styless.artists}>Mural por <span class={styles.artista}>Soma</span> (Colombia) y <span class={styles.artista}>Nav Svit</span> (Francia)</li>
-        <li class={styless.artists}>Exposición <span class={styless.obra}>"Desde Abajo"</span> de <span class={styless.artista}>Lesli Moquin</span> (Francia)</li>
-        <li class={styless.artists}>Proyección de film <span class={styless.obra}>"Picó: la maquina musical del Caribe"</span> de <span class={styles.artista}>Roberto de Zubiria</span> (Colombia)</li>
-        <li class={styless.artists}>Muestra musical por <span class={styless.artista}>DJ Galletas Calientes</span> (Colombia) y <span class={styles.artista}>DJ NoBreakfast</span> (Francia)</li>
-        <li class={styless.artists}>Video Mapping por <span class={styles.artista}>Felipe Vargas</span> (Colombia)</li>
-        <li class={styless.artists}>Instalación audiovisual interactiva por <span class={styles.artista}>Le Proyectarium</span> (Francia)</li>
-        <li class={styless.artists}>Parranda Vallenata por <span class={styles.artista}>Grupo La Olla</span> (Colombia)</li>
-        <li class={styless.artists}>Clase de danza por <span class={styles.artista}>Anika Dance</span> (Colombia)</li>
-        <li class={styless.artists}>Comida y productos colombianos</li>
+        <li class={styles.list}>Mural por <span class={styles.artista}>Soma</span> (Colombia) y <span class={styles.artista}>Nav Svit</span> (Francia)</li>
+        <li class={styles.list}>Exposición <span class={styless.obra}>"Desde Abajo"</span> de <span class={styless.artista}>Lesli Moquin</span> (Francia)</li>
+        <li class={styles.list}>Proyección de film <span class={styless.obra}>"Picó: la maquina musical del Caribe"</span> de <span class={styles.artista}>Roberto de Zubiria</span> (Colombia)</li>
+        <li class={styles.list}>Muestra musical por <span class={styless.artista}>DJ Galletas Calientes</span> (Colombia) y <span class={styles.artista}>DJ NoBreakfast</span> (Francia)</li>
+        <li class={styles.list}>Video Mapping por <span class={styles.artista}>Felipe Vargas</span> (Colombia)</li>
+        <li class={styles.list}>Instalación audiovisual interactiva por <span class={styles.artista}>Le Proyectarium</span> (Francia)</li>
+        <li class={styles.list}>Parranda Vallenata por <span class={styles.artista}>Grupo La Olla</span> (Colombia)</li>
+        <li class={styles.list}>Clase de danza por <span class={styles.artista}>Anika Dance</span> (Colombia)</li>
+        <li class={styles.list}>Comida y productos colombianos</li>
       </ul>
       <p><span class={styles.bold}>Con el apoyo de:</span> Mix'Art Myrys, Festival Locombia, Guayabo Colectivo, Talowa Producciones, Latino Graff, Le Proyectarium, Roots of One Tree Sound System, Anika Dance</p>
       <p class={styles.bold}>Enlaces:</p>
@@ -38,7 +38,7 @@ function CaribeSound () {
         <li><a href="https://fb.watch/pfkIBV71P4/" target="_blank">Mural por Soma</a></li>
       </ul>
       <Images arr={caribesoundimages}/>
-    </>
+    </div>
   )
 }
 
@@ -57,8 +57,7 @@ export function Prod () {
               CaribeSound <span class={styles.type}>Festival Interdiciplinar</span>  2019
             </li>
             {showCaribeSound() && (<CaribeSound/>)}
-          </ul>
-          
+          </ul>    
         </div>
     );
 }

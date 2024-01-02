@@ -76,7 +76,7 @@ function App() {
     <div class={styles.container}>
       <About />
       <main>
-        <h3 onclick={open_Prod}>Festival</h3>
+        <h3 onclick={open_Prod}>Producción de eventos</h3>
         {showProd() && (<Prod />)}
 
         <h3 onclick={open_Video}>Video</h3>

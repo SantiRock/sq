@@ -1,11 +1,55 @@
+import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
+import { videosApi } from "./videoapi";
+import { Images } from "../images/Images";
+
+
+function VideoProjects ({obj}) {
+
+  return(
+    <div class={styles.container}>
+      <h4 class={styles.title}>{obj.title}</h4>
+      <p><span class={styles.bold}>Fecha:</span> {obj.fecha}</p>
+      <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
+      <p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>
+      <p><span class={styles.bold}>Equipo:</span></p>        
+      <ul>
+        {obj.equipo.map(({id, nombre, cargo}) => (
+          <li key={id} class={styles.list}>{cargo}: {nombre}</li>
+        ))}
+      </ul>
+      <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
+      <p><span class={styles.bold}>Misiones:</span> {obj.misiones}</p>
+      {obj.duracion && (<p><span class={styles.bold}>Duración:</span> {obj.duracion}</p>)}
+      {obj.aforo && (<p><span class={styles.bold}>Aforo:</span> {obj.aforo}</p>)}
+      {obj.reconocimientos && (<p><span class={styles.bold}>Reconocimientos:</span> {obj.reconocimientos}</p>)}
+      {obj.apoyo && (<p><span class={styles.bold}>Con el apoyo de:</span> {obj.apoyo}</p>)}
+      {obj.enlaces && (
+        <>
+          <p class={styles.bold}>Enlaces:</p>
+          <ul>
+            {obj.enlaces.map(({id, enlace, text}) => (
+              <li key={id}><a href={enlace} target="_blank">{text}</a></li>
+            ))}
+          </ul>
+        </>
+      )}
+    </div>
+  )
+}
 
 export function Video () {
+  const [showRioRadio, setShowRioRadio] = createSignal(false);
+
+  const open_RioRadio = () => {
+    setShowRioRadio(prev => !prev);
+  }
 
     return(
       <div class={styles.container}>
         <ul>
-          <li class={styles.proyecto}>La Magadalena <span class={styles.type}>AV Performance</span> 2021</li>
+          <li class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
+          {showRioRadio() && (<VideoProjects obj={videosApi.la_magdalena}/>)}
           <li class={styles.proyecto}>Pink Paradize Festival <span class={styles.type}>Video Performance</span> 2019</li>
           <li class={styles.proyecto}>Der Kirschgarten <span class={styles.type}>Teatro Contemporaneo</span> 2018</li>
           <li class={styles.proyecto}>Die Originale <span class={styles.type}>Circo Contemporaneo</span> 2018</li>
