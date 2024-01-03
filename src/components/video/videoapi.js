@@ -334,36 +334,68 @@ export const videosApi = {
   },
 
   street_pack : {
-    id: '',
-    title: '',
-    fecha: '',
-    lugar: '',
-    cargo: '',
+    id: 'streetpack',
+    title: 'Street Pack Festival',
+    fecha: 'Septiembre 2017-2018-2019',
+    lugar: "Mix'Art Myrys, Toulouse, Francia",
+    cargo: 'VJ Master, Video Mapper',
     equipo: [
         {
-            id: '',
-            cargo: '',
-            nombre: ''
-        },
+            id: 'prod',
+            cargo: 'Producción',
+            nombre: 'Scratch Assembly'
+        },     
     ],
-    concepto: '',
-    misiones: '',
-    duración: '',
-    aforo: '',
-    reconocimentos: '',
-    apoyo: '',
+    concepto: 'Festival de Scratch y artes urbanas de 2 días',
+    misiones: 'Diseñar video-mapping y coordinar visuales (vjing, vjs, mezcla de video en vivo) del festival. Montaje y desmontaje de equipos de video.',
+    duración: '2 días, 8-10 horas por día',
+    aforo: 'alrededor de 1500 personas por noche',
+    apoyo: "Scratch Assembly, Mix'Art Myrys, Le Proyectarium, 5 minutes, Tv Bruits, Didier Bonmaison, Vicent Dombret, Mutha, Maïlis Gourdon",
     enlaces: [
         {
-            id: '',
-            enlace: '',
-            text: ''
+            id: '2019',
+            enlace: 'https://vimeo.com/358520289',
+            text: 'Street Pack 2019'
         },
-    ]
+        {
+            id: '2018',
+            enlace: 'https://tvbruits.org/spip.php?article2446',
+            text: 'Street Pack 2018'
+        },
+    ],
+    video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/358520289?h=99b65cebcb" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    },
 
-  },
+    lanuiteedm2019 : {
+        id: '',
+        title: '',
+        fecha: '',
+        lugar: '',
+        cargo: '',
+        equipo: [
+            {
+                id: '',
+                cargo: '',
+                nombre: ''
+            },
+        ],
+        concepto: '',
+        misiones: '',
+        duración: '',
+        aforo: '',
+        reconocimentos: '',
+        apoyo: '',
+        enlaces: [
+            {
+                id: '',
+                enlace: '',
+                text: ''
+            },
+        ]
+    
+    }
 
-};
-
+  }
 
 const modelo = {
     id: '',

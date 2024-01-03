@@ -27,7 +27,7 @@ function VideoProjects ({obj}) {
       {obj.enlaces && (
         <>
           <p class={styles.bold}>Enlaces:</p>
-          <ul>
+          <ul class={styles.ul}>
             {obj.enlaces.map(({id, enlace, text}) => (
               <li key={id}><a href={enlace} target="_blank">{text}</a></li>
             ))}
@@ -45,6 +45,7 @@ export function Video () {
   const [showDerKirchgarten, setShowDerKirchgarten] = createSignal(false);
   const [showDieOriginale, setShowDieOriginale] = createSignal(false);
   const [showLPM, setShowLPM] = createSignal(false);
+  const [showStreetPack, setShowStreetPack] = createSignal(false);
 
   const open_RioRadio = () => {
     setShowRioRadio(prev => !prev);
@@ -52,6 +53,7 @@ export function Video () {
     setShowDerKirchgarten(false);
     setShowDieOriginale(false);
     setShowLPM(false);
+    setShowStreetPack(false);
   }
 
   const open_PinkParadize = () => {
@@ -60,6 +62,7 @@ export function Video () {
     setShowDerKirchgarten(false);
     setShowDieOriginale(false);
     setShowLPM(false);
+    setShowStreetPack(false);
   }
 
   const open_DerKirchgarten = () => {
@@ -68,6 +71,7 @@ export function Video () {
     setShowRioRadio(false);
     setShowDieOriginale(false);
     setShowLPM(false);
+    setShowStreetPack(false);
   }
 
   const open_DieOriginale = () => {
@@ -76,6 +80,7 @@ export function Video () {
     setShowDerKirchgarten(false);
     setShowPinkParadize(false);
     setShowLPM(false);
+    setShowStreetPack(false);
   }
 
   const open_lpm = () => {
@@ -84,49 +89,60 @@ export function Video () {
     setShowDerKirchgarten(false);
     setShowPinkParadize(false);
     setShowDieOriginale(false);
+    setShowStreetPack(false);
   }
 
-    return(
-      <div class={styles.container}>
-        <ul>
-          <li class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
-          {showRioRadio() && (<VideoProjects obj={videosApi.la_magdalena}/>)}
+  const open_StreetPack = () => {
+    setShowStreetPack(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+  }
 
-          <li class={styles.proyecto} onclick={open_PinkParadize}>Pink Paradize Festival <span class={styles.type}>Video Performance</span> 2019</li>
-          {showPinkParadize() && (<VideoProjects obj={videosApi.pink_paradize}/>)}
+  return(
+    <div class={styles.container}>
+      <ul>
+        <li class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
+        {showRioRadio() && (<VideoProjects obj={videosApi.la_magdalena}/>)}
+        
+        <li class={styles.proyecto} onclick={open_PinkParadize}>Pink Paradize Festival <span class={styles.type}>Video Performance</span> 2019</li>
+        {showPinkParadize() && (<VideoProjects obj={videosApi.pink_paradize}/>)}
 
-          <li class={styles.proyecto} onclick={open_DerKirchgarten}>Der Kirschgarten <span class={styles.type}>Teatro Contemporaneo</span> 2018</li>
-          {showDerKirchgarten() && (<VideoProjects obj={videosApi.der_kirchgarten}/>)}
+        <li class={styles.proyecto} onclick={open_DerKirchgarten}>Der Kirschgarten <span class={styles.type}>Teatro Contemporaneo</span> 2018</li>
+        {showDerKirchgarten() && (<VideoProjects obj={videosApi.der_kirchgarten}/>)}
           
-          <li class={styles.proyecto} onclick={open_DieOriginale}>Die Originale <span class={styles.type}>Circo Contemporaneo</span> 2018</li>
-          {showDieOriginale() && (<VideoProjects obj={videosApi.die_originale}/>)}
+        <li class={styles.proyecto} onclick={open_DieOriginale}>Die Originale <span class={styles.type}>Circo Contemporaneo</span> 2018</li>
+        {showDieOriginale() && (<VideoProjects obj={videosApi.die_originale}/>)}
 
-          <li class={styles.proyecto} onclick={open_lpm}>LPM Live Mapping Contest <span class={styles.type}>Video-Mapping</span> 2018</li>
-          {showLPM() && (<VideoProjects obj={videosApi.lpm2018}/>)}
+        <li class={styles.proyecto} onclick={open_lpm}>LPM Live Mapping Contest <span class={styles.type}>Video-Mapping</span> 2018</li>          
+        {showLPM() && (<VideoProjects obj={videosApi.lpm2018}/>)}
           
-          <li class={styles.proyecto}>Street Pack Festival <span class={styles.type}>Video-Mapping</span> 2017-2018-2019</li>
+        <li class={styles.proyecto} onclick={open_StreetPack}>Street Pack Festival <span class={styles.type}>Video-Mapping</span> 2017-2018-2019</li>
+        {showStreetPack() && (<VideoProjects obj={videosApi.street_pack}/>)}
+          
+        <li class={styles.proyecto}>La Nuit Européen des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
 
-          <li class={styles.proyecto}>La Nuit Européen des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
+        <li class={styles.proyecto}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
+        
+        <li class={styles.proyecto}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
 
-          <li class={styles.proyecto}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
+        <li class={styles.proyecto}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
 
-          <li class={styles.proyecto}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
+        <li class={styles.proyecto}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
 
-          <li class={styles.proyecto}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
+        <li class={styles.proyecto}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
 
-          <li class={styles.proyecto}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
+        <li class={styles.proyecto}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
 
-          <li class={styles.proyecto}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
+        <li class={styles.proyecto}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
 
-          <li class={styles.proyecto}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
+        <li class={styles.proyecto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
 
-          <li class={styles.proyecto}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
+        <li class={styles.proyecto}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
 
-          <li class={styles.proyecto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
-
-          <li class={styles.proyecto}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
-
-        </ul>
-      </div>
-    );
+      </ul>
+    </div>
+  );
 }
