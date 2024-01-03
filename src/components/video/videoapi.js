@@ -186,7 +186,7 @@ export const videosApi = {
     misiones: 'Montaje de video-mapping (video y audio), asistencia en creación y mezcla en vivo, estructura de línea de tiempo y setteo del programa de proyección (resolume). Producción de material visual, animaciones.',
     duración: '50 min',
     aforo: '50 personas por función / 5 funciones en total',
-    reconocimentos: 'Video-Mapping nominado en los Video Mapping Awards del European Mapping Center (Lille/Fr) de 2019',
+    reconocimientos: 'Video-Mapping nominado en los Video Mapping Awards del European Mapping Center (Lille/Fr) de 2019',
     apoyo: 'K4 Kulturbureau, Bauwagenplatz Kiefernstraße, Kindercub, Kulturamt der Landeshauptstadt, Ministerium für Kultur und Wissenschaft NRW, Fonds Darstelllende Kûnste e.V, Stiftung van Meeteren, zakk - Zentrum für Aktion, Kultur und Kommunikation',
     enlaces: [
         {
@@ -316,7 +316,7 @@ export const videosApi = {
     misiones: 'Creación y perofrmance de video mapping.',
     duración: '5 min',
     aforo: '100 personas por ronda, 2 rondas',
-    reconocimentos: 'Finalista del concurso',
+    reconocimientos: 'Finalista del concurso',
     apoyo: 'LPM, Video Mapping Mexico',
     enlaces: [
         {
@@ -367,35 +367,276 @@ export const videosApi = {
     },
 
     lanuiteedm2019 : {
-        id: '',
-        title: '',
-        fecha: '',
-        lugar: '',
-        cargo: '',
+        id: 'lanuiteedm2019',
+        title: 'La Nuit Européenne des Musées',
+        fecha: 'Mayo 2018-2019',
+        lugar: 'Muséum - Museo Saint-Raymont, Toulouse, Francia',
+        cargo: 'Video-Mapper',
         equipo: [
             {
-                id: '',
-                cargo: '',
-                nombre: ''
+                id: 'prod',
+                cargo: 'Producción',
+                nombre: 'Culture en Mouvements'
+            },
+            {
+                id: 'leproy',
+                cargo: 'Artistas de Video',
+                nombre: 'Le Proyectarium'
             },
         ],
-        concepto: '',
-        misiones: '',
-        duración: '',
-        aforo: '',
+        concepto: 'Para la noche europea de los museos de 2018 y 2019, se me encomendo hacer un video-mapping, de temática libre en 2018 y bajo la temática de los superhéroes en 2019',
+        misiones: 'Concepto y ejecución de video-mapping',
+        duración: '7 horas',
+        aforo: 'alrededor de 15000 personas, publico flotante',
         reconocimentos: '',
-        apoyo: '',
+        apoyo: 'Culture en Mouvements, Le Proyectarium',
         enlaces: [
             {
-                id: '',
-                enlace: '',
-                text: ''
+                id: 'tlseblog',
+                enlace: 'https://www.toulouseblog.fr/la-nuit-europeenne-des-musees-le-weekend-prochain-a-toulouse/',
+                text: 'Reseña Toulouse Blog'
             },
         ]
-    
+    },
+
+    ecos_col : {
+        id: 'ecoscol',
+        title: 'Ecos de Colombia',
+        fecha: '7 de noviembre 2018',
+        lugar: 'La Brique Rouge, Toulouse, Francia',
+        cargo: 'Artista Performer Audiovisual',
+        equipo: [
+            {
+                id: 'prod',
+                cargo: 'Producción',
+                nombre: 'Festival Locombia'
+            },
+        ],
+        concepto: 'Remezcla de video en vivo a partir de diferentes medias visuales y sonoros: voz, paisaje sonoo, música, video documental, animación, imagén generativa, 3D, video pirateo, entre otros. La idea era crear un viaje por diferentes matices de la cultura colombiana.',
+        misiones: 'Concepto y presentación de performance audiovisual',
+        duración: '45 min',
+        aforo: '50 personas',
+        reconocimentos: '',
+        apoyo: 'Festival Locombia, Guayabo Colectivo',
+    },
+
+    avinstalation : {
+        id: 'avinstall',
+        title: 'Instalación Audiovisual Interactiva',
+        fecha: '3 de mayo 2017',
+        lugar: "Mix'Art Myrys, Toulouse, Francia",
+        cargo: 'Artista de video',
+        concepto: 'En el marco del evento Clutchorama propuse esta pieza audiovisual inmersiva que constaba de 3 pantallas a escala humana y con la cual se interactuaba por medio de un microfono, modificando el contenido audiovisual audio-reactivamente.',
+        misiones: 'Concepto y montaje',
+        duración: '7 horas',
+        aforo: '3000 personas, publico flotante',
+        apoyo: 'Pôle Video, Le Proyectarium, Claudio Nervi',
+        enlaces: [
+            {
+                id: 'clutch',
+                enlace: 'https://www.youtube.com/watch?v=Rq2nxX1ppj0',
+                text: 'Video del Evento por la Clutch Magazine'
+            },
+        ]
+    },
+
+    vjpanthera : {
+        id: 'vjpanthera',
+        title: 'VJ Panthera',
+        fecha: '2014-2018',
+        lugar: 'Colombia, Francia, Alemania, Italia',
+        cargo: 'Artista VJ',
+        concepto: 'Mezcla de video en vivo',
+        reconocimientos: 'Ganador en la Batalla de VJs del FECI Bogotá 2016',
+    },
+
+    guayabobros: {
+        id: 'guayabros',
+        title: 'Guayabo Brothers',
+        fecha: '2017-2018',
+        lugar: 'Toulouse, Francia',
+        cargo: 'VJ',
+        equipo: [
+            {
+                id: 'guayabros',
+                cargo: 'Banda',
+                nombre: 'Guayabo Brothers'
+            },
+        ],
+        concepto: 'Desarrollo y performance de show visual para conciertos de Los Guayabo Brothers, a partir del concepto de psicodelia tropical. Concepción de material visual especialmente para ser mezclado en vivo.',
+        apoyo: 'Los Guayabo Brothers, El Guayabo Colectivo',
+        enlaces: [
+            {
+                id: 'musicodrome',
+                enlace: 'https://lemusicodrome.com/soiree-los-guayabo-brothers-toulouse-2018/',
+                text: 'Reseña por Le Musicodrome'
+            },
+        ]
+    },
+
+    caliwood: {
+        id: 'caliwood',
+        title: 'Caliwood Remixed',
+        fecha: 'Marzo 2017',
+        lugar: 'Toulouse, Francia',
+        cargo: 'Artista de Video',
+        equipo: [
+            {
+                id: 'cinelatino',
+                cargo: 'Producción',
+                nombre: 'Cinélatino, Rencontres de Toulouse '
+            },
+        ],
+        concepto: 'Para el programa especial dedicado al cine de Cali, realizé un bucle de video a partir de los films que se presentaban en este programa y una presentación en vivo re-mezclando este material',
+        misiones: 'Remezcla de video',
+        apoyo: 'Cinélatino, Rencontres de Toulouse',
+    },
+
+    esteropicnic : {
+        id: 'esteropicnic',
+        title: 'Electric Mistakes: Estero Picnic',
+        fecha: '10 de marzo 2016',
+        lugar: 'Festival Estéreo Picnic, Bogotá, Colombia',
+        cargo: 'VJ',
+        equipo: [
+            {
+                id: 'banda',
+                cargo: 'Banda',
+                nombre: 'Electric Mistakes'
+            },
+            {
+                id: 'prod',
+                cargo: 'Producción',
+                nombre: 'Santiago Marin'
+            },
+        ],
+        concepto: 'Show visual para presentación del grupo de rock Electric Mistakes en el festival Estero Picnic.',
+        misiones: 'Concepto, producción y performance de show visual.',
+        duración: '45 min',
+        aforo: '1000 personas',
+    },
+
+    imputaciones : {
+        id: 'imputaciones',
+        title: 'Imputaciones: Cabaret Político Multimedia',
+        fecha: '4 de mayo y 12 y 13 de agosto 2016',
+        lugar: 'Bogotá, Colombia',
+        cargo: 'Artista de Video',
+        equipo: [
+            {
+                id: 'nadia',
+                cargo: 'Directora',
+                nombre: 'Nadia Granados'
+            },
+            {
+                id: 'nohemi',
+                cargo: 'Artista',
+                nombre: 'Nohemi Delgado'
+            },
+            {
+                id: 'tina',
+                cargo: 'Artista',
+                nombre: 'Tina Pit'
+            },
+            {
+                id: 'muza',
+                cargo: 'Arstista',
+                nombre: 'Muza de la Luz'
+            },
+            {
+                id: 'mario',
+                cargo: 'Artista',
+                nombre: 'Mario Andrés Gonzalez'
+            },
+            {
+                id: 'alba',
+                cargo: 'Artista',
+                nombre: 'Alba Cadena Roldán'
+            },
+            {
+                id: 'pasion',
+                cargo: 'Artista',
+                nombre: 'Pasión Cusqueña'
+            },
+            {
+                id: 'pinina',
+                cargo: 'Anfitrión',
+                nombre: 'Pinina Flandes'
+            },
+        ],
+        concepto: 'Laboratorio de cabarte politico multimedia dirigido por Nadia Granados, en la que 6 artsitas performers desarrollaban un acto multimedia.',
+        misiones: 'Asistir la puesta en escena y técnica de video. Operar proyecciones durante presentaciones.',
+        duración: '1 hora',
+        aforo: 'alrededor de 30 personas por presentación.',
+        reconocimientos: '',
+        apoyo: '',
+    },
+
+    famiasuto : {
+        id: 'famiasuto',
+        title: 'Famia Suto: Hip-Hop al Parque',
+        fecha: '15 de noviembre 2015',
+        lugar: 'Parque Simón Bolivar, Bogotá, Colombia',
+        cargo: 'VJ',
+        equipo: [
+            {
+                id: 'famia',
+                cargo: 'Banda',
+                nombre: 'Famia Suto'
+            },
+            {
+                id: 'sebas',
+                cargo: 'Fotografo',
+                nombre: 'Juan Sebastián González'
+            },
+        ],
+        concepto: 'Show visual para la presentación del grupo Famia Suto en Hip-Hop al Parque 2015',
+        misiones: 'Concepto y performance de video',
+        duración: '45 min',
+        aforo: 'alrededor de 5000 personas',
+    },
+
+    atusombra : {
+        id: 'atusombra',
+        title: 'A tu sombra',
+        fecha: '2012',
+        lugar: 'Bogotá',
+        cargo: 'Realizador de video',
+        equipo: [
+            {
+                id: 'grupo',
+                cargo: 'Grupo',
+                nombre: 'Proyecto Collage'
+            },
+            {
+                id: 'camiloa',
+                cargo: 'Dirección y dramaturgia',
+                nombre: 'Camilo Alvarado'
+            },
+            {
+                id: 'jennyd',
+                cargo: 'Actriz',
+                nombre: 'Jenny Delgado'
+            },
+            {
+                id: 'danilog',
+                cargo: 'Actor',
+                nombre: 'Danilo García'
+            },
+        ],
+        concepto: 'Obra de teatro con proyecciones.',
+        misiones: 'Realizar videos para la obra',
+        duración: '45 min',
+        enlaces: [
+            {
+                id: 'kiosko',
+                enlace: 'https://kioskoteatral.com/obras-hist/tu-sombra/',
+                text: 'Reseña Kiosko Teatral'
+            },
+        ]
     }
 
-  }
+}
 
 const modelo = {
     id: '',
@@ -414,7 +655,7 @@ const modelo = {
     misiones: '',
     duración: '',
     aforo: '',
-    reconocimentos: '',
+    reconocimientos: '',
     apoyo: '',
     enlaces: [
         {
@@ -423,5 +664,4 @@ const modelo = {
             text: ''
         },
     ]
-
 }

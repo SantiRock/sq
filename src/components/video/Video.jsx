@@ -3,7 +3,6 @@ import styles from "../Components.module.css";
 import { videosApi } from "./videoapi";
 import { Images } from "../images/Images";
 
-
 function VideoProjects ({obj}) {
 
   return(
@@ -11,17 +10,21 @@ function VideoProjects ({obj}) {
       <h4 class={styles.title}>{obj.title}</h4>
       <p><span class={styles.bold}>Fecha:</span> {obj.fecha}</p>
       <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
-      <p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>
-      <p><span class={styles.bold}>Equipo:</span></p>        
-      <ul class={styles.ul}>
-        {obj.equipo.map(({id, nombre, cargo}) => (
-          <li key={id} class={styles.list}>{cargo}: {nombre}</li>
-        ))}
-      </ul>
+      <p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>      
+      {obj.equipo && (
+        <>
+          <p><span class={styles.bold}>Equipo:</span></p>  
+          <ul class={styles.ul}>
+            {obj.equipo.map(({id, nombre, cargo}) => (
+              <li key={id} class={styles.list}>{cargo}: {nombre}</li>
+            ))}
+          </ul>
+        </>
+      )}
       <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
-      <p><span class={styles.bold}>Misiones:</span> {obj.misiones}</p>
+      {obj.misiones && (<p><span class={styles.bold}>Misiones:</span> {obj.misiones}</p>)}
       {obj.duracion && (<p><span class={styles.bold}>Duración:</span> {obj.duracion}</p>)}
-      {obj.aforo && (<p><span class={styles.bold}>Aforo:</span> {obj.aforo}</p>)}
+      {obj.aforo && (<p><span class={styles.bold}>Asistencia:</span> {obj.aforo}</p>)}
       {obj.reconocimientos && (<p><span class={styles.bold}>Reconocimientos:</span> {obj.reconocimientos}</p>)}
       {obj.apoyo && (<p><span class={styles.bold}>Con el apoyo de:</span> {obj.apoyo}</p>)}
       {obj.enlaces && (
@@ -39,6 +42,7 @@ function VideoProjects ({obj}) {
   )
 }
 
+
 export function Video () {
   const [showRioRadio, setShowRioRadio] = createSignal(false);
   const [showPinkParadize, setShowPinkParadize] = createSignal(false);
@@ -46,6 +50,16 @@ export function Video () {
   const [showDieOriginale, setShowDieOriginale] = createSignal(false);
   const [showLPM, setShowLPM] = createSignal(false);
   const [showStreetPack, setShowStreetPack] = createSignal(false);
+  const [showNuitMusees, setShowNuitMusees] = createSignal(false);
+  const [showEcosCol, setShowEcosCol] = createSignal(false);
+  const [showAvInstall, setShowAvInstall] = createSignal(false);
+  const [showVjPanthera, setShowVjPanthera] = createSignal(false);
+  const [showGuayaBros, setShowGuayaBros] = createSignal(false);
+  const [showCaliwood, setShowCaliwood] = createSignal(false);
+  const [showEsteroPicnic, setShowEstereoPicnic] = createSignal(false);
+  const [showImputaciones, setShowImputaciones] = createSignal(false);
+  const [showFamiaSuto, setShowFamiaSuto] = createSignal(false);
+  const [showAtusombra, setShowAtusombra] = createSignal(false);
 
   const open_RioRadio = () => {
     setShowRioRadio(prev => !prev);
@@ -54,6 +68,16 @@ export function Video () {
     setShowDieOriginale(false);
     setShowLPM(false);
     setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
   }
 
   const open_PinkParadize = () => {
@@ -63,6 +87,16 @@ export function Video () {
     setShowDieOriginale(false);
     setShowLPM(false);
     setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
   }
 
   const open_DerKirchgarten = () => {
@@ -72,6 +106,16 @@ export function Video () {
     setShowDieOriginale(false);
     setShowLPM(false);
     setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
   }
 
   const open_DieOriginale = () => {
@@ -81,6 +125,16 @@ export function Video () {
     setShowPinkParadize(false);
     setShowLPM(false);
     setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
   }
 
   const open_lpm = () => {
@@ -90,6 +144,16 @@ export function Video () {
     setShowPinkParadize(false);
     setShowDieOriginale(false);
     setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
   }
 
   const open_StreetPack = () => {
@@ -99,6 +163,206 @@ export function Video () {
     setShowPinkParadize(false);
     setShowDieOriginale(false);
     setShowLPM(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_NuitMusees = () => {
+    setShowNuitMusees(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_EcosCol = () => {
+    setShowEcosCol(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_AvInstall = () => {
+    setShowAvInstall(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_VjPanthera = () => {
+    setShowVjPanthera(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_GuayaBros = () => {
+    setShowGuayaBros(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_Caliwood = () => {
+    setShowCaliwood(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_EsteroPicnic = () => {
+    setShowEstereoPicnic(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_Imputaciones = () => {
+    setShowImputaciones(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+  }
+
+  const open_FamiaSuto = () => {
+    setShowFamiaSuto(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowAtusombra(false);
+  }
+
+  const open_Atusombra = () => {
+    setShowAtusombra(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
   }
 
   return(
@@ -122,25 +386,35 @@ export function Video () {
         <li class={styles.proyecto} onclick={open_StreetPack}>Street Pack Festival <span class={styles.type}>Video-Mapping</span> 2017-2018-2019</li>
         {showStreetPack() && (<VideoProjects obj={videosApi.street_pack}/>)}
           
-        <li class={styles.proyecto}>La Nuit Européen des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
-
-        <li class={styles.proyecto}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
+        <li class={styles.proyecto} onclick={open_NuitMusees}>La Nuit Européenne des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
+        {showNuitMusees() && (<VideoProjects obj={videosApi.lanuiteedm2019}/>)}
         
-        <li class={styles.proyecto}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
+        <li class={styles.proyecto} onclick={open_EcosCol}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
+        {showEcosCol() && (<VideoProjects obj={videosApi.ecos_col}/>)}
+        
+        <li class={styles.proyecto} onclick={open_AvInstall}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
+        {showAvInstall() && (<VideoProjects obj={videosApi.avinstalation}/>)}
+        
+        <li class={styles.proyecto} onclick={open_VjPanthera}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
+        {showVjPanthera() && (<VideoProjects obj={videosApi.vjpanthera}/>)}
+        
+        <li class={styles.proyecto} onclick={open_GuayaBros}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
+        {showGuayaBros() && (<VideoProjects obj={videosApi.guayabobros}/>)}
+        
+        <li class={styles.proyecto} onclick={open_Caliwood}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
+        {showCaliwood() && (<VideoProjects obj={videosApi.caliwood} />)}
 
-        <li class={styles.proyecto}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
-
-        <li class={styles.proyecto}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
-
-        <li class={styles.proyecto}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
-
-        <li class={styles.proyecto}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
-
-        <li class={styles.proyecto}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
-
-        <li class={styles.proyecto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
-
-        <li class={styles.proyecto}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
+        <li class={styles.proyecto} onclick={open_Imputaciones}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
+        {showImputaciones() && (<VideoProjects obj={videosApi.imputaciones}/>)}
+        
+        <li class={styles.proyecto} onclick={open_EsteroPicnic}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
+        {showEsteroPicnic() && (<VideoProjects obj={videosApi.esteropicnic} />)}
+        
+        <li class={styles.proyecto} onclick={open_FamiaSuto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
+        {showFamiaSuto() && (<VideoProjects obj={videosApi.famiasuto}/>)}
+        
+        <li class={styles.proyecto} onclick={open_Atusombra}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
+        {showAtusombra() && (<VideoProjects obj={videosApi.atusombra} />)}
 
       </ul>
     </div>
