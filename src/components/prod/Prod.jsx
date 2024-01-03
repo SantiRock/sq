@@ -19,7 +19,7 @@ function CaribeSound () {
       <p><span class={styles.bold}>Aforo:</span> 700 personas</p>
       <p><span class={styles.bold}>Cover:</span> Entrada libre y necesaría</p>
       <p class={styles.bold}>Programación:</p>
-      <ul>
+      <ul class={styles.ul}>
         <li class={styles.list}>Mural por <span class={styles.artista}>Soma</span> (Colombia) y <span class={styles.artista}>Nav Svit</span> (Francia)</li>
         <li class={styles.list}>Exposición <span class={styless.obra}>"Desde Abajo"</span> de <span class={styless.artista}>Lesli Moquin</span> (Francia)</li>
         <li class={styles.list}>Proyección de film <span class={styless.obra}>"Picó: la maquina musical del Caribe"</span> de <span class={styles.artista}>Roberto de Zubiria</span> (Colombia)</li>
