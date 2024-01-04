@@ -363,6 +363,46 @@ export const moviesapi = {
                 text: 'Articulo de Tv Bruits - Videos'
             },
         ],
+        video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/329808042?h=952893917a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    },
+
+    arb : {
+        id: 'arbwiego',
+        title: 'Asociación de Recicladores de Bogotá',
+        fecha: '2014',
+        lugar: 'Bogotá Colombia',
+        cargo: 'Montajista',
+        equipo: [
+            {
+                id: 'chiguro',
+                cargo: 'Producción',
+                nombre: 'Chigüiro C.E.'
+            },
+            {
+                id: 'connass',
+                cargo: 'Con el apoyo de',
+                nombre: 'WIEGO (Woman in Informal Employment Globalizinf and Organizing) y la ARB (Asociación de Recicladores de Bogotá)'
+            }
+        ],
+        concepto: 'Con unos amigos, bajo el nombre de Chigüiro C.E. (Comunicación Efectiva), en 2014 realizamos una serie de videos institcionales para la ARB. Mi responsabilidad fue la parte de edición y montaje.',
+        enlaces: [
+            {
+                id: 'vidoeoss',
+                enlace: 'https://youtu.be/wO36UsPPodo?si=VelLadkj3ezci_Jb',
+                text: 'Video: Auto 275 - ¿Qué pasaba?'
+            },
+            {
+                id: 'vidoeosssusystars',
+                enlace: 'https://youtu.be/WVoRaT-YwI4?si=wU09_2VT-j4uyg_e',
+                text: 'Video: Sustitución de vehículos de tracción animal en Bogotá - Crónicas de una lucha por la inclusión'
+            },
+            {
+                id: 'visdsdksdj',
+                enlace: 'https://youtu.be/7iUzTz3tpWk?si=F3uG0X9yiZTohmDn',
+                text: 'Video: Aprovechamiento - 2 Sencillos pasos para reciclar'
+            }
+        ],
+        video:'<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://www.youtube.com/embed/wO36UsPPodo?si=3HpOppdzPRwHbhsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
     }
 
 }

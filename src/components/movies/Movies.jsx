@@ -47,6 +47,7 @@ function Kinoclaje () {
   return(
     <div class={styles.container}>
       <h4 class={styles.title}>Kinoclaje</h4>
+      <div class={styles.video}><div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6180370?h=4fca2f1c31&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
       <p><span class={styles.bold}>Año:</span> 2005-2008</p>
       <p><span class={styles.bold}>Lugar:</span> Bogotá, Colombia</p>
       <p><span class={styles.bold}>Cargo desempeñado:</span> Animador</p>
@@ -61,12 +62,47 @@ function Kinoclaje () {
       </ul>
       <p class={styles.bold}>Enlaces:</p>
       <ul class={styles.ul}>
-        <li class={styles.list}><a href="https://vimeo.com/kinoclaje" traget="_blank">Canal Vimeo</a></li>
-        <li class={styles.list}><a href="https://kinoclaje.blogspot.com/" traget="_blank">Blog</a></li>
+        <li class={styles.list}><a href="https://vimeo.com/kinoclaje" target="_blank">Canal Vimeo</a></li>
+        <li class={styles.list}><a href="https://kinoclaje.blogspot.com/" target="_blank">Blog</a></li>
       </ul>
     </div>
   )
 }
+
+function Mas () {
+  return(
+    <div class={styles.container}>
+      <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>El Borracho</span>, videoclip de <span class={styles.artista}>Los Guayabo Borthers</span>, Toulouse, Francia, 2018</p>
+      <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Asistente de producción</p>
+      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 13px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e-1Nbw3xN9M?si=up-6zo4TVQPmx5W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      </div>
+      <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Sin Remedio</span>, videoclip de <span class={styles.artista}>Nawal feat Ely Guerra</span>, Bogotá, Colombia, 2010</p>
+      <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Asistente de producción</p>
+      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_QND2j92cm8?si=5wPOZk6XLnuw56_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      </div>
+      <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Vida de Artista 2: Fondo Negro</span>, video parodia realizado junto a <span class={styles.artista}>Matú Producciones</span> y <span class={styles.artista}>Quince16</span>, Bogotá, Colombia, 2011</p>
+      <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Co-Realización</p>
+      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b7mIHPi8130?si=Os2TWw_gEt14eMEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      </div>
+      <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Quince16 y Jalea Caliente en Rock al Parque 2016</span>, video experimental entre varios que hize con <span class={styles.artista}>Quince16</span>, Bogotá, Colombia, 2010</p>
+      <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Realizador</p>
+      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BgQrCTHU-DA?si=inwmXvy5QgU35OMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      </div>
+      <p><span class={styles.bold}>Proyecto:</span> Animación realizada en el marco del taller del Espejo Film Festival 2014, dictado por Savio Leite en la Redada, Bogotá</p>
+      <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Co-realizador</p>
+      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6FUdCdOazGo?si=23dmTGXfTlvJ-6fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      </div>
+      <p>Muchos más ...</p>
+    </div>
+  )
+}
+
+
 
 export function Movies () {
   const [showAguaSalada, setShowAguaSalada] = createSignal(false);
@@ -75,6 +111,8 @@ export function Movies () {
   const [showEcuador, setShowEcuador] = createSignal(false);
   const [showKinoclaje, setShowKinoclaje] = createSignal(false);
   const [showJattends, setShowJattends] = createSignal(false);
+  const [showArb, setShowArb] = createSignal(false);
+  const [showMas, setShowMas] = createSignal(false);
 
   const open_AguaSalada = () => {
     setShowAguaSalada(prev => !prev);
@@ -83,6 +121,8 @@ export function Movies () {
     setShowEcuador(false);
     setShowKinoclaje(false);
     setShowJattends(false);
+    setShowArb(false);
+    setShowMas(false);
   }
 
   const open_Andormeda = () => {
@@ -92,6 +132,8 @@ export function Movies () {
     setShowEcuador(false);
     setShowKinoclaje(false);
     setShowJattends(false);
+    setShowArb(false);
+    setShowMas(false);
   }
 
   const open_BaladaRock = () => {
@@ -101,6 +143,7 @@ export function Movies () {
     setShowEcuador(false);
     setShowKinoclaje(false);
     setShowJattends(false);
+    setShowArb(false);
   }
 
   const open_Ecuador = () => {
@@ -110,6 +153,8 @@ export function Movies () {
     setShowBaladaRock(false);
     setShowKinoclaje(false);
     setShowJattends(false);
+    setShowArb(false);
+    setShowMas(false);
   }
 
   const open_Kinoclaje = () => {
@@ -119,6 +164,8 @@ export function Movies () {
     setShowBaladaRock(false);
     setShowEcuador(false);
     setShowJattends(false);
+    setShowArb(false);
+    setShowMas(false);
   }
 
   const open_Jattends = () => {
@@ -128,6 +175,30 @@ export function Movies () {
     setShowBaladaRock(false);
     setShowEcuador(false);
     setShowKinoclaje(false);
+    setShowArb(false);
+    setShowMas(false);
+  }
+
+  const open_Arb = () => {
+    setShowArb(prev => !prev);
+    setShowAguaSalada(false);
+    setShowAndromeda(false);
+    setShowBaladaRock(false);
+    setShowEcuador(false);
+    setShowKinoclaje(false);
+    setShowJattends(false);
+    setShowMas(false);
+  }
+
+  const open_Mas = () => {
+    setShowMas(prev => !prev);
+    setShowAguaSalada(false);
+    setShowAndromeda(false);
+    setShowBaladaRock(false);
+    setShowEcuador(false);
+    setShowKinoclaje(false);
+    setShowJattends(false);
+    setShowArb(false);
   }
 
     return(
@@ -151,10 +222,12 @@ export function Movies () {
           <li class={styles.proyecto} onclick={open_Jattends}>J'attends la pluie <span class={styles.type}>Cubrimiento de evento</span> 2019</li>
           {showJattends() && ( <Movie obj={moviesapi.jattends} />)}
 
-          <li class={styles.proyecto}>ARB <span class={styles.type}>Institucional</span> 2014</li>
+          <li class={styles.proyecto} onclick={open_Arb}>ARB <span class={styles.type}>Institucional</span> 2014</li>
+          {showArb() && (<Movie obj={moviesapi.arb}/>)}
           
-          <li class={styles.proyecto}>+</li>
-
+          <li class={styles.proyecto} onclick={open_Mas}>+</li>
+          {showMas() && (<Mas />)}
+      
         </ul>
       </div>
     );
