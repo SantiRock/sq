@@ -1,6 +1,5 @@
 import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
-import styless from "./Prod.module.css";
 import { caribesoundimages } from "./prodapi";
 import { Images } from "../images/Images";
 
@@ -14,16 +13,16 @@ function CaribeSound () {
       <p><span class={styles.bold}>Lugar:</span> Mix'Art Myrys, Toulouse, Francia</p>
       <p><span class={styles.bold}>Cargo desempeñado:</span> Jefe de Proyecto</p>
       <p><span class={styles.bold}>Misiones:</span> Imaginar, planear y ejecutar. Yo contacté a los participantes y coordiné todo el proyecto.</p>
-      <p><span class={styles.bold}>Concepto:</span> Festival musical y de artes visuales de pequeño formato alrededor de la cultura <span class={styless.obra}>"picotera"</span> del caribe colombiano</p>
+      <p><span class={styles.bold}>Concepto:</span> Festival musical y de artes visuales de pequeño formato alrededor de la cultura <span class={styles.obra}>"picotera"</span> del caribe colombiano</p>
       <p><span class={styles.bold}>Equipo técnico, artístico y logístico:</span> 60 personas</p>
       <p><span class={styles.bold}>Aforo:</span> 700 personas</p>
       <p><span class={styles.bold}>Cover:</span> Entrada libre y necesaría</p>
       <p class={styles.bold}>Programación:</p>
       <ul class={styles.ul}>
         <li class={styles.list}>Mural por <span class={styles.artista}>Soma</span> (Colombia) y <span class={styles.artista}>Nav Svit</span> (Francia)</li>
-        <li class={styles.list}>Exposición <span class={styless.obra}>"Desde Abajo"</span> de <span class={styless.artista}>Lesli Moquin</span> (Francia)</li>
-        <li class={styles.list}>Proyección de film <span class={styless.obra}>"Picó: la maquina musical del Caribe"</span> de <span class={styles.artista}>Roberto de Zubiria</span> (Colombia)</li>
-        <li class={styles.list}>Muestra musical por <span class={styless.artista}>DJ Galletas Calientes</span> (Colombia) y <span class={styles.artista}>DJ NoBreakfast</span> (Francia)</li>
+        <li class={styles.list}>Exposición <span class={styles.obra}>"Desde Abajo"</span> de <span class={styles.artista}>Lesli Moquin</span> (Francia)</li>
+        <li class={styles.list}>Proyección de film <span class={styles.obra}>"Picó: la maquina musical del Caribe"</span> de <span class={styles.artista}>Roberto de Zubiria</span> (Colombia)</li>
+        <li class={styles.list}>Muestra musical por <span class={styles.artista}>DJ Galletas Calientes</span> (Colombia) y <span class={styles.artista}>DJ NoBreakfast</span> (Francia)</li>
         <li class={styles.list}>Video Mapping por <span class={styles.artista}>Felipe Vargas</span> (Colombia)</li>
         <li class={styles.list}>Instalación audiovisual interactiva por <span class={styles.artista}>Le Proyectarium</span> (Francia)</li>
         <li class={styles.list}>Parranda Vallenata por <span class={styles.artista}>Grupo La Olla</span> (Colombia)</li>

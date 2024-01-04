@@ -51,3 +51,12 @@ p {
 .ul {
     margin-bottom: 11px;
 }
+
+.video {
+    margin-bottom: 11px;
+}
+
+.obra {
+    font-style: italic;
+    color:rgb(173, 173, 173);
+}
