@@ -54,6 +54,7 @@ p {
 
 .video {
     margin-bottom: 11px;
+    max-width: 640px;
 }
 
 .obra {

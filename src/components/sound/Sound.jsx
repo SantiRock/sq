@@ -1,5 +1,27 @@
 import styles from "../Components.module.css";
 
+function Sonido ({obj}) {
+  return(
+    <div class={styles.container}>
+       <h4 class={styles.title}>{obj.title}</h4>
+         {obj.sound && (<div class={styles.video} innerHTML={obj.sound}></div>)}
+        <p><span class={styles.bold}>Año:</span> {obj.fecha}</p>
+        <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
+        <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
+        {obj.enlaces && (
+        <>
+          <p class={styles.bold}>Enlaces:</p>
+          <ul class={styles.ul}>
+            {obj.enlaces.map(({id, enlace, text}) => (
+              <li key={id}><a href={enlace} target="_blank">{text}</a></li>
+            ))}
+          </ul>
+        </>
+      )}
+    </div>
+  )
+}
+
 export function Sound () {
 
     return(

@@ -74,30 +74,40 @@ function Mas () {
     <div class={styles.container}>
       <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>El Borracho</span>, videoclip de <span class={styles.artista}>Los Guayabo Borthers</span>, Toulouse, Francia, 2018</p>
       <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Asistente de producción</p>
-      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 13px;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e-1Nbw3xN9M?si=up-6zo4TVQPmx5W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      <div class={styles.video}>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 13px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e-1Nbw3xN9M?si=up-6zo4TVQPmx5W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        </div>
       </div>
       <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Sin Remedio</span>, videoclip de <span class={styles.artista}>Nawal feat Ely Guerra</span>, Bogotá, Colombia, 2010</p>
       <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Asistente de producción</p>
-      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_QND2j92cm8?si=5wPOZk6XLnuw56_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      <div class={styles.video}>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_QND2j92cm8?si=5wPOZk6XLnuw56_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        </div>
       </div>
       <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Vida de Artista 2: Fondo Negro</span>, video parodia realizado junto a <span class={styles.artista}>Matú Producciones</span> y <span class={styles.artista}>Quince16</span>, Bogotá, Colombia, 2011</p>
       <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Co-Realización</p>
-      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b7mIHPi8130?si=Os2TWw_gEt14eMEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      <div class={styles.video}>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b7mIHPi8130?si=Os2TWw_gEt14eMEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        </div>
       </div>
       <p><span class={styles.bold}>Proyecto: </span><span class={styles.obra}>Quince16 y Jalea Caliente en Rock al Parque 2016</span>, video experimental entre varios que hize con <span class={styles.artista}>Quince16</span>, Bogotá, Colombia, 2010</p>
       <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Realizador</p>
-      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
-       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BgQrCTHU-DA?si=inwmXvy5QgU35OMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      <div class={styles.video}>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BgQrCTHU-DA?si=inwmXvy5QgU35OMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        </div>
       </div>
       <p><span class={styles.bold}>Proyecto:</span> Animación realizada en el marco del taller del Espejo Film Festival 2014, dictado por Savio Leite en la Redada, Bogotá</p>
       <p style="margin-bottom:13px;"><span class={styles.bold}>Cargo desempeñado:</span> Co-realizador</p>
-      <div class={styles.video} style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6FUdCdOazGo?si=23dmTGXfTlvJ-6fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+      <div class={styles.video} >
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 17px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6FUdCdOazGo?si=23dmTGXfTlvJ-6fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;   gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        </div>
       </div>
-      <p>Muchos más ...</p>
+      <p>y muchos más ...</p>
     </div>
   )
 }
