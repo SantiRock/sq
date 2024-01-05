@@ -6,7 +6,6 @@ function Sonido ({obj}) {
   return(
     <div class={styles.container}>
        <h4 class={styles.title}>{obj.title}</h4>
-         
         <p><span class={styles.bold}>Año:</span> {obj.fecha}</p>
         {obj.lugar && (<p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>)}
         <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
