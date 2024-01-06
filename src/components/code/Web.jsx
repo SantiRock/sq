@@ -120,7 +120,7 @@ export function Web () {
         <li class={styles.proyecto} onclick={open_WebStudio}>WebStudio / 2022</li>
         {showWebStudio() && (<Site obj={webapi.webstudio}/>)}
 
-        <li class={styles.proyecto} onclick={open_PhoneBookApp}>PhoneBook App / 2022</li>
+        <li class={styles.proyecto} onclick={open_PhoneBookApp}>PhoneBook App / 2023</li>
         {showPhoneBookApp() && (<Site obj={webapi.phonebookapp}/>)}
 
       </ul>
