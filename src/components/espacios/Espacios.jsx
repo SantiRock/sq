@@ -30,6 +30,18 @@ export function Espacios () {
   const [showLaRddx, setShowLaRddx] = createSignal(false);
   const [showQuince16, setShowQuince16] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 13,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   const open_Myrys = () => {
     setShowMyrys(prev => !prev);
     setShowLeProyectarium(false);
@@ -38,6 +50,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    smoothScroll("#myrys");
   }
 
   const open_LeProyectarium = () => {
@@ -48,6 +61,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    smoothScroll("#leproyectarium");
   }
 
   const open_Spektrum = () => {
@@ -58,6 +72,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    smoothScroll("#spektrum");
   }
 
   const open_GuayaboColective = () => {
@@ -68,6 +83,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    smoothScroll("#guayabocolective");
   }
 
   const open_GairaCafe = () => {
@@ -78,6 +94,7 @@ export function Espacios () {
     setShowMyrys(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    smoothScroll("#cumbiahouse");
   }
 
   const open_LaRddx = () => {
@@ -88,6 +105,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowMyrys(false);
     setShowQuince16(false);
+    smoothScroll("#larddx");
   }
 
   const open_Quince16 = () => {
@@ -98,30 +116,31 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowMyrys(false);
+    smoothScroll("#quince16");
   }
 
   return(
     <div class={styles.container}>
       <ul>
-        <li class={styles.proyecto} onclick={open_Myrys}>Mix'Art Myrys <span class={styles.type}>Asociación de Artistas</span> 2017-2019</li>
+        <li id="myrys" class={styles.proyecto} onclick={open_Myrys}>Mix'Art Myrys <span class={styles.type}>Asociación de Artistas</span> 2017-2019</li>
         {showMyrys() && (<Space obj={spacesapi.myrys} />)}
 
-        <li class={styles.proyecto} onclick={open_LeProyectarium}>Le Proyectarium <span class={styles.type}>Asociación de Artistas Audiovisuales</span> 2017-2019</li>
+        <li id="leproyectarium" class={styles.proyecto} onclick={open_LeProyectarium}>Le Proyectarium <span class={styles.type}>Asociación de Artistas Audiovisuales</span> 2017-2019</li>
         {showLeProyectarium() && (<Space obj={spacesapi.leproyectarium} />)}
 
-        <li class={styles.proyecto} onclick={open_Spektrum}>Spektrum: art, science & community <span class={styles.type}>Escpacio Artistico</span> 2018</li>
+        <li id="spektrum" class={styles.proyecto} onclick={open_Spektrum}>Spektrum: art, science & community <span class={styles.type}>Escpacio Artistico</span> 2018</li>
         {showSpektrum() && (<Space obj={spacesapi.spektrum} />)}
 
-        <li class={styles.proyecto} onclick={open_GuayaboColective}>Guayabo Colectivo <span class={styles.type}>Asociación Cultural</span> 2017-2020</li>
+        <li id="guayabocolective" class={styles.proyecto} onclick={open_GuayaboColective}>Guayabo Colectivo <span class={styles.type}>Asociación Cultural</span> 2017-2020</li>
         {showGuayaboColective() && (<Space obj={spacesapi.guyabaocolective} />)}
 
-        <li class={styles.proyecto} onclick={open_GairaCafe}>Gaira Café & Cumbia House <span class={styles.type}>Restaurante-Auditorio</span> 2014-2016</li>
+        <li id="cumbiahouse" class={styles.proyecto} onclick={open_GairaCafe}>Gaira Café & Cumbia House <span class={styles.type}>Restaurante-Auditorio</span> 2014-2016</li>
         {showGairaCafe() && (<Space obj={spacesapi.gairacafe} />)}
 
-        <li class={styles.proyecto} onclick={open_LaRddx}>La Redada <span class={styles.type}>Casa Cultural</span> 2011-2016</li>
+        <li id="larddx" class={styles.proyecto} onclick={open_LaRddx}>La Redada <span class={styles.type}>Casa Cultural</span> 2011-2016</li>
         {showLaRddx() && (<Space obj={spacesapi.larddx} />)}
 
-        <li class={styles.proyecto} onclick={open_Quince16}>Quince16 <span class={styles.type}>Casa Culturual</span> 2009-2011</li>
+        <li id="quince16" class={styles.proyecto} onclick={open_Quince16}>Quince16 <span class={styles.type}>Casa Culturual</span> 2009-2011</li>
         {showQuince16() && (<Space obj={spacesapi.quince16} />)}
 
       </ul>

@@ -45,14 +45,27 @@ function CaribeSound () {
 export function Prod () {
   const [showCaribeSound, setShowCaribeSound] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 13,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   const open_CaribeSound = () => {
     setShowCaribeSound(prev => !prev);
+    smoothScroll("#caribesound");
   }
 
     return(
         <div class={styles.container}>
           <ul>
-            <li class={styles.proyecto} onclick={open_CaribeSound}>
+            <li id="caribesound" class={styles.proyecto} onclick={open_CaribeSound}>
               CaribeSound <span class={styles.type}>Festival Interdiciplinar</span>  2019
             </li>
             {showCaribeSound() && (<CaribeSound/>)}

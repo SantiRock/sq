@@ -61,6 +61,18 @@ export function Video () {
   const [showFamiaSuto, setShowFamiaSuto] = createSignal(false);
   const [showAtusombra, setShowAtusombra] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 13,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   const open_RioRadio = () => {
     setShowRioRadio(prev => !prev);
     setShowPinkParadize(false);
@@ -78,6 +90,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#rioradio');
   }
 
   const open_PinkParadize = () => {
@@ -97,6 +110,8 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#pinkparadize');
+
   }
 
   const open_DerKirchgarten = () => {
@@ -116,6 +131,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#derkirschgarten');
   }
 
   const open_DieOriginale = () => {
@@ -135,6 +151,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#dieoriginale');
   }
 
   const open_lpm = () => {
@@ -154,6 +171,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#lpm');
   }
 
   const open_StreetPack = () => {
@@ -173,6 +191,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#streetpack');
   }
 
   const open_NuitMusees = () => {
@@ -192,6 +211,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#nuitdesmusees');
   }
 
   const open_EcosCol = () => {
@@ -211,6 +231,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#ecosdecolombia');
   }
 
   const open_AvInstall = () => {
@@ -230,6 +251,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#avinstall');
   }
 
   const open_VjPanthera = () => {
@@ -249,6 +271,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#vjpanthera');
   }
 
   const open_GuayaBros = () => {
@@ -268,6 +291,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#guayabobros');
   }
 
   const open_Caliwood = () => {
@@ -287,6 +311,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#caliwoodrmx');
   }
 
   const open_EsteroPicnic = () => {
@@ -306,6 +331,7 @@ export function Video () {
     setShowImputaciones(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#esteropicnic');
   }
 
   const open_Imputaciones = () => {
@@ -325,6 +351,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowFamiaSuto(false);
     setShowAtusombra(false);
+    smoothScroll('#imputaciones');
   }
 
   const open_FamiaSuto = () => {
@@ -344,6 +371,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowAtusombra(false);
+    smoothScroll('#famiasuto');
   }
 
   const open_Atusombra = () => {
@@ -363,57 +391,58 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    smoothScroll('#atusombra');
   }
 
   return(
     <div class={styles.container}>
       <ul>
-        <li class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
+        <li id="rioradio" class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
         {showRioRadio() && (<VideoProjects obj={videosApi.la_magdalena}/>)}
         
-        <li class={styles.proyecto} onclick={open_PinkParadize}>Pink Paradize Festival <span class={styles.type}>Video Performance</span> 2019</li>
+        <li id="pinkparadize" class={styles.proyecto} onclick={open_PinkParadize}>Pink Paradize Festival <span class={styles.type}>Video Performance</span> 2019</li>
         {showPinkParadize() && (<VideoProjects obj={videosApi.pink_paradize}/>)}
 
-        <li class={styles.proyecto} onclick={open_DerKirchgarten}>Der Kirschgarten <span class={styles.type}>Teatro Contemporaneo</span> 2018</li>
+        <li id="derkirschgarten" class={styles.proyecto} onclick={open_DerKirchgarten}>Der Kirschgarten <span class={styles.type}>Teatro Contemporaneo</span> 2018</li>
         {showDerKirchgarten() && (<VideoProjects obj={videosApi.der_kirchgarten}/>)}
           
-        <li class={styles.proyecto} onclick={open_DieOriginale}>Die Originale <span class={styles.type}>Circo Contemporaneo</span> 2018</li>
+        <li id="dieoriginale" class={styles.proyecto} onclick={open_DieOriginale}>Die Originale <span class={styles.type}>Circo Contemporaneo</span> 2018</li>
         {showDieOriginale() && (<VideoProjects obj={videosApi.die_originale}/>)}
 
-        <li class={styles.proyecto} onclick={open_lpm}>LPM Live Mapping Contest <span class={styles.type}>Video-Mapping</span> 2018</li>          
+        <li id="lpm" class={styles.proyecto} onclick={open_lpm}>LPM Live Mapping Contest <span class={styles.type}>Video-Mapping</span> 2018</li>          
         {showLPM() && (<VideoProjects obj={videosApi.lpm2018}/>)}
           
-        <li class={styles.proyecto} onclick={open_StreetPack}>Street Pack Festival <span class={styles.type}>Video-Mapping</span> 2017-2018-2019</li>
+        <li id="streetpack" class={styles.proyecto} onclick={open_StreetPack}>Street Pack Festival <span class={styles.type}>Video-Mapping</span> 2017-2018-2019</li>
         {showStreetPack() && (<VideoProjects obj={videosApi.street_pack}/>)}
           
-        <li class={styles.proyecto} onclick={open_NuitMusees}>La Nuit Européenne des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
+        <li id="nuitdesmusees" class={styles.proyecto} onclick={open_NuitMusees}>La Nuit Européenne des Musées <span class={styles.type}>Video-Mapping</span> 2018-2019</li>
         {showNuitMusees() && (<VideoProjects obj={videosApi.lanuiteedm2019}/>)}
         
-        <li class={styles.proyecto} onclick={open_EcosCol}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
+        <li id="ecosdecolombia" class={styles.proyecto} onclick={open_EcosCol}>Ecos de Colombia <span class={styles.type}>AV Performance</span> 2018</li>
         {showEcosCol() && (<VideoProjects obj={videosApi.ecos_col}/>)}
         
-        <li class={styles.proyecto} onclick={open_AvInstall}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
+        <li id="avinstall" class={styles.proyecto} onclick={open_AvInstall}>AV Instalation <span class={styles.type}>Instalación Interactiva</span> 2017</li>
         {showAvInstall() && (<VideoProjects obj={videosApi.avinstalation}/>)}
         
-        <li class={styles.proyecto} onclick={open_VjPanthera}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
+        <li id="vjpanthera" class={styles.proyecto} onclick={open_VjPanthera}>VJ Panthera <span class={styles.type}>VJing</span> 2013-2018</li>
         {showVjPanthera() && (<VideoProjects obj={videosApi.vjpanthera}/>)}
         
-        <li class={styles.proyecto} onclick={open_GuayaBros}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
+        <li id="guayabobros" class={styles.proyecto} onclick={open_GuayaBros}>Guayabo Borthers <span class={styles.type}>VJing</span> 2017-2018</li>
         {showGuayaBros() && (<VideoProjects obj={videosApi.guayabobros}/>)}
         
-        <li class={styles.proyecto} onclick={open_Caliwood}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
+        <li id="caliwoodrmx" class={styles.proyecto} onclick={open_Caliwood}>Caliwood Remixed <span class={styles.type}>VJing</span> 2017</li>
         {showCaliwood() && (<VideoProjects obj={videosApi.caliwood} />)}
 
-        <li class={styles.proyecto} onclick={open_Imputaciones}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
+        <li id="imputaciones" class={styles.proyecto} onclick={open_Imputaciones}>Imputaciones <span class={styles.type}>Cabaret Político Multimedia</span> 2016</li>
         {showImputaciones() && (<VideoProjects obj={videosApi.imputaciones}/>)}
         
-        <li class={styles.proyecto} onclick={open_EsteroPicnic}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
+        <li id="esteropicnic" class={styles.proyecto} onclick={open_EsteroPicnic}>Electric Mistakes: Estero Picnic <span class={styles.type}>VJing</span> 2016</li>
         {showEsteroPicnic() && (<VideoProjects obj={videosApi.esteropicnic} />)}
         
-        <li class={styles.proyecto} onclick={open_FamiaSuto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
+        <li id="famiasuto" class={styles.proyecto} onclick={open_FamiaSuto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
         {showFamiaSuto() && (<VideoProjects obj={videosApi.famiasuto}/>)}
         
-        <li class={styles.proyecto} onclick={open_Atusombra}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
+        <li id="atusombra" class={styles.proyecto} onclick={open_Atusombra}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
         {showAtusombra() && (<VideoProjects obj={videosApi.atusombra} />)}
 
       </ul>

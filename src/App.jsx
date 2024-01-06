@@ -16,6 +16,18 @@ function App() {
   const [showWeb, setShowWeb] = createSignal(false);
   const [showEspacios, setShowEspacios] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 20,
+        behavior: 'smooth'
+      });
+    }
+  }
+
 
   const open_Prod = () => {
       setShowProd(prev => !prev);
@@ -24,6 +36,7 @@ function App() {
       setShowSound(false);
       setShowWeb(false);
       setShowEspacios(false);
+      smoothScroll("#prod")
   }
 
   const open_Video = () => {
@@ -33,6 +46,8 @@ function App() {
     setShowSound(false);
     setShowWeb(false);
     setShowEspacios(false);
+    smoothScroll("#video")
+ 
   }
 
   const open_Movies = () => {
@@ -51,6 +66,7 @@ function App() {
     setShowSound(prev => !prev);
     setShowWeb(false);
     setShowEspacios(false);
+    smoothScroll("#movies")
   }
 
   const open_Web = () => {
@@ -60,6 +76,7 @@ function App() {
     setShowSound(false);
     setShowWeb(prev => !prev);
     setShowEspacios(false);
+    smoothScroll("#web")
   }
 
   const open_Espacios = () => {
@@ -69,6 +86,7 @@ function App() {
     setShowSound(false);
     setShowWeb(false);
     setShowEspacios(prev => !prev);
+    smoothScroll("#spaces")
   }
 
 
@@ -76,22 +94,22 @@ function App() {
     <div class={styles.container}>
       <About />
       <main>
-        <h3 onclick={open_Prod}>Producción de eventos</h3>
+        <h3 id="prod" onclick={open_Prod}>Producción de eventos</h3>
         {showProd() && (<Prod />)}
 
-        <h3 onclick={open_Video}>Video</h3>
+        <h3 id="video" onclick={open_Video}>Video</h3>
         {showVideo() && (<Video />)}
 
-        <h3 onclick={open_Movies}>Filmografía</h3>
+        <h3 id="movies" onclick={open_Movies}>Filmografía</h3>
         {showMovies() && (<Movies />)}
 
-        <h3 onclick={open_Sound}>Sonido</h3>
+        <h3 id="sound" onclick={open_Sound}>Sonido</h3>
         {showSound() && (<Sound />)} 
 
-        <h3 onclick={open_Web}>Desarrollo Web</h3>
+        <h3 id="web" onclick={open_Web}>Desarrollo Web</h3>
         {showWeb() && (<Web />)}
 
-        <h3 onclick={open_Espacios}>Espacios & Asociaciones</h3>
+        <h3 id="spaces" onclick={open_Espacios}>Espacios & Asociaciones</h3>
         {showEspacios() && (<Espacios />)}
       </main>
     </div>

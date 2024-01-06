@@ -124,6 +124,18 @@ export function Movies () {
   const [showArb, setShowArb] = createSignal(false);
   const [showMas, setShowMas] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 13,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   const open_AguaSalada = () => {
     setShowAguaSalada(prev => !prev);
     setShowAndromeda(false);
@@ -133,6 +145,7 @@ export function Movies () {
     setShowJattends(false);
     setShowArb(false);
     setShowMas(false);
+    smoothScroll("#aguasalada");
   }
 
   const open_Andormeda = () => {
@@ -144,6 +157,7 @@ export function Movies () {
     setShowJattends(false);
     setShowArb(false);
     setShowMas(false);
+    smoothScroll("#andromeda");
   }
 
   const open_BaladaRock = () => {
@@ -154,6 +168,7 @@ export function Movies () {
     setShowKinoclaje(false);
     setShowJattends(false);
     setShowArb(false);
+    smoothScroll("#baladarock");
   }
 
   const open_Ecuador = () => {
@@ -165,6 +180,7 @@ export function Movies () {
     setShowJattends(false);
     setShowArb(false);
     setShowMas(false);
+    smoothScroll("#ecuador");
   }
 
   const open_Kinoclaje = () => {
@@ -176,6 +192,7 @@ export function Movies () {
     setShowJattends(false);
     setShowArb(false);
     setShowMas(false);
+    smoothScroll("#kinoclaje");
   }
 
   const open_Jattends = () => {
@@ -187,6 +204,7 @@ export function Movies () {
     setShowKinoclaje(false);
     setShowArb(false);
     setShowMas(false);
+    smoothScroll("#jattends");
   }
 
   const open_Arb = () => {
@@ -198,6 +216,7 @@ export function Movies () {
     setShowKinoclaje(false);
     setShowJattends(false);
     setShowMas(false);
+    smoothScroll("#arb");
   }
 
   const open_Mas = () => {
@@ -209,33 +228,34 @@ export function Movies () {
     setShowKinoclaje(false);
     setShowJattends(false);
     setShowArb(false);
+    smoothScroll("#mas");
   }
 
     return(
       <div class={styles.container}>
         <ul>
-          <li class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> 2022</li>
+          <li id="aguasalada" class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> 2022</li>
           {showAguaSalada() && (<Movie obj={moviesapi.aguasalada}/>)}
           
-          <li class={styles.proyecto} onclick={open_Andormeda}>Andrómeda <span class={styles.type}>Corto Experimental</span> 2016</li>
+          <li id="andromeda" class={styles.proyecto} onclick={open_Andormeda}>Andrómeda <span class={styles.type}>Corto Experimental</span> 2016</li>
           {showAndromeda() && (<Movie obj={moviesapi.andromeda} />)}
           
-          <li class={styles.proyecto} onclick={open_BaladaRock}>Balada Rock <span class={styles.type}>Corto Ficción</span> 2014</li>
+          <li id="baladarock" class={styles.proyecto} onclick={open_BaladaRock}>Balada Rock <span class={styles.type}>Corto Ficción</span> 2014</li>
           {showBaladaRock() && (<Movie obj={moviesapi.baladarock}/>)}
           
-          <li class={styles.proyecto} onclick={open_Ecuador}>Ecuador <span class={styles.type}>Corto Ficción</span> 2011</li>
+          <li id="ecuador" class={styles.proyecto} onclick={open_Ecuador}>Ecuador <span class={styles.type}>Corto Ficción</span> 2011</li>
           {showEcuador() && (<Movie obj={moviesapi.equador} />)}
           
-          <li class={styles.proyecto} onclick={open_Kinoclaje}>Kinoclaje <span class={styles.type}>Animación</span> 2005-2009</li>
+          <li id="kinoclaje" class={styles.proyecto} onclick={open_Kinoclaje}>Kinoclaje <span class={styles.type}>Animación</span> 2005-2009</li>
           {showKinoclaje() && (<Kinoclaje />)}
           
-          <li class={styles.proyecto} onclick={open_Jattends}>J'attends la pluie <span class={styles.type}>Cubrimiento de evento</span> 2019</li>
+          <li id="jattends" class={styles.proyecto} onclick={open_Jattends}>J'attends la pluie <span class={styles.type}>Cubrimiento de evento</span> 2019</li>
           {showJattends() && ( <Movie obj={moviesapi.jattends} />)}
 
-          <li class={styles.proyecto} onclick={open_Arb}>ARB <span class={styles.type}>Institucional</span> 2014</li>
+          <li id="arb" class={styles.proyecto} onclick={open_Arb}>ARB <span class={styles.type}>Institucional</span> 2014</li>
           {showArb() && (<Movie obj={moviesapi.arb}/>)}
           
-          <li class={styles.proyecto} onclick={open_Mas}>+</li>
+          <li id="mas" class={styles.proyecto} onclick={open_Mas}>+</li>
           {showMas() && (<Mas />)}
       
         </ul>

@@ -28,6 +28,18 @@ export function Web () {
   const [showWebStudio, setShowWebStudio] = createSignal(false);
   const [showPhoneBookApp, setShowPhoneBookApp] = createSignal(false);
 
+  function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const offset = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offset - 13,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   const open_GLSL = () => {
     setShowGLSL(prev => !prev);
     setShowFilmoteka(false);
@@ -36,6 +48,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#glslresearch");
   };
 
   const open_Filmoteka = () => {
@@ -46,9 +59,10 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#filmoteka");
   };
 
-  const open_Kiinopoisk = () => {
+  const open_Kinopoisk = () => {
     setShowKinopoisk(prev => !prev);
     setShowFilmoteka(false);
     setShowGLSL(false);
@@ -56,6 +70,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#kinopoisk");
   };
 
   const open_Swapi = () => {
@@ -66,6 +81,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#swapi");
   };
 
   const open_IceCream = () => {
@@ -76,6 +92,7 @@ export function Web () {
     setShowGLSL(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#icecream");
   };
 
   const open_WebStudio = () => {
@@ -86,6 +103,7 @@ export function Web () {
     setShowIceCream(false);
     setShowGLSL(false);
     setShowPhoneBookApp(false);
+    smoothScroll("#webstudio");
   };
 
   const open_PhoneBookApp = () => {
@@ -96,31 +114,32 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowGLSL(false);
+    smoothScroll("#phonebook");
   };
 
 
   return(
     <div class={styles.container}>
       <ul>
-        <li class={styles.proyecto} onclick={open_GLSL}>GLSL Research / 2023</li>
+        <li id="glslreaserch" class={styles.proyecto} onclick={open_GLSL}>GLSL Research / 2023</li>
         {showGLSL() && (<Site obj={webapi.glslresearch}/>)}
 
-        <li class={styles.proyecto} onclick={open_Filmoteka}>Filmoteka / 2023</li>
+        <li id="filmoteka" class={styles.proyecto} onclick={open_Filmoteka}>Filmoteka / 2023</li>
         {showFilmoteka() && (<Site obj={webapi.filmoteka}/>)}
         
-        <li class={styles.proyecto} onclick={open_Kiinopoisk}>Kinopoisk / 2023</li>
+        <li id="kinopoisk" class={styles.proyecto} onclick={open_Kinopoisk}>Kinopoisk / 2023</li>
         {showKinopoisk() && (<Site obj={webapi.kinopoisk}/>)}
         
-        <li class={styles.proyecto} onclick={open_Swapi}>Swapi-Challenge / 2023</li>
+        <li id="swapi" class={styles.proyecto} onclick={open_Swapi}>Swapi-Challenge / 2023</li>
         {showSwapi() && (<Site obj={webapi.swapi}/>)}
         
-        <li class={styles.proyecto} onclick={open_IceCream}>Ice-Cream / 2022</li>
+        <li id="icecream" class={styles.proyecto} onclick={open_IceCream}>Ice-Cream / 2022</li>
         {showIceCream() && (<Site obj={webapi.icecream}/>)}
 
-        <li class={styles.proyecto} onclick={open_WebStudio}>WebStudio / 2022</li>
+        <li id="webstudio" class={styles.proyecto} onclick={open_WebStudio}>WebStudio / 2022</li>
         {showWebStudio() && (<Site obj={webapi.webstudio}/>)}
 
-        <li class={styles.proyecto} onclick={open_PhoneBookApp}>PhoneBook App / 2023</li>
+        <li id="phonebook" class={styles.proyecto} onclick={open_PhoneBookApp}>PhoneBook App / 2023</li>
         {showPhoneBookApp() && (<Site obj={webapi.phonebookapp}/>)}
 
       </ul>
