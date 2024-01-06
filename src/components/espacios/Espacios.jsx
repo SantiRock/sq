@@ -9,7 +9,7 @@ function Space ({obj}) {
       <p><span class={styles.bold}>Fecha:</span> {obj.fecha}</p>
       <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
       <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
-      <p><span class={styles.bold}>Misiones:</span> {obj.misiones}</p>
+      <p><span class={styles.bold}>Misiones:</span> <span innerHTML={obj.misiones}></span></p>
       <p class={styles.bold}>Enlaces:</p> 
       <ul class={styles.ul}>
         {obj.enlaces.map(({id, enlace, text}) => (
