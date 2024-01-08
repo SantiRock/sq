@@ -2,7 +2,7 @@ export const soundapi = {
     paisajes_sonoros : {
         title: "Paisajes Sonoros",
         fecha: "2019-2021",
-        lugar: "Toulouse (Francia), Le Truc Vert (Francia), Zaragoza (España), Minca (Colombia), Bogotá (Colombia), Villa de Leyva (Colombia)",
+        lugar: "Toulouse (Francia), Le Truc Vert (Francia), Zaragoza (España), Minca (Colombia), Bogotá (Colombia), Villa de Leyva (Colombia), Isla Salamanca (Colombia)",
         concepto: "Entre 2019 y 2021 estuve grabando paisajes sonoros por los diferentes lugares que visitaba. En principio había una curiosidad hacia la narración sonora, contar historias por medio del sonido, algo así como cine para los oídos. Luego esto se tranformaría más como en derivas a partir de momentos y texturas sonoras. Edité un par de tracks y subi algunas grabaciones en bruto a FreeSound, una plataforma para comparitr sonidos. También participé en el proyecto Field Recording - Infinite Mixtapes de la radio digital NTS Radio con algunas de mis grabaciones.",
         sound: '<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1125382312&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>',
         enlaces: [

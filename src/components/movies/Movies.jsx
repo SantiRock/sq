@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
 import { moviesapi } from "./moviesapi";
+import { Images } from "../images/Images";
 
 function Movie ({obj}) {
   return(
@@ -38,7 +39,7 @@ function Movie ({obj}) {
           </ul>
         </>
       )}
-
+       <Images obj={obj}/>
     </div>
   )
 }
@@ -65,6 +66,7 @@ function Kinoclaje () {
         <li class={styles.list}><a href="https://vimeo.com/kinoclaje" target="_blank">Canal Vimeo</a></li>
         <li class={styles.list}><a href="https://kinoclaje.blogspot.com/" target="_blank">Blog</a></li>
       </ul>
+      <Images obj={moviesapi.kinoclaje}/>
     </div>
   )
 }

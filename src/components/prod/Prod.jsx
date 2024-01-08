@@ -36,7 +36,7 @@ function CaribeSound () {
         <li><a href="https://www.facebook.com/1213624855/videos/10219478278126960/" target="_blank">Video de un asistente</a></li>
         <li><a href="https://fb.watch/pfkIBV71P4/" target="_blank">Mural por Soma</a></li>
       </ul>
-      <Images arr={caribesoundimages}/>
+      <Images obj={caribesoundimages[0]}/>
     </div>
   )
 }

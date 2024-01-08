@@ -29,7 +29,7 @@ function Gallery ({close_gallery, src, alt, credit, next, prev, clickclose}) {
     )
 }
 
-export function Images ({arr}) {
+export function Images ({obj}) {
     const [showGallery, setShowGallery] = createSignal(false);
     const [currentImage, setCurrentImage] = createSignal('');
     const [currentAlt, setCurrentAlt] = createSignal('');
@@ -66,41 +66,41 @@ export function Images ({arr}) {
         setCurrentId(cid);
     }
 
-    const lastId = arr[0].images.length;
+    const lastId = obj.images.length;
 
     const next = () => {
         if( currentId() === lastId){
             setShowGallery(false);
-            setCurrentImage(arr[0].images[0].image);
-            setCurrentAlt(arr[0].images[0].alt);
-            setCurrentCredit(arr[0].images[0].credit);
+            setCurrentImage(obj.images[0].image);
+            setCurrentAlt(obj.images[0].alt);
+            setCurrentCredit(obj.images[0].credit);
             setShowGallery(true);
-            setCurrentId(arr[0].images[0].id);
+            setCurrentId(obj.images[0].id);
         } else {
             setShowGallery(false);
-            setCurrentImage(arr[0].images[currentId()].image);
-            setCurrentAlt(arr[0].images[currentId()].alt);
-            setCurrentCredit(arr[0].images[currentId()].credit);
+            setCurrentImage(obj.images[currentId()].image);
+            setCurrentAlt(obj.images[currentId()].alt);
+            setCurrentCredit(obj.images[currentId()].credit);
             setShowGallery(true);
-            setCurrentId(arr[0].images[currentId()].id);
+            setCurrentId(obj.images[currentId()].id);
         }
     }
 
     const prev = () => {
         if( currentId() === 1){
             setShowGallery(false);
-            setCurrentImage(arr[0].images[lastId - 1].image);
-            setCurrentAlt(arr[0].images[lastId - 1].alt);
-            setCurrentCredit(arr[0].images[lastId - 1].credit);
+            setCurrentImage(obj.images[lastId - 1].image);
+            setCurrentAlt(obj.images[lastId - 1].alt);
+            setCurrentCredit(obj.images[lastId - 1].credit);
             setShowGallery(true);
-            setCurrentId(arr[0].images[lastId - 1].id);
+            setCurrentId(obj.images[lastId - 1].id);
         } else {
             setShowGallery(false);
-            setCurrentImage(arr[0].images[currentId() - 2].image);
-            setCurrentAlt(arr[0].images[currentId() - 2].alt);
-            setCurrentCredit(arr[0].images[currentId() - 2].credit);
+            setCurrentImage(obj.images[currentId() - 2].image);
+            setCurrentAlt(obj.images[currentId() - 2].alt);
+            setCurrentCredit(obj.images[currentId() - 2].credit);
             setShowGallery(true);
-            setCurrentId(arr[0].images[currentId() - 2].id);
+            setCurrentId(obj.images[currentId() - 2].id);
         }
     }
 
@@ -108,7 +108,7 @@ export function Images ({arr}) {
     return(
         <>
           <ul class={styles.images}>
-            {arr[0].images.map(({id, srcset, src, alt, image, credit}) => (
+            {obj.images.map(({id, srcset, src, alt, image, credit}) => (
               <li key={id} onclick={() => open_Gallery(image, alt, credit, id)}>
                 <img 
                   class={styles.images_item}

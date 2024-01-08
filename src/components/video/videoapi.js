@@ -60,6 +60,57 @@ export const videosApi = {
         text: "Transmisión por Instagram",
       },
     ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/rioradio/rr1@2x.jpg',
+            image: '/images/video/rioradio/rr1.jpg',
+            alt: 'proycción',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/rioradio/rr2@2x.jpg',
+            image: '/images/video/rioradio/rr2.jpg',
+            alt: 'puesto fijo',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/rioradio/rr3@2x.jpg',
+            image: '/images/video/rioradio/rr3.jpg',
+            alt: 'juego de sombras',
+            credit: ''
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/rioradio/rr4@2x.jpg',
+            image: '/images/video/rioradio/rr4.jpg',
+            alt: 'juego de sombras',
+            credit: 'Plataforma Caníbal'
+        },
+        {
+            id: 5,
+            srcset: '',
+            src: '/images/video/rioradio/rr5@2x.jpg',
+            image: '/images/video/rioradio/rr5.jpg',
+            alt: 'juego mde sombras',
+            credit: 'Plataforma Caníbal'
+        },
+        {
+            id: 6,
+            srcset: '',
+            src: '/images/video/rioradio/rr6@2x.jpg',
+            image: '/images/video/rioradio/rr6.jpg',
+            alt: 'proyeccion',
+            credit: 'Plataforma Caníbal'
+        }
+
+    ]
   },
 
   pink_paradize: {
@@ -105,6 +156,32 @@ export const videosApi = {
             id: 'face',
             enlace: 'https://m.facebook.com/events/mixart-myrys/the-driver-aka-manu-le-malin-pink-paradize-festival-6/1169422356549145/',
             text: 'Evento Facebook'
+        },
+    ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/pinkparadize/pp1@2x.jpg',
+            image: '/images/video/pinkparadize/pp1.jpg',
+            alt: 'Albatros',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/pinkparadize/pp2@2x.jpg',
+            image: '/images/video/pinkparadize/pp2.jpg',
+            alt: 'Esther',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/pinkparadize/pp3@2x.jpg',
+            image: '/images/video/pinkparadize/pp3.jpg',
+            alt: 'The Driver Aka Manu le Malin',
+            credit: ''
         },
     ]
   },
@@ -209,6 +286,66 @@ export const videosApi = {
             enlace: 'https://www.lightzoomlumiere.fr/videos/3-coups-de-coeur-aux-video-mapping-awards-2019/?fbclid=IwAR2L9I0yyu2CxOJFToxRnhfr-ivG-SJwyhGIRSm8pHBJ3vBB5Mlh3rcowe4',
             text: 'Reseña de Light Zoom Lumière'
         },
+    ],
+    video : '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/310680608?h=f37673b8b3&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+    images : [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk1@2x.jpg',
+            image: '/images/video/derkirschgarten/dk1.jpg',
+            alt: 'woods',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk2@2x.jpg',
+            image: '/images/video/derkirschgarten/dk2.jpg',
+            alt: 'video mapping',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk3@2x.jpg',
+            image: '/images/video/derkirschgarten/dk3.jpg',
+            alt: 'video mapping',
+            credit: ''
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk4@2x.jpg',
+            image: '/images/video/derkirschgarten/dk4.jpg',
+            alt: 'puesto fijo',
+            credit: ''
+        },
+        {
+            id: 5,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk5@2x.jpg',
+            image: '/images/video/derkirschgarten/dk5.jpg',
+            alt: 'puesto fijo',
+            credit: ''
+        },
+        {
+            id: 6,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk6@2x.jpg',
+            image: '/images/video/derkirschgarten/dk6.jpg',
+            alt: 'video mapping',
+            credit: ''
+        },
+        {
+            id: 7,
+            srcset: '',
+            src: '/images/video/derkirschgarten/dk7@2x.jpg',
+            image: '/images/video/derkirschgarten/dk7.jpg',
+            alt: 'video mapping',
+            credit: ''
+        }
+        
     ]
   },
 
@@ -286,6 +423,73 @@ export const videosApi = {
             enlace: 'https://www.facebook.com/photo/?fbid=1485496998225505&set=pcb.1485502021558336',
             text: 'Fotos'
         }
+    ],
+    images : [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/dieoriginale/do1@2x.jpg',
+            image: '/images/video/dieoriginale/do1.jpg',
+            alt: 'Berliner Festspiele',
+            credit: 'Hugo Estrela'
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/dieoriginale/do2@2x.jpg',
+            image: '/images/video/dieoriginale/do2.jpg',
+            alt: 'Show',
+            credit: 'Hugo Estrela'
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/dieoriginale/do3@2x.jpg',
+            image: '/images/video/dieoriginale/do3.jpg',
+            alt: 'Proyecciones',
+            credit: 'Hugo Estrela'
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/dieoriginale/do4@2x.jpg',
+            image: '/images/video/dieoriginale/do4.jpg',
+            alt: 'Proyecciones',
+            credit: 'Hugo Estrela'
+        },
+        {
+            id: 5,
+            srcset: '',
+            src: '/images/video/dieoriginale/do5@2x.jpg',
+            image: '/images/video/dieoriginale/do5.jpg',
+            alt: 'Flyer',
+            credit: ''
+        },
+        {
+            id: 6,
+            srcset: '',
+            src: '/images/video/dieoriginale/do6@2x.jpg',
+            image: '/images/video/dieoriginale/do6.jpg',
+            alt: 'Ensayo',
+            credit: 'Santiago Quintero'
+        },
+        {
+            id: 7,
+            srcset: '',
+            src: '/images/video/dieoriginale/do7@2x.jpg',
+            image: '/images/video/dieoriginale/do7.jpg',
+            alt: 'Backstage',
+            credit: 'Santiago Quintero'
+        },
+        {
+            id: 8,
+            srcset: '',
+            src: '/images/video/dieoriginale/do8@2x.jpg',
+            image: '/images/video/dieoriginale/do8.jpg',
+            alt: 'Foto de grupo',
+            credit: 'Hugo Estrela'
+        }
+
     ]
   },
 
@@ -330,7 +534,49 @@ export const videosApi = {
             text: 'Video'
         },
     ],
-    video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/897758225?h=5a6860ec3f&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/897758225?h=5a6860ec3f&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/lpm/lpm1@2x.jpg',
+            image: '/images/video/lpm/lpm1.jpg',
+            alt: 'Video Mapping',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/lpm/lpm2@2x.jpg',
+            image: '/images/video/lpm/lpm2.jpg',
+            alt: 'Video Mapping',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/lpm/lpm3@2x.jpg',
+            image: '/images/video/lpm/lpm3.jpg',
+            alt: 'Video Mapping',
+            credit: ''
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/lpm/lpm4@2x.jpg',
+            image: '/images/video/lpm/lpm4.jpg',
+            alt: 'Video Mapping',
+            credit: ''
+        },
+        {
+            id: 5,
+            srcset: '',
+            src: '/images/video/lpm/lpm5@2x.jpg',
+            image: '/images/video/lpm/lpm5.jpg',
+            alt: 'Video Mapping',
+            credit: ''
+        },
+    ]
   },
 
   street_pack : {
@@ -363,7 +609,41 @@ export const videosApi = {
             text: 'Street Pack 2018'
         },
     ],
-    video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/358520289?h=99b65cebcb" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/358520289?h=99b65cebcb" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+    images : [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/streetpack/sp1@2x.jpg',
+            image: '/images/video/streetpack/sp1.jpg',
+            alt: 'flyer',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/streetpack/sp2@2x.jpg',
+            image: '/images/video/streetpack/sp2.jpg',
+            alt: 'stage',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/streetpack/sp3@2x.jpg',
+            image: '/images/video/streetpack/sp3.jpg',
+            alt: 'break',
+            credit: ''
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/streetpack/sp4@2x.jpg',
+            image: '/images/video/streetpack/sp4.jpg',
+            alt: 'dj',
+            credit: 'Tv Bruits'
+        },
+    ]
     },
 
     lanuiteedm2019 : {
@@ -396,6 +676,56 @@ export const videosApi = {
                 enlace: 'https://www.toulouseblog.fr/la-nuit-europeenne-des-musees-le-weekend-prochain-a-toulouse/',
                 text: 'Reseña Toulouse Blog'
             },
+        ],
+        images : [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm1@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm1.jpg',
+                alt: 'flyer',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm2@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm2.jpg',
+                alt: 'video mapping',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm3@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm3.jpg',
+                alt: 'video mapping',
+                credit: ''
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm4@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm4.jpg',
+                alt: 'video mapping',
+                credit: ''
+            },
+            {
+                id: 5,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm5@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm5.jpg',
+                alt: 'video mapping',
+                credit: ''
+            },
+            {
+                id: 6,
+                srcset: '',
+                src: '/images/video/lanuitdesmusees/lndm6@2x.jpg',
+                image: '/images/video/lanuitdesmusees/lndm6.jpg',
+                alt: 'video mapping',
+                credit: ''
+            },
         ]
     },
 
@@ -418,6 +748,40 @@ export const videosApi = {
         aforo: '50 personas',
         reconocimentos: '',
         apoyo: 'Festival Locombia, Guayabo Colectivo',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/ecosdecolombia/ec1@2x.jpg',
+                image: '/images/video/ecosdecolombia/ec1.jpg',
+                alt: 'Performance',
+                credit: 'Paul Gzx'
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/ecosdecolombia/ec2@2x.jpg',
+                image: '/images/video/ecosdecolombia/ec2.jpg',
+                alt: 'Performance',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/ecosdecolombia/ec3@2x.jpg',
+                image: '/images/video/ecosdecolombia/ec3.jpg',
+                alt: 'Performance',
+                credit: ''
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/video/ecosdecolombia/ec4@2x.jpg',
+                image: '/images/video/ecosdecolombia/ec4.jpg',
+                alt: 'Performance',
+                credit: ''
+            }
+        ]
     },
 
     avinstalation : {
@@ -437,6 +801,32 @@ export const videosApi = {
                 enlace: 'https://www.youtube.com/watch?v=Rq2nxX1ppj0',
                 text: 'Video del Evento por la Clutch Magazine'
             },
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/avinstall/avi1@2x.jpg',
+                image: '/images/video/avinstall/avi1.jpg',
+                alt: 'Install',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/avinstall/avi2@2x.jpg',
+                image: '/images/video/avinstall/avi2.jpg',
+                alt: 'Install',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/avinstall/avi3@2x.jpg',
+                image: '/images/video/avinstall/avi3.jpg',
+                alt: 'Install',
+                credit: ''
+            }
         ]
     },
 
@@ -448,6 +838,16 @@ export const videosApi = {
         cargo: 'Artista VJ',
         concepto: 'Mezcla de video en vivo',
         reconocimientos: 'Ganador en la Batalla de VJs del FECI Bogotá 2016',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/vjpanthera/vjp@2x.jpg',
+                image: '/images/video/vjpanthera/vjp.jpg',
+                alt: 'Best VJ ',
+                credit: 'Julian Medina'
+            },
+        ]
     },
 
     guayabobros: {
@@ -471,6 +871,32 @@ export const videosApi = {
                 enlace: 'https://lemusicodrome.com/soiree-los-guayabo-brothers-toulouse-2018/',
                 text: 'Reseña por Le Musicodrome'
             },
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/guayabobros/gb1@2x.jpg',
+                image: '/images/video/guayabobros/gb1.jpg',
+                alt: 'visual',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/guayabobros/gb2@2x.jpg',
+                image: '/images/video/guayabobros/gb2.jpg',
+                alt: 'concierto',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/guayabobros/gb3@2x.jpg',
+                image: '/images/video/guayabobros/gb3.jpg',
+                alt: 'stage',
+                credit: ''
+            },
         ]
     },
 
@@ -490,6 +916,40 @@ export const videosApi = {
         concepto: 'Para el programa especial dedicado al cine de Cali, realizé un bucle de video a partir de los films que se presentaban en este programa y una presentación en vivo re-mezclando este material',
         misiones: 'Remezcla de video',
         apoyo: 'Cinélatino, Rencontres de Toulouse',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/caliwoodrmx/cw1@2x.jpg',
+                image: '/images/video/caliwoodrmx/cw1.jpg',
+                alt: 'visuals',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/caliwoodrmx/cw2@2x.jpg',
+                image: '/images/video/caliwoodrmx/cw2.jpg',
+                alt: 'visuals',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/caliwoodrmx/cw3@2x.jpg',
+                image: '/images/video/caliwoodrmx/cw3.jpg',
+                alt: 'visuals',
+                credit: ''
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/video/caliwoodrmx/cw4@2x.jpg',
+                image: '/images/video/caliwoodrmx/cw4.jpg',
+                alt: 'poster',
+                credit: ''
+            },
+        ]
     },
 
     esteropicnic : {
@@ -514,6 +974,48 @@ export const videosApi = {
         misiones: 'Concepto, producción y performance de show visual.',
         duración: '45 min',
         aforo: '1000 personas',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/estereopicnic/ep1@2x.jpg',
+                image: '/images/video/estereopicnic/ep1.jpg',
+                alt: 'concierto',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/estereopicnic/ep2@2x.jpg',
+                image: '/images/video/estereopicnic/ep2.jpg',
+                alt: 'equipo',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/estereopicnic/ep3@2x.jpg',
+                image: '/images/video/estereopicnic/ep3.jpg',
+                alt: 'prueba de sonido',
+                credit: ''
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/video/estereopicnic/ep4@2x.jpg',
+                image: '/images/video/estereopicnic/ep4.jpg',
+                alt: 'concierto',
+                credit: ''
+            },
+            {
+                id: 5,
+                srcset: '',
+                src: '/images/video/estereopicnic/ep5@2x.jpg',
+                image: '/images/video/estereopicnic/ep5.jpg',
+                alt: 'concierto',
+                credit: ''
+            },
+        ]
     },
 
     imputaciones : {
@@ -570,6 +1072,32 @@ export const videosApi = {
         aforo: 'alrededor de 30 personas por presentación.',
         reconocimientos: '',
         apoyo: '',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/imputaciones/ip1@2x.jpg',
+                image: '/images/video/imputaciones/ip1.jpg',
+                alt: 'poster',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/imputaciones/ip2@2x.jpg',
+                image: '/images/video/imputaciones/ip2.jpg',
+                alt: 'Tina Pit',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/imputaciones/ip3@2x.jpg',
+                image: '/images/video/imputaciones/ip3.jpg',
+                alt: 'Pasion Cusqueña',
+                credit: ''
+            },
+        ]
     },
 
     famiasuto : {
@@ -594,6 +1122,40 @@ export const videosApi = {
         misiones: 'Concepto y performance de video',
         duración: '45 min',
         aforo: 'alrededor de 5000 personas',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/famiasuto/fs1@2x.jpg',
+                image: '/images/video/famiasuto/fs1.jpg',
+                alt: 'concierto',
+                credit: 'Juan Sebastián González'
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/video/famiasuto/fs2@2x.jpg',
+                image: '/images/video/famiasuto/fs2.jpg',
+                alt: 'concierto',
+                credit: 'Juan Sebastián González'
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/video/famiasuto/fs3@2x.jpg',
+                image: '/images/video/famiasuto/fs3.jpg',
+                alt: 'Santi',
+                credit: 'Juan Sebastián González'
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/video/famiasuto/fs4@2x.jpg',
+                image: '/images/video/famiasuto/fs4.jpg',
+                alt: 'concierto',
+                credit: 'Juan Sebastián González'
+            },
+        ]
     },
 
     atusombra : {
@@ -633,6 +1195,16 @@ export const videosApi = {
                 enlace: 'https://kioskoteatral.com/obras-hist/tu-sombra/',
                 text: 'Reseña Kiosko Teatral'
             },
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/video/atusombra/ats1@2x.jpg',
+                image: '/images/video/atusombra/ats.jpg',
+                alt: 'obra',
+                credit: ''
+            }
         ]
     }
 

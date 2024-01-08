@@ -90,6 +90,24 @@ export const moviesapi = {
         concepto: 'En el marco de la materia Taller de Cine Digital del programa de Comunicación Audiovisual de la Universidad Autónoma del Caribe, realizamos este cortometraje de ficción con los estudiantes.',
         duracion: '13:19 min',
         video:'<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/895572052?h=ba3fe3ac2d&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/movies/aguasalada/as1@2x.jpg',
+                image: '/images/movies/aguasalada/as1.jpg',
+                alt: 'fotograma',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/movies/aguasalada/as2@2x.jpg',
+                image: '/images/movies/aguasalada/as2.jpg',
+                alt: 'fotograma',
+                credit: ''
+            }
+        ]
     },
 
     andromeda : {
@@ -137,6 +155,32 @@ export const moviesapi = {
             }
         ],
         video:'<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/897756921?h=9b3ac7f836&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/movies/andromeda/a1@2x.jpg',
+                image: '/images/movies/andromeda/a1.jpg',
+                alt: 'fotograma',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/movies/andromeda/a2@2x.jpg',
+                image: '/images/movies/andromeda/a2.jpg',
+                alt: 'fotograma',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/movies/andromeda/a3@2x.jpg',
+                image: '/images/movies/andromeda/a3.jpg',
+                alt: 'fotograma',
+                credit: ''
+            },
+        ]
     },
 
     baladarock : {
@@ -363,7 +407,17 @@ export const moviesapi = {
                 text: 'Articulo de Tv Bruits - Videos'
             },
         ],
-        video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/329808042?h=952893917a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+        video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/329808042?h=952893917a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/movies/jattends/ja@2x.jpg',
+                image: '/images/movies/jattends/ja.jpg',
+                alt: 'fotograma',
+                credit: 'Tv Bruits'
+            },
+        ]
     },
 
     arb : {
@@ -403,7 +457,21 @@ export const moviesapi = {
             }
         ],
         video:'<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://www.youtube.com/embed/wO36UsPPodo?si=3HpOppdzPRwHbhsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
+    },
+
+    kinoclaje: {
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/movies/kinoclaje/k@2x.jpg',
+                image: '/images/movies/kinoclaje/k.jpg',
+                alt: 'Tomasita y el Caimán',
+                credit: ''
+            },
+        ]
     }
+
 
 }
 

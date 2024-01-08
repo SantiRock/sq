@@ -38,6 +38,7 @@ function VideoProjects ({obj}) {
         </>
       )}
       {obj.video && (<div innerHTML={obj.video}></div>)}
+      {obj.images && (<Images obj={obj}/>)}
     </div>
   )
 }
