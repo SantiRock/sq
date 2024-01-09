@@ -1,8 +1,12 @@
 .container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 21px;
-  min-width: 280px;
+  padding-bottom: 13px;
+  min-width: 310px;
   max-width: 1200px;
+  min-height: 100vh;
 }
 
 ul {
@@ -42,7 +46,10 @@ a:hover, h3:hover {
 
 @media screen and (min-width: 570px) {
   .container {
-    padding: 33px 51px;
+    padding-top: 33px;
+    padding-left: 51px;
+    padding-right: 51px;
+    padding-bottom: 13px;
   }
 }
 

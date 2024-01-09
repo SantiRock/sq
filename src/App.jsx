@@ -7,6 +7,7 @@ import { Movies } from './components/movies/Movies';
 import { Sound } from './components/sound/Sound';
 import { Web } from './components/code/Web';
 import { Espacios } from './components/espacios/Espacios';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   const [showProd, setShowProd] = createSignal(false);
@@ -112,6 +113,7 @@ function App() {
         <h3 id="spaces" onclick={open_Espacios}>Espacios & Asociaciones</h3>
         {showEspacios() && (<Espacios />)}
       </main>
+      <Footer />
     </div>
   );
 }
