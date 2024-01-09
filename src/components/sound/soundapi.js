@@ -303,7 +303,7 @@ export const soundapi = {
         title: "DJ Selector",
         fecha: "2009 - 2021",
         lugar: "Colombia - Francia",
-        concepto: "Seleccionar y presentar sets de música underground, alternativa y/o poco conocida de diferentes géneros. Nunca me interesó hacerme de un nombre de DJ. Mi interés siempre fue más por compartir canciones de alto valor que casi no se escuchan, lo cual a veces complicaba la interacción con el público que quiere escuchar lo que ya conoce, pero que funciona muy bien con el público que le gusta descubrir nuevas propuestas. Aparte también me involucré con la organización de los eventos en colaboración con otros DJs.",
+        concepto: "Seleccionar y presentar sets de música underground, alternativa y/o poco conocida de diferentes géneros. Nunca me interesó hacerme de un nombre de DJ. Mi interés siempre fue más por compartir canciones de alto valor que casi no se escuchan, lo cual a veces complicaba la interacción con el público que quiere escuchar lo que ya conoce, pero que funciona muy bien con el público que le gusta descubrir nuevas propuestas. Aparte también me involucré en la organización de los eventos en colaboración con otros DJs.",
         enlaces: [
             {
                 id: "nochejhciocidccumbiadjbrgejano",

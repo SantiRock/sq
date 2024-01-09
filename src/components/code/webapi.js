@@ -2,7 +2,7 @@ export const webapi = {
     glslresearch : {
         title: 'GLSL Research',
         fecha: '2023 - Actualmente',
-        concepto: 'En esta proyecto busco explorar el lenguaje de sombreado GLSL (informatica gráfica) a través de la API WebGL',
+        concepto: 'En este proyecto busco explorar el lenguaje de sombreado GLSL (informatica gráfica) a través de la API WebGL',
         stack: 'Solidjs, WebGL ',
         enlaces: [
             {
