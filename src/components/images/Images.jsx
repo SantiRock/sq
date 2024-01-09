@@ -109,9 +109,9 @@ export function Images ({obj}) {
         <>
           <ul class={styles.images}>
             {obj.images.map(({id, srcset, src, alt, image, credit}) => (
-              <li key={id} onclick={() => open_Gallery(image, alt, credit, id)}>
+              <li class={styles.images_item} key={id} onclick={() => open_Gallery(image, alt, credit, id)}>
                 <img 
-                  class={styles.images_item}
+                  class={styles.images_itemm}
                   srcset={srcset}
                   src={src}
                   alt={alt}

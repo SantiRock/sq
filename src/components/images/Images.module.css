@@ -7,14 +7,26 @@
 }
 
 .images_item {
-    display: block;
-    object-fit: cover;
+    position: relative; 
     margin-top: 13px;
     width: 100px;
     height: 100px;
-    filter: grayscale(30%);
     cursor: pointer;
 }
+
+.images_itemm {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(30%);
+    transition: transform 0.5s ease;
+}
+
+.images_itemm:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
 
 /* Modal */
 
@@ -60,6 +72,7 @@
 .image_container {
     position: relative; 
 }
+
 
 .gallery_item {
     display: block;

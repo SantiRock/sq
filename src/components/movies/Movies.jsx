@@ -39,7 +39,7 @@ function Movie ({obj}) {
           </ul>
         </>
       )}
-       <Images obj={obj}/>
+       {obj.images && (<Images obj={obj}/>)}
     </div>
   )
 }

@@ -252,7 +252,7 @@ export const spacesapi = {
             {
                 id: 1,
                 srcset: '',
-                src: '/images/spaces/guayavocolective/gc1@2x.jpg',
+                src: '/images/spaces/guayavocolective/gcc1@2x.jpg',
                 image: '/images/spaces/guayavocolective/gc1.jpg',
                 alt: 'Latino Graff',
                 credit: ''
@@ -260,7 +260,7 @@ export const spacesapi = {
             {
                 id: 2,
                 srcset: '',
-                src: '/images/spaces/guayavocolective/gc2@2x.jpg',
+                src: '/images/spaces/guayavocolective/gcc2@2x.jpg',
                 image: '/images/spaces/guayavocolective/gc2.jpg',
                 alt: 'Disparates',
                 credit: ''
