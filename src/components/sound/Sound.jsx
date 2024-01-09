@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import { soundapi } from "./soundapi";
 import styles from "../Components.module.css";
+import { Images } from "../images/Images";
 
 function Sonido ({obj}) {
   return(
@@ -23,6 +24,7 @@ function Sonido ({obj}) {
          
         </>
       )}
+      {obj.images && (<Images obj={obj}/>)}
     </div>
   )
 }

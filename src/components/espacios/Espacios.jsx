@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import { spacesapi } from "./espaciosapi";
 import styles from "../Components.module.css";
+import { Images } from "../images/Images";
 
 function Space ({obj}) {
   return(
@@ -16,6 +17,7 @@ function Space ({obj}) {
           <li key={id}><a href={enlace} target="_blank">{text}</a></li>
         ))}
       </ul>
+      <Images obj={obj} />
     </div>
   )
 }

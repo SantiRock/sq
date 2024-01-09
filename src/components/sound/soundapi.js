@@ -60,6 +60,232 @@ export const soundapi = {
                 enlace: "https://www.instagram.com/colombiantapes/",
                 text: "Cuenta Instagram"
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct1@2x.jpg',
+                image: '/images/sound/colombiantapes/ct1.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct2@2x.jpg',
+                image: '/images/sound/colombiantapes/ct2.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 3,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct3@2x.jpg',
+                image: '/images/sound/colombiantapes/ct3.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 4,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct4@2x.jpg',
+                image: '/images/sound/colombiantapes/ct4.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 5,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct5@2x.jpg',
+                image: '/images/sound/colombiantapes/ct5.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 6,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct6@2x.jpg',
+                image: '/images/sound/colombiantapes/ct6.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 7,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct7@2x.jpg',
+                image: '/images/sound/colombiantapes/ct7.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 8,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct8@2x.jpg',
+                image: '/images/sound/colombiantapes/ct8.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 9,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct9@2x.jpg',
+                image: '/images/sound/colombiantapes/ct9.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 10,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct10@2x.jpg',
+                image: '/images/sound/colombiantapes/ct10.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 11,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct11@2x.jpg',
+                image: '/images/sound/colombiantapes/ct11.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 12,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct12@2x.jpg',
+                image: '/images/sound/colombiantapes/ct12.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 13,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct13@2x.jpg',
+                image: '/images/sound/colombiantapes/ct13.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 14,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct14@2x.jpg',
+                image: '/images/sound/colombiantapes/ct14.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 15,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct15@2x.jpg',
+                image: '/images/sound/colombiantapes/ct15.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 16,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct16@2x.jpg',
+                image: '/images/sound/colombiantapes/ct16.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 17,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct17@2x.jpg',
+                image: '/images/sound/colombiantapes/ct17.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 18,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct18@2x.jpg',
+                image: '/images/sound/colombiantapes/ct18.jpg',
+                alt: 'Colombian Tapes',
+                credit: 'Zambo Producciones'
+            },
+            {
+                id: 19,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct19@2x.jpg',
+                image: '/images/sound/colombiantapes/ct19.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 20,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct20@2x.jpg',
+                image: '/images/sound/colombiantapes/ct20.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 21,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct21@2x.jpg',
+                image: '/images/sound/colombiantapes/ct21.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 22,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct22@2x.jpg',
+                image: '/images/sound/colombiantapes/ct22.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 23,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct23@2x.jpg',
+                image: '/images/sound/colombiantapes/ct23.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 24,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct24@2x.jpg',
+                image: '/images/sound/colombiantapes/ct24.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 25,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct25@2x.jpg',
+                image: '/images/sound/colombiantapes/ct25.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 26,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct26@2x.jpg',
+                image: '/images/sound/colombiantapes/ct26.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 27,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct27@2x.jpg',
+                image: '/images/sound/colombiantapes/ct27.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
+            {
+                id: 28,
+                srcset: '',
+                src: '/images/sound/colombiantapes/ct28@2x.jpg',
+                image: '/images/sound/colombiantapes/ct28.jpg',
+                alt: 'Colombian Tapes',
+                credit: ''
+            },
         ]
     },
 
@@ -83,6 +309,24 @@ export const soundapi = {
                 id: "nochejhciocidccumbiadjbrgejano",
                 enlace: "https://djnobreakfast.tumblr.com/post/188060660866/noche-de-cumbia-4-quartier-arnaud-bernard",
                 text: "Noche de Cumbia, Toulouse, 2019"
+            }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/sound/djselector/djs1@2x.jpg',
+                image: '/images/sound/djselector/djs1.jpg',
+                alt: 'El Club de la Cumbia',
+                credit: 'Pancho Villa'
+            },
+            {
+                id: 2,
+                srcset: '',
+                src: '/images/sound/djselector/djs2@2x.jpg',
+                image: '/images/sound/djselector/djs2.jpg',
+                alt: 'Noche de Cumbia',
+                credit: 'Antoine No Breakfast'
             }
         ]
     }

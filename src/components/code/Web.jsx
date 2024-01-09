@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
 import { webapi } from "./webapi";
+import { Images } from "../images/Images";
 
 function Site ({obj}) {
   return(
@@ -15,6 +16,7 @@ function Site ({obj}) {
           <li key={id}><a href={enlace} target="_blank">{text}</a></li>
         ))}
       </ul>
+      <Images obj={obj} />
     </div>
   )
 }

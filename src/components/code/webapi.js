@@ -15,6 +15,16 @@ export const webapi = {
                 enlace: 'https://santirock.github.io/chakana/',
                 text: 'Otros tests con WebGL'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/glslresearch@2x.jpg',
+                image: '/images/web/glslresearch.jpg',
+                alt: 'glslreasearch',
+                credit: ''
+            },
         ]
     },
 
@@ -34,6 +44,16 @@ export const webapi = {
                 enlace: 'https://developer.themoviedb.org/docs/getting-started',
                 text: 'The Movie Database API'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/filmoteka@2x.jpg',
+                image: '/images/web/filmoteka.jpg',
+                alt: 'filmoteka',
+                credit: ''
+            },
         ]
     },
 
@@ -53,6 +73,16 @@ export const webapi = {
                 enlace: 'https://developer.themoviedb.org/docs/getting-started',
                 text: 'The Movie Database API'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/kinopoisk@2x.jpg',
+                image: '/images/web/kinopoisk.jpg',
+                alt: 'kinopoisk',
+                credit: ''
+            },
         ]
     },
 
@@ -72,6 +102,16 @@ export const webapi = {
                 enlace: 'https://swapi.dev/',
                 text: 'SWAPI'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/swapi@2x.jpg',
+                image: '/images/web/swapi.jpg',
+                alt: 'swapi',
+                credit: ''
+            },
         ]
     },
 
@@ -86,6 +126,16 @@ export const webapi = {
                 enlace: 'https://santirock.github.io/IceCream/',
                 text: 'Sitio Web - IceCream'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/icecream@2x.jpg',
+                image: '/images/web/icecream.jpg',
+                alt: 'icecream',
+                credit: ''
+            },
         ]
     },
 
@@ -100,6 +150,16 @@ export const webapi = {
                 enlace: 'https://santirock.github.io/Web_Studio/',
                 text: 'Sitio Web - WebSudio'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/webstudio@2x.jpg',
+                image: '/images/web/webstudio.jpg',
+                alt: 'webstudio',
+                credit: ''
+            },
         ]
     },
 
@@ -114,6 +174,16 @@ export const webapi = {
                 enlace: 'https://santirock.github.io/react-app-phonebook/',
                 text: 'Sitio Web - PhoneBook App'
             }
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/phonebookapp@2x.jpg',
+                image: '/images/web/phonebookapp.jpg',
+                alt: 'Phone Book App',
+                credit: ''
+            },
         ]
     }
     
