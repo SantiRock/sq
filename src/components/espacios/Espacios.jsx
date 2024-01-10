@@ -17,7 +17,7 @@ function Space ({obj}) {
           <li key={id}><a href={enlace} target="_blank">{text}</a></li>
         ))}
       </ul>
-      <Images obj={obj} />
+      {obj.images && (<Images obj={obj} />)}
     </div>
   )
 }
@@ -31,6 +31,7 @@ export function Espacios () {
   const [showGairaCafe, setShowGairaCafe] = createSignal(false);
   const [showLaRddx, setShowLaRddx] = createSignal(false);
   const [showQuince16, setShowQuince16] = createSignal(false);
+  const [showLaConcha, setShowLaConcha] = createSignal(false);
 
   function smoothScroll(targetId) {
     const target = document.querySelector(targetId);
@@ -52,6 +53,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#myrys");
   }
 
@@ -63,6 +65,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#leproyectarium");
   }
 
@@ -74,6 +77,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#spektrum");
   }
 
@@ -85,6 +89,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#guayabocolective");
   }
 
@@ -96,6 +101,7 @@ export function Espacios () {
     setShowMyrys(false);
     setShowLaRddx(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#cumbiahouse");
   }
 
@@ -107,6 +113,7 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowMyrys(false);
     setShowQuince16(false);
+    setShowLaConcha(false);
     smoothScroll("#larddx");
   }
 
@@ -118,7 +125,20 @@ export function Espacios () {
     setShowGairaCafe(false);
     setShowLaRddx(false);
     setShowMyrys(false);
+    setShowLaConcha(false);
     smoothScroll("#quince16");
+  }
+
+  const open_LaConcha = () => {
+    setShowLaConcha(prev => !prev);
+    setShowLeProyectarium(false);
+    setShowSpektrum(false);
+    setShowGuayaboColective(false);
+    setShowGairaCafe(false);
+    setShowLaRddx(false);
+    setShowMyrys(false);
+    setShowQuince16(false);
+    smoothScroll("#laconcha");
   }
 
   return(
@@ -144,6 +164,9 @@ export function Espacios () {
 
         <li id="quince16" class={styles.proyecto} onclick={open_Quince16}>Quince16 <span class={styles.type}>Casa Culturual</span> 2009-2011</li>
         {showQuince16() && (<Space obj={spacesapi.quince16} />)}
+
+        <li id="laconcha" class={styles.proyecto} onclick={open_LaConcha}>Teatro la Concha <span class={styles.type}>Teatro</span> 2023</li>
+        {showLaConcha() && (<Space obj={spacesapi.teatrolaconcha} />)}
 
       </ul>
     </div> 

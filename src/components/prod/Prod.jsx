@@ -1,6 +1,6 @@
 import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
-import { caribesoundimages } from "./prodapi";
+import { prodapi } from "./prodapi";
 import { Images } from "../images/Images";
 
 
@@ -36,7 +36,28 @@ function CaribeSound () {
         <li><a href="https://www.facebook.com/1213624855/videos/10219478278126960/" target="_blank">Video de un asistente</a></li>
         <li><a href="https://fb.watch/pfkIBV71P4/" target="_blank">Mural por Soma</a></li>
       </ul>
-      <Images obj={caribesoundimages[0]}/>
+      <Images obj={prodapi.caribesound}/>
+    </div>
+  )
+}
+
+function MasProd () {
+  return(
+    <div class={styles.container}>
+      <p><span class={styles.bold}>Proyecto: </span>presentación de la obra <span class={styles.artista}>La Itinerancia de la tribú del gitano Melquìadíades</span></p>
+      <p><span class={styles.bold}>Fecha:</span> 14 de Marzo de 2020</p>
+      <p><span class={styles.bold}>Lugar:</span> Teatro Cenit, Minca, Colombia</p>
+      <p><span class={styles.bold}>Cargo desempeñado:</span> Asistencia de producción</p>
+      <p><span class={styles.bold}>Concepto:</span> Presentación de obra de teatro y compartir</p>
+      <p class={styles.bold}>Equipo:</p>
+      <ul class={styles.ul}>
+        <li class={styles.list}>Producción: Cenit Arte Natura</li>
+        <li class={styles.list}>Compañia: Teatro Itinerante del Sol</li>
+        <li class={styles.list}>Directora: Beatriz Camargo</li>
+        <li class={styles.list}>Asistencia de producción: Santiago Quintero</li>
+        <li class={styles.list}>Apoyo: Carmen Almeida y Carlos Pérez</li>
+      </ul>
+      <Images obj={prodapi.teatrocenit} />
     </div>
   )
 }
@@ -44,6 +65,7 @@ function CaribeSound () {
 
 export function Prod () {
   const [showCaribeSound, setShowCaribeSound] = createSignal(false);
+  const [showMas, setShowMas] = createSignal(false);
 
   function smoothScroll(targetId) {
     const target = document.querySelector(targetId);
@@ -59,7 +81,15 @@ export function Prod () {
 
   const open_CaribeSound = () => {
     setShowCaribeSound(prev => !prev);
+    setShowMas(false);
     smoothScroll("#caribesound");
+  }
+
+  const open_Mas = () => {
+    setShowMas(prev => !prev);
+    setShowCaribeSound(false);
+    smoothScroll("#mas");
+  
   }
 
     return(
@@ -69,6 +99,9 @@ export function Prod () {
               CaribeSound <span class={styles.type}>Festival Interdiciplinar</span>  2019
             </li>
             {showCaribeSound() && (<CaribeSound/>)}
+
+            <li id="mas" class={styles.proyecto} onclick={open_Mas}>+</li>
+            {showMas() && (<MasProd />)}
           </ul>    
         </div>
     );

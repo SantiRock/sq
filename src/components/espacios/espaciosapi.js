@@ -554,5 +554,20 @@ export const spacesapi = {
                 credit: ''
             },
         ]
+    },
+
+    teatrolaconcha: {
+        title: "Teatro la Concha",
+        fecha: "2023",
+        lugar: "Cali, Colombia",
+        concepto: "Sala de teatro",
+        misiones: "Técnica de iluminación",
+        enlaces: [
+            {
+                id: "teatrolaconcha",
+                enlace: "https://teatrolaconcha.com/",
+                text: "Teatro La Concha"
+            }
+        ],
     }
 }
