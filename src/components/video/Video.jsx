@@ -61,6 +61,7 @@ export function Video () {
   const [showImputaciones, setShowImputaciones] = createSignal(false);
   const [showFamiaSuto, setShowFamiaSuto] = createSignal(false);
   const [showAtusombra, setShowAtusombra] = createSignal(false);
+  const [showEncarnacion, setShowEncarnacion] = createSignal(false);
 
   function smoothScroll(targetId) {
     const target = document.querySelector(targetId);
@@ -90,6 +91,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#rioradio');
   }
@@ -110,9 +112,9 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#pinkparadize');
-
   }
 
   const open_DerKirchgarten = () => {
@@ -131,6 +133,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#derkirschgarten');
   }
@@ -151,6 +154,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#dieoriginale');
   }
@@ -171,6 +175,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#lpm');
   }
@@ -191,6 +196,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#streetpack');
   }
@@ -211,6 +217,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#nuitdesmusees');
   }
@@ -231,6 +238,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#ecosdecolombia');
   }
@@ -251,6 +259,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#avinstall');
   }
@@ -271,6 +280,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#vjpanthera');
   }
@@ -291,6 +301,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#guayabobros');
   }
@@ -311,6 +322,7 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#caliwoodrmx');
   }
@@ -331,6 +343,7 @@ export function Video () {
     setShowCaliwood(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#esteropicnic');
   }
@@ -351,6 +364,7 @@ export function Video () {
     setShowCaliwood(false);
     setShowEstereoPicnic(false);
     setShowFamiaSuto(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#imputaciones');
   }
@@ -371,8 +385,30 @@ export function Video () {
     setShowCaliwood(false);
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
+    setShowEncarnacion(false);
     setShowAtusombra(false);
     smoothScroll('#famiasuto');
+  }
+
+  const open_Encarnacion = () => {
+    setShowEncarnacion(prev => !prev);
+    setShowRioRadio(false);
+    setShowDerKirchgarten(false);
+    setShowPinkParadize(false);
+    setShowDieOriginale(false);
+    setShowLPM(false);
+    setShowStreetPack(false);
+    setShowNuitMusees(false);
+    setShowEcosCol(false);
+    setShowAvInstall(false);
+    setShowVjPanthera(false);
+    setShowGuayaBros(false);
+    setShowCaliwood(false);
+    setShowEstereoPicnic(false);
+    setShowImputaciones(false);
+    setShowFamiaSuto(false);
+    setShowAtusombra(false);
+    smoothScroll('#atusombra');
   }
 
   const open_Atusombra = () => {
@@ -392,7 +428,8 @@ export function Video () {
     setShowEstereoPicnic(false);
     setShowImputaciones(false);
     setShowFamiaSuto(false);
-    smoothScroll('#atusombra');
+    setShowEncarnacion(false);
+    smoothScroll('#encarnacion');
   }
 
   return(
@@ -442,6 +479,9 @@ export function Video () {
         
         <li id="famiasuto" class={styles.proyecto} onclick={open_FamiaSuto}>Famia Suto: Hip-Hop al Parque <span class={styles.type}>VJing</span> 2015</li>
         {showFamiaSuto() && (<VideoProjects obj={videosApi.famiasuto}/>)}
+
+        <li id="encarnacion" class={styles.proyecto} onclick={open_Encarnacion}>Encarnación de un tambor alegre <span class={styles.type}>Live Cinema</span> 2014</li>
+        {showEncarnacion() && (<VideoProjects obj={videosApi.encarnacion}/>)}
         
         <li id="atusombra" class={styles.proyecto} onclick={open_Atusombra}>A tu sombra <span class={styles.type}>Teatro Multimedia</span> 2012</li>
         {showAtusombra() && (<VideoProjects obj={videosApi.atusombra} />)}

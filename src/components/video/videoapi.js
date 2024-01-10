@@ -1206,6 +1206,30 @@ export const videosApi = {
                 credit: ''
             }
         ]
+    },
+
+    encarnacion : {
+        id: 'encarnacion',
+        title: 'Encarnación de un tambor alegre',
+        fecha: '14 de octubre de 2014',
+        lugar: 'Auditorio FUGA, Bogotá, Colombia',
+        cargo: 'Asistente de Video-Mapping',
+        equipo: [
+            {
+                id: 'sonidosenraizados',
+                cargo: 'Organizadores',
+                nombre: 'Sonidos Enraizados, Juan Orozco y Pablo Mora Calderón.'
+            },
+        ],
+        concepto: 'Live Cinema, performance audiovisual para la inaguración de la 16a Muestra Internacional Documental de Bogotá 2014.',
+        misiones: 'Cuadrar video-mapping y operarlo.',
+        enlaces: [
+            {
+                id: 'Portalfuga',
+                enlace: 'https://portalant.fuga.gov.co/inauguracion-16a-muestra-internacional-documental-de-bogota-salas-de-exposicion-fuga',
+                text: 'Portal FUGA'
+            },
+        ]
     }
 
 }
