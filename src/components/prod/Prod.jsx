@@ -78,8 +78,8 @@ function MasProd () {
           <li class={styles.list}>Apoyo: Carmen Almeida y Carlos Pérez</li>
         </ul>
         <Images obj={prodapi.teatrocenit} />
+        <p>y muchos más ...</p>
      </div>
-     <p>y muchos más ...</p>
     </div>
   )
 }
