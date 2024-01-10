@@ -88,5 +88,17 @@ export const prodapi = {
                     credit: '',
                 }
             ]
+        },
+        caribefemfest: {
+            images: [
+                {
+                    id: 1,
+                    srcset: '',
+                    src: '/images/prod/mas/cff@2x.jpg',
+                    image: '/images/prod/mas/cff.jpg',
+                    alt: 'flyer',
+                    credit: '',
+                }
+            ]
         }
 }
