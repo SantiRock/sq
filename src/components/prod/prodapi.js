@@ -100,5 +100,17 @@ export const prodapi = {
                     credit: '',
                 }
             ]
+        },
+        bienaldedanza: {
+            images: [
+                {
+                    id: 1,
+                    srcset: '',
+                    src: '/images/prod/mas/bddc.jpg',
+                    image: '/images/prod/mas/bddc.jpg',
+                    alt: 'Ruth Childs',
+                    credit: '',
+                }
+            ]
         }
 }

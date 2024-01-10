@@ -43,7 +43,14 @@ function CaribeSound () {
 
 function MasProd () {
   return(
-    <>
+    <div class={styles.container}>
+         <div class={styles.container}>
+        <p><span class={styles.bold}>Proyecto: </span><span class={styles.artista}>6ta Bienal Internacional de Danza de Cali</span></p>
+        <p><span class={styles.bold}>Fecha:</span> 9 al 12 de Noviembre de 2023</p>
+        <p><span class={styles.bold}>Lugar:</span> Cali, Colombia</p>
+        <p><span class={styles.bold}>Cargo desempeñado:</span> Interprete para Ruth Childs, Crazy Smooth y Dorothée Munyaneza</p>
+        <Images obj={prodapi.bienaldedanza} />
+     </div>
       <div class={styles.container}>
         <p><span class={styles.bold}>Proyecto: </span><span class={styles.artista}>CaribeFemFest Vol5</span></p>
         <p><span class={styles.bold}>Fecha:</span> 26, 27 & 28 de Marzo de 2022</p>
@@ -72,9 +79,7 @@ function MasProd () {
         </ul>
         <Images obj={prodapi.teatrocenit} />
      </div>
-    
-    </>
-
+    </div>
   )
 }
 
