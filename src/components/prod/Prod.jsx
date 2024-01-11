@@ -48,7 +48,7 @@ function MasProd () {
         <p><span class={styles.bold}>Proyecto: </span><span class={styles.artista}>6ta Bienal Internacional de Danza de Cali</span></p>
         <p><span class={styles.bold}>Fecha:</span> 9 al 12 de Noviembre de 2023</p>
         <p><span class={styles.bold}>Lugar:</span> Cali, Colombia</p>
-        <p><span class={styles.bold}>Cargo desempeñado:</span> Interprete para Ruth Childs, Crazy Smooth y Dorothée Munyaneza</p>
+        <p><span class={styles.bold}>Cargo desempeñado:</span> Asistencia de producción para Ruth Childs, Crazy Smooth y Dorothée Munyaneza</p>
         <Images obj={prodapi.bienaldedanza} />
      </div>
       <div class={styles.container}>
