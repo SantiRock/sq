@@ -135,7 +135,7 @@ export function Web () {
         <li id="swapi" class={styles.proyecto} onclick={open_Swapi}>Swapi-Challenge / 2023</li>
         {showSwapi() && (<Site obj={webapi.swapi}/>)}
         
-        <li id="icecream" class={styles.proyecto} onclick={open_IceCream}>Ice-Cream / 2022</li>
+        <li id="icecream" class={styles.proyecto} onclick={open_IceCream}>IceCream / 2022</li>
         {showIceCream() && (<Site obj={webapi.icecream}/>)}
 
         <li id="webstudio" class={styles.proyecto} onclick={open_WebStudio}>WebStudio / 2022</li>
