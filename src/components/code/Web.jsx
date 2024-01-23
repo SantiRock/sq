@@ -29,6 +29,7 @@ export function Web () {
   const [showIceCream, setShowIceCream] = createSignal(false);
   const [showWebStudio, setShowWebStudio] = createSignal(false);
   const [showPhoneBookApp, setShowPhoneBookApp] = createSignal(false);
+  const [showSqpweb, setShowSqpweb] = createSignal(false);
 
   function smoothScroll(targetId) {
     const target = document.querySelector(targetId);
@@ -50,6 +51,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#glslresearch");
   };
 
@@ -61,6 +63,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#filmoteka");
   };
 
@@ -72,6 +75,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#kinopoisk");
   };
 
@@ -83,6 +87,7 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#swapi");
   };
 
@@ -94,6 +99,7 @@ export function Web () {
     setShowGLSL(false);
     setShowWebStudio(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#icecream");
   };
 
@@ -105,6 +111,7 @@ export function Web () {
     setShowIceCream(false);
     setShowGLSL(false);
     setShowPhoneBookApp(false);
+    setShowSqpweb(false);
     smoothScroll("#webstudio");
   };
 
@@ -116,6 +123,19 @@ export function Web () {
     setShowIceCream(false);
     setShowWebStudio(false);
     setShowGLSL(false);
+    setShowSqpweb(false);
+    smoothScroll("#phonebook");
+  };
+
+  const open_Sqpweb = () => {
+    setShowSqpweb(prev => !prev);
+    setShowFilmoteka(false);
+    setShowKinopoisk(false);
+    setShowSwapi(false);
+    setShowIceCream(false);
+    setShowWebStudio(false);
+    setShowGLSL(false);
+    setShowPhoneBookApp(false);
     smoothScroll("#phonebook");
   };
 
@@ -123,6 +143,9 @@ export function Web () {
   return(
     <div class={styles.container}>
       <ul>
+      <li id="glslreaserch" class={styles.proyecto} onclick={open_Sqpweb}>Front-End Studio / 2024</li>
+        {showSqpweb() && (<Site obj={webapi.sqpweb}/>)}
+
         <li id="glslreaserch" class={styles.proyecto} onclick={open_GLSL}>GLSL Research / 2023</li>
         {showGLSL() && (<Site obj={webapi.glslresearch}/>)}
 

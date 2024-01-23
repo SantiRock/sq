@@ -1,4 +1,27 @@
 export const webapi = {
+    sqpweb : {
+        title: 'FrontEnd Studio',
+        fecha: '2024 - Actualmente',
+        concepto: 'Sitio personal para ofrecer servicios de desarrollo Forntend, creación de páginas web.',
+        stack: 'Vue.js',
+        enlaces: [
+            {
+                id: 'frontendstudio',
+                enlace: 'https://sqpweb.netlify.app/',
+                text: 'Sitio Web: FrontEnd Studio'
+            },
+        ],
+        images: [
+            {
+                id: 1,
+                srcset: '',
+                src: '/images/web/frontenddev@2x.jpg',
+                image: '/images/web/frontenddev.jpg',
+                alt: 'Frontend Studio',
+                credit: ''
+            },
+        ]
+    },
     glslresearch : {
         title: 'GLSL Research',
         fecha: '2023 - Actualmente',
