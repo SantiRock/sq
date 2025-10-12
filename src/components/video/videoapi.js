@@ -62,8 +62,9 @@ export const videosApi = {
             nombre: 'Leonardo Pastrana Cortés'
         },
     ],
-    concepto: 'Presentación del proyecto Astonativo en el marco del festival de la diversidad Sucursal Fest 2025 de Cali, Colombia',
+    concepto: 'Presentación del proyecto Astonativo en el marco del festival de la diversidad Sucursal Fest 2025 de Cali, Colombia. En esta ocación utilicé AI como parte del proceso de creación de imagen y creé mi propia interfaz personalisada sobre Touch Designer.',
     misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    stack: 'TouchDesigner, AI.',
     duración: '30min',
     aforo: 'unas 2000 personas, publico flotante',
     apoyo: 'Secretaria de Cultura de Cali, Alcaldía de Cali',
@@ -112,6 +113,38 @@ export const videosApi = {
             alt: 'sf4',
             credit: ''
         },
+               {
+            id: 5,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf5@2x.jpg',
+            image: '/images/video/sucursalfest/sf5.jpg',
+            alt: 'sf5',
+            credit: ''
+        },
+        {
+            id: 6,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf6@2x.jpg',
+            image: '/images/video/sucursalfest/sf6.jpg',
+            alt: 'sf6',
+            credit: ''
+        },
+        {
+            id: 7,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf7@2x.jpg',
+            image: '/images/video/sucursalfest/sf7.jpg',
+            alt: 'sf7',
+            credit: ''
+        },
+        {
+            id: 8,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf8@2x.jpg',
+            image: '/images/video/sucursalfest/sf8.jpg',
+            alt: 'sf8',
+            credit: ''
+        },
     ]
   },
 
@@ -138,8 +171,9 @@ export const videosApi = {
             nombre: 'Orquesta Universidad Autonoma de Occidente'
         },
     ],
-    concepto: 'Presentación del proyecto Astonativo en el marco de la programación artística de la Semana de la Biodiversidad de Cali 2005',
+    concepto: 'Presentación del proyecto Astonativo en el marco de la programación artística de la Semana de la Biodiversidad de Cali 2005. En esta ocación utilicé AI como parte del proceso de creación de imagen y creé mi propia interfaz personalisada sobre Touch Designer.',
     misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    stack: 'TouchDesigner, AI.',
     duración: '30min',
     aforo: 'unas 500 personas, publico flotante',
     apoyo: 'Alcaldía de Santiago de Cali',
@@ -213,6 +247,7 @@ export const videosApi = {
     ],
     concepto: 'Presentación del proyecto Astronativo en el marco de programación artísitica de la COP16',
     misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    stack: 'Resolume',
     duración: '45 min',
     aforo: '2000 personas, publico flotante',
     apoyo: "Ministerio de Ambiente de Colombia",
@@ -302,6 +337,7 @@ export const videosApi = {
     concepto:
       'Performance audiovisual dentro del marco del proyecto de investigación/creación "Río/radio: Correspondencia anfibia" de Laura Wiesner acerca del río Magdalena. Beca residencias nacionales de Idartes.',
     misiones: "Performance Visual, mezlca de video en vivo.",
+    stack: 'Resolume',
     duracion: "45min",
     aforo: "50 personas",
     apoyo: "Plataforma Caníbal, Radio Bestial, Vokaribe Radio, Idartes",
@@ -405,6 +441,7 @@ export const videosApi = {
     ],
     concepto: 'Festival de música electrónica. Para esta ocación trabajé con patches audio-reactivos creados en Quartz Composer, 0 video, 0 imágenes pre-renderisadas, 100% programación. Bajo el lema "vez lo que escuchas, sin sonido no hay imagén".',
     misiones: 'Performance de video, VJing, mezcla de video en vivo. Montaje y desmontaje de equipos de video.',
+    stack: 'Resolume, Quartz Composer',
     duración: '6 horas',
     aforo: '2000 personas, publico flotante',
     apoyo: "Mix'Art Myrys, Le Proyectarium, 5 minutes, Les Productions du Possible",
@@ -518,6 +555,7 @@ export const videosApi = {
     ],
     concepto: 'Obra de teatro comtemporàneo basada en "El jardin de los cerezos" de Anton Chejov, como forma de denunciar el riego de gentrificación del barrio tradicionalmente "alternativo" de Dûsseldorf. Lo obra hace un recorrido por el barrio, en exteriores e interiores, y se realizó con ayuda de la comunidad.',
     misiones: 'Montaje de video-mapping (video y audio), asistencia en creación y mezcla en vivo, estructura de línea de tiempo y setteo del programa de proyección (resolume). Producción de material visual, animaciones.',
+    stack: 'Resolume, Suite Adobe',
     duración: '50 min',
     aforo: '50 personas por función / 5 funciones en total',
     reconocimientos: 'Video-Mapping nominado en los Video Mapping Awards del European Mapping Center (Lille/Fr) de 2019',
@@ -661,6 +699,7 @@ export const videosApi = {
     ],
     concepto: 'Laboratorio de circo contemporaneo en el que se buscaba juntar la pratica del circo con otras artes. Ocho directores de circo debian generar una propuesta en una semana, junto a un equipo que nunca hubiera trabajado juntos.',
     misiones: 'Performance de video, mezlca de video en vivo. Aportar a la propuesta escenica en estrucutura temporal e ilumincación.',
+    stack: 'Resolume',
     duración: '25 min',
     aforo: '250 por presentación / 2 presentaciones',
     apoyo: 'Berlin Festpiele, Berlin Circus Festival',
@@ -775,6 +814,7 @@ export const videosApi = {
     ],
     concepto: 'Concurso de video mapping mezclado en vivo.',
     misiones: 'Creación y perofrmance de video mapping.',
+    stack: 'Resolume',
     duración: '5 min',
     aforo: '100 personas por ronda, 2 rondas',
     reconocimientos: 'Finalista del concurso',
@@ -851,6 +891,7 @@ export const videosApi = {
     ],
     concepto: 'Festival de Scratch y artes urbanas de 2 días',
     misiones: 'Diseñar video-mapping y coordinar visuales (vjing, vjs, mezcla de video en vivo) del festival. Montaje y desmontaje de equipos de video.',
+    stack: 'Resolume',
     duración: '2 días, 8-10 horas por día',
     aforo: 'alrededor de 1500 personas por noche',
     apoyo: "Scratch Assembly, Mix'Art Myrys, Le Proyectarium, 5 minutes, Tv Bruits, Didier Bonmaison, Vicent Dombret, Mutha, Maïlis Gourdon",
@@ -903,7 +944,7 @@ export const videosApi = {
     ]
     },
 
-    lanuiteedm2019 : {
+  lanuiteedm2019 : {
         id: 'lanuiteedm2019',
         title: 'La Nuit Européenne des Musées',
         fecha: 'Mayo 2018-2019',
@@ -923,6 +964,7 @@ export const videosApi = {
         ],
         concepto: 'Para la noche europea de los museos de 2018 y 2019, se me encomendo hacer un video-mapping, de temática libre en 2018 y bajo la temática de los superhéroes en 2019',
         misiones: 'Concepto y ejecución de video-mapping',
+        stack: 'Resolume',
         duración: '7 horas',
         aforo: 'alrededor de 15000 personas, publico flotante',
         reconocimentos: '',
@@ -986,7 +1028,7 @@ export const videosApi = {
         ]
     },
 
-    ecos_col : {
+  ecos_col : {
         id: 'ecoscol',
         title: 'Ecos de Colombia',
         fecha: '7 de noviembre 2018',
@@ -1001,6 +1043,7 @@ export const videosApi = {
         ],
         concepto: 'Remezcla de video en vivo a partir de diferentes medias visuales y sonoros: voz, paisaje sonoo, música, video documental, animación, imagén generativa, 3D, video pirateo, entre otros. La idea era crear un viaje por diferentes matices de la cultura colombiana.',
         misiones: 'Concepto y presentación de performance audiovisual',
+        stack: 'Resolume',
         duración: '45 min',
         aforo: '50 personas',
         reconocimentos: '',
@@ -1041,7 +1084,7 @@ export const videosApi = {
         ]
     },
 
-    avinstalation : {
+  avinstalation : {
         id: 'avinstall',
         title: 'Instalación Audiovisual Interactiva',
         fecha: '3 de mayo 2017',
@@ -1049,6 +1092,7 @@ export const videosApi = {
         cargo: 'Artista de video',
         concepto: 'En el marco del evento Clutchorama propuse esta pieza audiovisual inmersiva que constaba de 3 pantallas a escala humana y con la cual se interactuaba por medio de un microfono, modificando el contenido audiovisual audio-reactivamente.',
         misiones: 'Concepto y montaje',
+        stack: 'Resolume, Matrox',
         duración: '7 horas',
         aforo: '3000 personas, publico flotante',
         apoyo: 'Pôle Video, Le Proyectarium, Claudio Nervi',
@@ -1087,13 +1131,14 @@ export const videosApi = {
         ]
     },
 
-    vjpanthera : {
+  vjpanthera : {
         id: 'vjpanthera',
         title: 'VJ Panthera',
         fecha: '2014-2018',
         lugar: 'Colombia, Francia, Alemania, Italia',
         cargo: 'Artista VJ',
         concepto: 'Mezcla de video en vivo',
+        stack: 'Resolume',
         reconocimientos: 'Ganador en la Batalla de VJs del FECI Bogotá 2016',
         images: [
             {
@@ -1107,7 +1152,7 @@ export const videosApi = {
         ]
     },
 
-    guayabobros: {
+  guayabobros: {
         id: 'guayabros',
         title: 'Guayabo Brothers',
         fecha: '2017-2018',
@@ -1121,6 +1166,7 @@ export const videosApi = {
             },
         ],
         concepto: 'Desarrollo y performance de show visual para conciertos de Los Guayabo Brothers, a partir del concepto de psicodelia tropical. Concepción de material visual especialmente para ser mezclado en vivo.',
+        stack: 'Resolume',
         apoyo: 'Los Guayabo Brothers, El Guayabo Colectivo',
         enlaces: [
             {
@@ -1157,7 +1203,7 @@ export const videosApi = {
         ]
     },
 
-    caliwood: {
+  caliwood: {
         id: 'caliwood',
         title: 'Caliwood Remixed',
         fecha: 'Marzo 2017',
@@ -1209,7 +1255,7 @@ export const videosApi = {
         ]
     },
 
-    esteropicnic : {
+  esteropicnic : {
         id: 'esteropicnic',
         title: 'Electric Mistakes: Estero Picnic',
         fecha: '10 de marzo 2016',
@@ -1229,6 +1275,7 @@ export const videosApi = {
         ],
         concepto: 'Show visual para presentación del grupo de rock Electric Mistakes en el festival Estero Picnic.',
         misiones: 'Concepto, producción y performance de show visual.',
+        stack: 'Resolume',
         duración: '45 min',
         aforo: '1000 personas',
         images: [
@@ -1275,7 +1322,7 @@ export const videosApi = {
         ]
     },
 
-    imputaciones : {
+  imputaciones : {
         id: 'imputaciones',
         title: 'Imputaciones: Cabaret Político Multimedia',
         fecha: '4 de mayo y 12 y 13 de agosto 2016',
@@ -1325,6 +1372,7 @@ export const videosApi = {
         ],
         concepto: 'Laboratorio de cabarte politico multimedia dirigido por Nadia Granados, en la que 6 artsitas performers desarrollaban un acto multimedia.',
         misiones: 'Asistir la puesta en escena y técnica de video. Operar proyecciones durante presentaciones.',
+        stack: 'Resolume',
         duración: '1 hora',
         aforo: 'alrededor de 30 personas por presentación.',
         reconocimientos: '',
@@ -1357,7 +1405,7 @@ export const videosApi = {
         ]
     },
 
-    famiasuto : {
+  famiasuto : {
         id: 'famiasuto',
         title: 'Famia Suto: Hip-Hop al Parque',
         fecha: '15 de noviembre 2015',
@@ -1377,6 +1425,7 @@ export const videosApi = {
         ],
         concepto: 'Show visual para la presentación del grupo Famia Suto en Hip-Hop al Parque 2015',
         misiones: 'Concepto y performance de video',
+        stack: 'Resolume',
         duración: '45 min',
         aforo: 'alrededor de 5000 personas',
         images: [
@@ -1415,7 +1464,7 @@ export const videosApi = {
         ]
     },
 
-    atusombra : {
+  atusombra : {
         id: 'atusombra',
         title: 'A tu sombra',
         fecha: '2012',
@@ -1465,7 +1514,7 @@ export const videosApi = {
         ]
     },
 
-    encarnacion : {
+  encarnacion : {
         id: 'encarnacion',
         title: 'Encarnación de un tambor alegre',
         fecha: '14 de octubre de 2014',
@@ -1480,6 +1529,7 @@ export const videosApi = {
         ],
         concepto: 'Live Cinema, performance audiovisual para la inaguración de la 16a Muestra Internacional Documental de Bogotá 2014.',
         misiones: 'Cuadrar video-mapping y operarlo.',
+        stack: 'Resolume',
         enlaces: [
             {
                 id: 'Portalfuga',

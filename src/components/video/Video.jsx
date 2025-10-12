@@ -24,6 +24,7 @@ function VideoProjects ({obj}) {
       )}
       <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
       {obj.misiones && (<p><span class={styles.bold}>Misiones:</span> {obj.misiones}</p>)}
+      {obj.stack && (<p><span class={styles.bold}>Stack:</span> {obj.stack}</p>)}
       {obj.duracion && (<p><span class={styles.bold}>Duración:</span> {obj.duracion}</p>)}
       {obj.aforo && (<p><span class={styles.bold}>Asistencia:</span> {obj.aforo}</p>)}
       {obj.reconocimientos && (<p><span class={styles.bold}>Reconocimientos:</span> {obj.reconocimientos}</p>)}

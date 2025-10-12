@@ -104,6 +104,18 @@ export function Images ({obj}) {
         }
     }
 
+    document.addEventListener('keydown', (event) => {
+      if (showGallery()) {
+        event.preventDefault();
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            next();
+          } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            prev();
+          }
+      }
+
+    })
+
 
     return(
         <>
