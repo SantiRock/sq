@@ -1092,7 +1092,7 @@ export const videosApi = {
         cargo: 'Artista de video',
         concepto: 'En el marco del evento Clutchorama propuse esta pieza audiovisual inmersiva que constaba de 3 pantallas a escala humana y con la cual se interactuaba por medio de un microfono, modificando el contenido audiovisual audio-reactivamente.',
         misiones: 'Concepto y montaje',
-        stack: 'Resolume, Matrox',
+        stack: 'Resolume, Matrox, Arduino, Pure Data',
         duración: '7 horas',
         aforo: '3000 personas, publico flotante',
         apoyo: 'Pôle Video, Le Proyectarium, Claudio Nervi',
