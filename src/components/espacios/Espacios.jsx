@@ -5,7 +5,7 @@ import { Images } from "../images/Images";
 
 function Space ({obj}) {
   return(
-    <div class={styles.container}>
+    <div class={`${styles.container} ${styles.cp}`}>
       <h4 class={styles.title}>{obj.title}</h4>
       <p><span class={styles.bold}>Fecha:</span> {obj.fecha}</p>
       <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
@@ -33,112 +33,37 @@ export function Espacios () {
   const [showQuince16, setShowQuince16] = createSignal(false);
   const [showLaConcha, setShowLaConcha] = createSignal(false);
 
-  function smoothScroll(targetId) {
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      const offset = target.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: offset - 13,
-        behavior: 'smooth'
-      });
-    }
-  }
 
   const open_Myrys = () => {
     setShowMyrys(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#myrys");
   }
 
   const open_LeProyectarium = () => {
     setShowLeProyectarium(prev => !prev);
-    setShowMyrys(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#leproyectarium");
   }
 
   const open_Spektrum = () => {
     setShowSpektrum(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowMyrys(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#spektrum");
   }
 
   const open_GuayaboColective = () => {
     setShowGuayaboColective(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowMyrys(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#guayabocolective");
   }
 
   const open_GairaCafe = () => {
     setShowGairaCafe(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowMyrys(false);
-    setShowLaRddx(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#cumbiahouse");
   }
 
   const open_LaRddx = () => {
     setShowLaRddx(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowMyrys(false);
-    setShowQuince16(false);
-    setShowLaConcha(false);
-    smoothScroll("#larddx");
   }
 
   const open_Quince16 = () => {
     setShowQuince16(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowMyrys(false);
-    setShowLaConcha(false);
-    smoothScroll("#quince16");
   }
 
   const open_LaConcha = () => {
     setShowLaConcha(prev => !prev);
-    setShowLeProyectarium(false);
-    setShowSpektrum(false);
-    setShowGuayaboColective(false);
-    setShowGairaCafe(false);
-    setShowLaRddx(false);
-    setShowMyrys(false);
-    setShowQuince16(false);
-    smoothScroll("#laconcha");
   }
 
   return(

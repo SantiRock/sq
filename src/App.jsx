@@ -17,77 +17,28 @@ function App() {
   const [showWeb, setShowWeb] = createSignal(false);
   const [showEspacios, setShowEspacios] = createSignal(false);
 
-  function smoothScroll(targetId) {
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      const offset = target.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: offset - 20,
-        behavior: 'smooth'
-      });
-    }
-  }
-
-
   const open_Prod = () => {
       setShowProd(prev => !prev);
-      setShowVideo(false);
-      setShowMovies(false);
-      setShowSound(false);
-      setShowWeb(false);
-      setShowEspacios(false);
-      smoothScroll("#prod")
   }
 
   const open_Video = () => {
-    setShowProd(false);
-    setShowVideo(prev => !prev);
-    setShowMovies(false);
-    setShowSound(false);
-    setShowWeb(false);
-    setShowEspacios(false);
-    smoothScroll("#video")
- 
+    setShowVideo(prev => !prev); 
   }
 
   const open_Movies = () => {
-    setShowProd(false);
-    setShowVideo(false);
     setShowMovies(prev => !prev);
-    setShowSound(false);
-    setShowWeb(false);
-    setShowEspacios(false);
   }
 
   const open_Sound = () => {
-    setShowProd(false);
-    setShowVideo(false);
-    setShowMovies(false);
     setShowSound(prev => !prev);
-    setShowWeb(false);
-    setShowEspacios(false);
-    smoothScroll("#movies")
   }
 
   const open_Web = () => {
-    setShowProd(false);
-    setShowVideo(false);
-    setShowMovies(false);
-    setShowSound(false);
     setShowWeb(prev => !prev);
-    setShowEspacios(false);
-    smoothScroll("#web")
   }
 
   const open_Espacios = () => {
-    setShowProd(false);
-    setShowVideo(false);
-    setShowMovies(false);
-    setShowSound(false);
-    setShowWeb(false);
     setShowEspacios(prev => !prev);
-    smoothScroll("#spaces")
   }
 
 
@@ -95,23 +46,25 @@ function App() {
     <div class={styles.container}>
       <About />
       <main>
-        <h3 id="prod" onclick={open_Prod}>Producción de eventos</h3>
-        {showProd() && (<Prod />)}
-
+       
         <h3 id="video" onclick={open_Video}>Video</h3>
         {showVideo() && (<Video />)}
+
+        <h3 id="sound" onclick={open_Sound}>Sonido</h3>
+        {showSound() && (<Sound />)}
+
+        <h3 id="spaces" onclick={open_Espacios}>Espacios & Asociaciones</h3>
+        {showEspacios() && (<Espacios />)}
+
+        <h3 id="web" onclick={open_Web}>Web</h3>
+        {showWeb() && (<Web />)}
+
+         <h3 id="prod" onclick={open_Prod}>Producción de eventos</h3>
+        {showProd() && (<Prod />)}
 
         <h3 id="movies" onclick={open_Movies}>Filmografía</h3>
         {showMovies() && (<Movies />)}
 
-        <h3 id="sound" onclick={open_Sound}>Sonido</h3>
-        {showSound() && (<Sound />)} 
-
-        <h3 id="web" onclick={open_Web}>Desarrollo Web</h3>
-        {showWeb() && (<Web />)}
-
-        <h3 id="spaces" onclick={open_Espacios}>Espacios & Asociaciones</h3>
-        {showEspacios() && (<Espacios />)}
       </main>
       <Footer />
     </div>

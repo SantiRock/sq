@@ -22,13 +22,15 @@ export function About () {
       <h2 class={styles.portafolio}>Portafolio</h2>
       <div class={styles.contact_container}>
         <p class={styles.contact} onClick={copyText}>
-          Contacto: <span class={styles.email}>santiagoquinteropintoo@gmail.com</span>
+          Contacto: <span class={styles.email}>sqp.dev@gmail.com</span>
         </p>
         <span class={styles.tooltipText}>
           {copied}
         </span>
       </div>
-      <p class={styles.msn}>Los proyectos estan divididos por secciones, solo debes dar click en la sección y luego en el nombre del proyecto.</p>
+      <p class={styles.msn1}>Los proyectos estan divididos por secciones, solo debes dar click en la sección y luego en el nombre del proyecto.</p>
+      <p class={styles.msn}>Actualizado Octubre 2025</p>
+
     </header>
     );
 }

@@ -1,4 +1,245 @@
 export const videosApi = {
+  a1v8: {
+    id: 'a1v8_',
+    title: 'A1V8',
+    fecha: '2025',
+    concepto: 'A1V8 es un proyecto artístico que investiga la imagen interactiva en tiempo real mediante programación gráfica. Nos interesa crear experiencias estéticas desde el código, explorando el potencial expresivo de la tecnología como lenguaje visual. Buscamos promover la producción de proyectos web y/o no-web que integren propuestas visuales interactivas.',
+    enlaces: [
+        {
+            id: 'a1v8web',
+            enlace: 'https://a1v8.onrender.com/',
+            text: 'WebSite'
+        },
+        {
+            id: 'insta',
+            enlace: 'https://www.instagram.com/a1v8visu/',
+            text: 'Instagram'
+        },
+    ],
+  },
+
+  sucursalfest: {
+    id: 'sucursal_fest',
+    title: 'Astronativo en el Sucursal Fest',
+    fecha: '2025',
+    lugar: 'Cali, Colombia',
+    cargo: 'Artista de Video',
+    equipo: [
+        {
+            id: 'astro',
+            cargo: 'Proyecto Musical',
+            nombre: 'Astronativo'
+        },
+        {
+            id: 'blad',
+            cargo: 'Productor Musical',
+            nombre: 'Wladimir Garcia'
+        },
+        {
+            id: 'batucada',
+            cargo: 'Ft ',
+            nombre: 'David Molina con Festa Batucada'
+        },
+                {
+            id: 'batucada',
+            cargo: 'Invitados',
+            nombre: 'Leonardo Pastrana Cortés'
+        },
+    ],
+    concepto: 'Presentación del proyecto Astonativo en el marco del festival de la diversidad Sucursal Fest 2025 de Cali, Colombia',
+    misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    duración: '30min',
+    aforo: 'unas 2000 personas, publico flotante',
+    apoyo: 'Secretaria de Cultura de Cali, Alcaldía de Cali',
+    enlaces: [
+        {
+            id: 'astroo',
+            enlace: 'https://www.instagram.com/astronativos/',
+            text: 'Astonativo'
+        },
+        {
+            id: 'sucursal',
+            enlace: 'https://www.instagram.com/sucursalfest/',
+            text: 'Sucrusal Fest'
+        },
+    ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf1@2x.jpg',
+            image: '/images/video/sucursalfest/sf1.jpg',
+            alt: 'sf1',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf2@2x.jpg',
+            image: '/images/video/sucursalfest/sf2.jpg',
+            alt: 'sf2',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf3@2x.jpg',
+            image: '/images/video/sucursalfest/sf3.jpg',
+            alt: 'sf3',
+            credit: ''
+        },
+        {
+            id: 4,
+            srcset: '',
+            src: '/images/video/sucursalfest/sf4@2x.jpg',
+            image: '/images/video/sucursalfest/sf4.jpg',
+            alt: 'sf4',
+            credit: ''
+        },
+    ]
+  },
+
+  biodiversidad: {
+    id: 'biodiversidad',
+    title: 'Astronativo en La Semana de la Biodiversidad',
+    fecha: '2025',
+    lugar: 'Cali, Colombia',
+    cargo: 'Artista de Video',
+    equipo: [
+        {
+            id: 'astro',
+            cargo: 'Proyecto Musical',
+            nombre: 'Astronativo'
+        },
+        {
+            id: 'blad',
+            cargo: 'Productor Musical',
+            nombre: 'Wladimir Garcia'
+        },
+        {
+            id: 'orquesta',
+            cargo: 'Invitados',
+            nombre: 'Orquesta Universidad Autonoma de Occidente'
+        },
+    ],
+    concepto: 'Presentación del proyecto Astonativo en el marco de la progra,aciòn artistica de la Semana de la Biodiversidad de Cali 2005',
+    misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    duración: '30min',
+    aforo: 'unas 500 personas, publico flotante',
+    apoyo: 'Alcaldía de Santiago de Cali',
+    enlaces: [
+        {
+            id: 'astroo',
+            enlace: 'https://www.instagram.com/astronativos/',
+            text: 'Astonativo'
+        },
+    ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/semanabiodiversidad/sb1@2x.jpg',
+            image: '/images/video/semanabiodiversidad/sb1.jpg',
+            alt: 'sb1',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/semanabiodiversidad/sb2@2x.jpg',
+            image: '/images/video/semanabiodiversidad/sb2.jpg',
+            alt: 'sb2',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/semanabiodiversidad/sb3@2x.jpg',
+            image: '/images/video/semanabiodiversidad/sb3.jpg',
+            alt: 'sb3',
+            credit: ''
+        },
+    ]
+  },
+
+  cop16: {
+    id: 'cop16',
+    title: 'Astronativo en la COP16',
+    fecha: '2024',
+    lugar: 'Plaza Cayzedo, Cali, Colombia',
+    cargo: '',
+    equipo: [
+        {
+            id: 'astroo',
+            cargo: 'Proyecto Musical',
+            nombre: 'Astronativo'
+        },
+        {
+            id: 'blad',
+            cargo: 'Productor Musical',
+            nombre: 'Wladimir Garcia'
+        },
+        {
+            id: 'juan',
+            cargo: 'DJ - Beat Maker',
+            nombre: 'Juan David Poveda'
+        },      
+        {
+            id: 'enraizados',
+            cargo: 'Ft ',
+            nombre: 'Enraizados'
+        },
+        {
+            id: 'rafa',
+            cargo: 'Gaitero',
+            nombre: "Rafael Fernandez"
+        },
+    ],
+    concepto: 'Presentación del proyecto Astronativo en el marco de programaciòn artisitica de la COP16',
+    misiones: 'Performance de video, VJing, mezcla de video en vivo.',
+    duración: '45 min',
+    aforo: '2000 personas, publico flotante',
+    apoyo: "Ministerio de Ambiente de Colombia",
+    enlaces: [
+        {
+            id: 'astroo',
+            enlace: 'https://www.instagram.com/astronativos/',
+            text: 'Astonativo'
+        },
+        {
+            id: 'cop',
+            enlace: 'https://www.instagram.com/cop16colombia/',
+            text: 'COP16'
+        },
+    ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/cop16/cop1@2x.jpg',
+            image: '/images/video/cop16/cop1.jpg',
+            alt: 'cop1',
+            credit: ''
+        },
+        {
+            id: 2,
+            srcset: '',
+            src: '/images/video/cop16/cop2@2x.jpg',
+            image: '/images/video/cop16/cop2.jpg',
+            alt: 'cop2',
+            credit: ''
+        },
+        {
+            id: 3,
+            srcset: '',
+            src: '/images/video/cop16/cop3@2x.jpg',
+            image: '/images/video/cop16/cop3.jpg',
+            alt: 'cop3',
+            credit: ''
+        },
+    ]
+  },
+
   la_magdalena: {
     id: 'la magadalena',
     title: "Río/radio: Correspondencia anfibia",

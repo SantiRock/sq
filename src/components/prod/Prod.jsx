@@ -7,7 +7,7 @@ import { Images } from "../images/Images";
 function CaribeSound () {
 
   return(
-    <div class={styles.container}>
+    <div class={`${styles.container} ${styles.cp}`}>
       <h4 class={styles.title}>CaribeSound </h4>
       <p><span class={styles.bold}>Fecha:</span> 22 de Junio de 2019</p>
       <p><span class={styles.bold}>Lugar:</span> Mix'Art Myrys, Toulouse, Francia</p>
@@ -43,12 +43,12 @@ function CaribeSound () {
 
 function MasProd () {
   return(
-    <div class={styles.container}>
-         <div class={styles.container}>
+    <div class={`${styles.container} ${styles.cp}`}>
+      <div class={styles.container}>
         <p><span class={styles.bold}>Proyecto: </span><span class={styles.artista}>6ta Bienal Internacional de Danza de Cali</span></p>
         <p><span class={styles.bold}>Fecha:</span> 9 al 12 de Noviembre de 2023</p>
         <p><span class={styles.bold}>Lugar:</span> Cali, Colombia</p>
-        <p><span class={styles.bold}>Cargo desempeñado:</span> Asistencia de producción para Ruth Childs, Crazy Smooth y Dorothée Munyaneza</p>
+        <p><span class={styles.bold}>Cargo desempeñado:</span> Intérpete - Asistencia de producción para Ruth Childs, Crazy Smooth y Dorothée Munyaneza</p>
         <Images obj={prodapi.bienaldedanza} />
      </div>
       <div class={styles.container}>
@@ -74,12 +74,11 @@ function MasProd () {
           <li class={styles.list}>Producción: Cenit Arte Natura</li>
           <li class={styles.list}>Compañia: Teatro Itinerante del Sol</li>
           <li class={styles.list}>Directora: Beatriz Camargo</li>
-          <li class={styles.list}>Asistencia de producción: Santiago Quintero</li>
-          <li class={styles.list}>Apoyo: Carmen Almeida y Carlos Pérez</li>
+          <li class={styles.list}>Asistentes de producción: Santiago , Carmen Almeida y Carlos Pérez</li>
         </ul>
         <Images obj={prodapi.teatrocenit} />
-        <p>y muchos más ...</p>
      </div>
+      <p>y muchos más ...</p>
     </div>
   )
 }
@@ -89,29 +88,13 @@ export function Prod () {
   const [showCaribeSound, setShowCaribeSound] = createSignal(false);
   const [showMas, setShowMas] = createSignal(false);
 
-  function smoothScroll(targetId) {
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      const offset = target.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: offset - 13,
-        behavior: 'smooth'
-      });
-    }
-  }
-
   const open_CaribeSound = () => {
     setShowCaribeSound(prev => !prev);
-    setShowMas(false);
-    smoothScroll("#caribesound");
+
   }
 
   const open_Mas = () => {
     setShowMas(prev => !prev);
-    setShowCaribeSound(false);
-    smoothScroll("#mas");
-  
   }
 
     return(

@@ -11,44 +11,6 @@ export const webapi = {
                 text: 'Sitio Web: FrontEnd Studio'
             },
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/frontenddev@2x.jpg',
-                image: '/images/web/frontenddev.jpg',
-                alt: 'Frontend Studio',
-                credit: ''
-            },
-        ]
-    },
-    glslresearch : {
-        title: 'GLSL Research',
-        fecha: '2023 - Actualmente',
-        concepto: 'En este proyecto busco explorar el lenguaje de sombreado GLSL (informatica gráfica) a través de la API WebGL',
-        stack: 'Solidjs, WebGL ',
-        enlaces: [
-            {
-                id: 'webglsldeec',
-                enlace: 'https://santirock.github.io/glsl-research/',
-                text: 'Sitio Web: GLSL Research'
-            },
-            {
-                id: 'chkanaad2423',
-                enlace: 'https://santirock.github.io/chakana/',
-                text: 'Otros tests con WebGL'
-            }
-        ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/glslresearch@2x.jpg',
-                image: '/images/web/glslresearch.jpg',
-                alt: 'glslreasearch',
-                credit: ''
-            },
-        ]
     },
 
     filmoteka : {
@@ -68,16 +30,6 @@ export const webapi = {
                 text: 'The Movie Database API'
             }
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/filmoteka@2x.jpg',
-                image: '/images/web/filmoteka.jpg',
-                alt: 'filmoteka',
-                credit: ''
-            },
-        ]
     },
 
     kinopoisk : {
@@ -97,16 +49,6 @@ export const webapi = {
                 text: 'The Movie Database API'
             }
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/kinopoisk@2x.jpg',
-                image: '/images/web/kinopoisk.jpg',
-                alt: 'kinopoisk',
-                credit: ''
-            },
-        ]
     },
 
     swapi : {
@@ -126,16 +68,6 @@ export const webapi = {
                 text: 'SWAPI'
             }
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/swapi@2x.jpg',
-                image: '/images/web/swapi.jpg',
-                alt: 'swapi',
-                credit: ''
-            },
-        ]
     },
 
     icecream : {
@@ -150,16 +82,6 @@ export const webapi = {
                 text: 'Sitio Web - IceCream'
             }
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/icecream@2x.jpg',
-                image: '/images/web/icecream.jpg',
-                alt: 'icecream',
-                credit: ''
-            },
-        ]
     },
 
     webstudio : {
@@ -174,40 +96,62 @@ export const webapi = {
                 text: 'Sitio Web - WebSudio'
             }
         ],
-        images: [
-            {
-                id: 1,
-                srcset: '',
-                src: '/images/web/webstudio@2x.jpg',
-                image: '/images/web/webstudio.jpg',
-                alt: 'webstudio',
-                credit: ''
-            },
-        ]
     },
 
-    phonebookapp : {
-        title: 'PhoneBook App',
-        fecha: '2023',
-        concepto: 'App directorio de telefonos en linea con uso de login y creación de usuarios.',
-        stack: 'React',
+    zhizhwa : {
+        title: 'Zhizhwa',
+        fecha: '2025',
+        concepto: 'Inspirada en el universo VJ (mezcla de video en tiempo real), Zhizhwa es una interfaz web que permite al visitante modificar en tiempo real una animación generada por código, dando lugar a infinitas variaciones de una forma que se dibuja y desdibuja continuamente.',
+        stack: 'Javascript Vanilla, Threejs, glsl shaders',
         enlaces: [
             {
-                id: 'pjhonebooksjaapp',
-                enlace: 'https://santirock.github.io/react-app-phonebook/',
-                text: 'Sitio Web - PhoneBook App'
+                id: 'zhizhwaa',
+                enlace: 'https://santirock.github.io/zhizhwa/',
+                text: 'Sitio Web: Zhizhwa'
             }
         ],
-        images: [
+    },
+
+    petronico : {
+        title: 'Petronico',
+        fecha: '2024',
+        concepto: 'Pagina para promocionar el evento Petronio Sessions',
+        stack: 'Javascript Vanilla',
+        enlaces: [
             {
-                id: 1,
-                srcset: '',
-                src: '/images/web/phonebookapp@2x.jpg',
-                image: '/images/web/phonebookapp.jpg',
-                alt: 'Phone Book App',
-                credit: ''
+                id: 'petronicoo',
+                enlace: 'https://santirock.github.io/petronico/',
+                text: 'Sitio Web: Petronico'
             },
-        ]
-    }
-    
+        ],
+    },
+
+    skull: {
+        title: 'Skull Test',
+        fecha: '2025',
+        concepto: 'Pagina de test para probar imagen 3D con la libreria Threejs. Se puede demorar un poco en cargar.',
+        stack: 'Javascript Vanilla, Threejs',
+        enlaces: [
+            {
+                id: 'skulltestt',
+                enlace: 'https://santirock.github.io/test-skull/',
+                text: 'Sitio Web: Skull Test'
+            },
+        ],
+    },
+
+    webgldm : {
+        title: 'WebGL Drawing Modes',
+        fecha: '2024',
+        concepto: 'Pagina para ilustrar los diferentes modos de dibujo de los vector shaders usando la API WebGL. Hace parte de mi investigación del lenguaje glsl en el contexto web. Si no carga bien la primera bien, por favor recargar u oprimir uno de los botones de los diferentes ejemplos.',
+        stack: 'Javascript Vanilla, WebGL, glsl shaders',
+        enlaces: [
+            {
+                id: 'webgldmm',
+                enlace: 'https://santirock.github.io/webgl_drawing_modes/',
+                text: 'Sitio Web: WebGL Drawing Modes'
+            },
+        ],
+    },
+ 
 }

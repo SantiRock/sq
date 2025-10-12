@@ -1,16 +1,17 @@
 import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
+import styless from "../Components.module.css";
 import { videosApi } from "./videoapi";
 import { Images } from "../images/Images";
 
 function VideoProjects ({obj}) {
 
   return(
-    <div class={styles.container}>
+    <div class={`${styles.container} ${styles.cp}`}>
       <h4 class={styles.title}>{obj.title}</h4>
       <p><span class={styles.bold}>Fecha:</span> {obj.fecha}</p>
-      <p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>
-      <p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>      
+      {obj.lugar && (<p><span class={styles.bold}>Lugar:</span> {obj.lugar}</p>)}
+      {obj.cargo && (<p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>   )}   
       {obj.equipo && (
         <>
           <p><span class={styles.bold}>Equipo:</span></p>  
@@ -45,6 +46,10 @@ function VideoProjects ({obj}) {
 
 
 export function Video () {
+  const [showA1V8, setShowA1V8] = createSignal(false);
+  const [showSucursalFest, setShowSucursalFest] = createSignal(false);
+  const [showSemanaBio, setShowSemanaBio] = createSignal(false);
+  const [showCop16, setShowCop16] = createSignal(false);
   const [showRioRadio, setShowRioRadio] = createSignal(false);
   const [showPinkParadize, setShowPinkParadize] = createSignal(false);
   const [showDerKirchgarten, setShowDerKirchgarten] = createSignal(false);
@@ -63,378 +68,108 @@ export function Video () {
   const [showAtusombra, setShowAtusombra] = createSignal(false);
   const [showEncarnacion, setShowEncarnacion] = createSignal(false);
 
-  function smoothScroll(targetId) {
-    const target = document.querySelector(targetId);
+  const open_A1V8 = () => {
+    setShowA1V8(prev => !prev);
+  }
+  
+  const open_SucursalFest = () => {
+    setShowSucursalFest(prev => !prev);
+  }
 
-    if (target) {
-      const offset = target.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: offset - 13,
-        behavior: 'smooth'
-      });
-    }
+  const open_SemanaBio = () => {
+    setShowSemanaBio(prev => !prev);
+  }
+  
+  const open_Cop16 = () => {
+    setShowCop16(prev => !prev);
   }
 
   const open_RioRadio = () => {
     setShowRioRadio(prev => !prev);
-    setShowPinkParadize(false);
-    setShowDerKirchgarten(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#rioradio');
   }
 
   const open_PinkParadize = () => {
     setShowPinkParadize(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#pinkparadize');
+
   }
 
   const open_DerKirchgarten = () => {
     setShowDerKirchgarten(prev => !prev);
-    setShowPinkParadize(false);
-    setShowRioRadio(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#derkirschgarten');
+
   }
 
   const open_DieOriginale = () => {
     setShowDieOriginale(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#dieoriginale');
   }
 
   const open_lpm = () => {
     setShowLPM(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#lpm');
   }
 
   const open_StreetPack = () => {
     setShowStreetPack(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#streetpack');
   }
 
   const open_NuitMusees = () => {
     setShowNuitMusees(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#nuitdesmusees');
+
   }
 
   const open_EcosCol = () => {
-    setShowEcosCol(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#ecosdecolombia');
+    setShowEcosCol(prev => !prev);   
   }
 
   const open_AvInstall = () => {
     setShowAvInstall(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#avinstall');
   }
 
   const open_VjPanthera = () => {
     setShowVjPanthera(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#vjpanthera');
   }
 
   const open_GuayaBros = () => {
     setShowGuayaBros(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#guayabobros');
   }
 
   const open_Caliwood = () => {
     setShowCaliwood(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#caliwoodrmx');
   }
 
   const open_EsteroPicnic = () => {
     setShowEstereoPicnic(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#esteropicnic');
   }
 
   const open_Imputaciones = () => {
     setShowImputaciones(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#imputaciones');
   }
 
   const open_FamiaSuto = () => {
     setShowFamiaSuto(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowEncarnacion(false);
-    setShowAtusombra(false);
-    smoothScroll('#famiasuto');
   }
 
   const open_Encarnacion = () => {
     setShowEncarnacion(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowAtusombra(false);
-    smoothScroll('#atusombra');
   }
 
   const open_Atusombra = () => {
     setShowAtusombra(prev => !prev);
-    setShowRioRadio(false);
-    setShowDerKirchgarten(false);
-    setShowPinkParadize(false);
-    setShowDieOriginale(false);
-    setShowLPM(false);
-    setShowStreetPack(false);
-    setShowNuitMusees(false);
-    setShowEcosCol(false);
-    setShowAvInstall(false);
-    setShowVjPanthera(false);
-    setShowGuayaBros(false);
-    setShowCaliwood(false);
-    setShowEstereoPicnic(false);
-    setShowImputaciones(false);
-    setShowFamiaSuto(false);
-    setShowEncarnacion(false);
-    smoothScroll('#encarnacion');
   }
 
   return(
     <div class={styles.container}>
       <ul>
+        <li id="a1v8" class={styles.proyecto} onclick={open_A1V8}>A1V8 <span class={styles.type}>Proyecto Artístico</span> 2025</li>
+        {showA1V8() && (<VideoProjects obj={videosApi.a1v8}/>)}
+
+        <li id="sucursalfest_" class={styles.proyecto} onclick={open_SucursalFest}>Astronativo en el Sucursal Fest <span class={styles.type}>Concierto - Visuales</span> 2025</li>
+        {showSucursalFest() && (<VideoProjects obj={videosApi.sucursalfest}/>)}
+
+        <li id="sbiodiversidad" class={styles.proyecto} onclick={open_SemanaBio}>Astronativo en la Semana de la Biodiversidad <span class={styles.type}>Concierto - Visuales</span> 2025</li>
+        {showSemanaBio() && (<VideoProjects obj={videosApi.biodiversidad}/>)}
+
+        <li id="cop16_" class={styles.proyecto} onclick={open_Cop16}>Astronaitvo en la COP16 <span class={styles.type}>Concierto - Visuales</span> 2024</li>
+        {showCop16() && (<VideoProjects obj={videosApi.cop16}/>)}                
+
         <li id="rioradio" class={styles.proyecto} onclick={open_RioRadio}>Río/Radio: Correspondencia anfibia <span class={styles.type}>AV Performance</span> 2021</li>
         {showRioRadio() && (<VideoProjects obj={videosApi.la_magdalena}/>)}
         

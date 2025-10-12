@@ -10,13 +10,13 @@ h1 {
 
 .contact_container {
     position: relative;
-
 }
 
 .contact {
     font-size: 13px;
     margin-top: 9px;
-    margin-bottom: 17px;
+    margin-bottom: 3px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -45,6 +45,16 @@ h1 {
     color: rgb(142, 220, 196);
 }
 
+.msn1 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    max-width: 370px ;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    color: white;
+}
+
 .msn {
     margin-top: 0;
     margin-bottom: 21px;
@@ -52,12 +62,14 @@ h1 {
     font-size: 13px;
     line-height: 1.7;
     text-align: justify;
+    font-style: italic;
+    color: rgb(186, 186, 186);
 }
 
 @media screen and (min-width: 374px){
     .contact {
         margin-top: 13px;
-        margin-bottom: 21px;
+        margin-bottom: 3px;
         font-size: 14px;
     }
     .msn {
