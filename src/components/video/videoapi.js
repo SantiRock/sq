@@ -3,7 +3,8 @@ export const videosApi = {
     id: 'a1v8_',
     title: 'A1V8',
     fecha: '2025',
-    concepto: 'A1V8 es un proyecto artístico que investiga la imagen interactiva en tiempo real mediante programación gráfica. Nos interesa crear experiencias estéticas desde el código, explorando el potencial expresivo de la tecnología como lenguaje visual. Buscamos promover la producción de proyectos web y/o no-web que integren propuestas visuales interactivas.',
+    concepto: 'A1V8 es un proyecto artístico que investiga la imagen interactiva en tiempo real mediante programación gráfica. Nos interesa crear experiencias estéticas desde el código, explorando el potencial expresivo de esta tecnología como lenguaje visual.',
+    reconocimientos: 'Proyecto participante de la exposiciòn colectiva RGB Realidades Generativas Brillantes, muestra AV sobre Vjismo en Colombia en Mayo-Junio 2025 en la Cinemateca de Bogotá.',
     enlaces: [
         {
             id: 'a1v8web',
@@ -15,7 +16,22 @@ export const videosApi = {
             enlace: 'https://www.instagram.com/a1v8visu/',
             text: 'Instagram'
         },
+        {
+            id: 'rgb',
+            enlace: 'https://www.instagram.com/rgbexpo2025/',
+            text: 'RGB Realidades Generativas Colectivas'
+        },
     ],
+    images: [
+        {
+            id: 1,
+            srcset: '',
+            src: '/images/video/a1v8/av1@2x.jpg',
+            image: '/images/video/a1v8/av1.jpg',
+            alt: 'rgb',
+            credit: ''
+        },
+    ]
   },
 
   sucursalfest: {
@@ -122,7 +138,7 @@ export const videosApi = {
             nombre: 'Orquesta Universidad Autonoma de Occidente'
         },
     ],
-    concepto: 'Presentación del proyecto Astonativo en el marco de la progra,aciòn artistica de la Semana de la Biodiversidad de Cali 2005',
+    concepto: 'Presentación del proyecto Astonativo en el marco de la programación artística de la Semana de la Biodiversidad de Cali 2005',
     misiones: 'Performance de video, VJing, mezcla de video en vivo.',
     duración: '30min',
     aforo: 'unas 500 personas, publico flotante',
@@ -195,7 +211,7 @@ export const videosApi = {
             nombre: "Rafael Fernandez"
         },
     ],
-    concepto: 'Presentación del proyecto Astronativo en el marco de programaciòn artisitica de la COP16',
+    concepto: 'Presentación del proyecto Astronativo en el marco de programación artísitica de la COP16',
     misiones: 'Performance de video, VJing, mezcla de video en vivo.',
     duración: '45 min',
     aforo: '2000 personas, publico flotante',
