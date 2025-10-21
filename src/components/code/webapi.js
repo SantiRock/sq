@@ -1,7 +1,20 @@
 export const webapi = {
+    aigallery : {
+        title: 'AI Gallery',
+        fecha: '2025',
+        concepto: 'Galeria de imágenes que he creado con ayuda de la herramiento de la inteligencia artificial como parte de mi practica y exploración artisitica visual y tecnologica.',
+        stack: 'js vanilla',
+        enlaces: [
+            {
+                id: 'aigallery',
+                enlace: 'https://santirock.github.io/ai_gallery/',
+                text: 'Sitio Web: Galeria IA'
+            },
+        ],
+    },
     sqpweb : {
         title: 'FrontEnd Studio',
-        fecha: '2024 - Actualmente',
+        fecha: '2024',
         concepto: 'Sitio personal para ofrecer servicios de desarrollo Forntend, creación de páginas web.',
         stack: 'Vue.js',
         enlaces: [

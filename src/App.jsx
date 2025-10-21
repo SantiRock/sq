@@ -47,23 +47,23 @@ function App() {
       <About />
       <main>
        
-        <h3 id="video" onclick={open_Video}>Video</h3>
+        <h3 id="video" onclick={open_Video}>Video Performance</h3>
         {showVideo() && (<Video />)}
-
-        <h3 id="sound" onclick={open_Sound}>Sonido</h3>
-        {showSound() && (<Sound />)}
 
         <h3 id="web" onclick={open_Web}>Web</h3>
         {showWeb() && (<Web />)}
+
+        <h3 id="movies" onclick={open_Movies}>Filmografía</h3>
+        {showMovies() && (<Movies />)}
+
+        <h3 id="sound" onclick={open_Sound}>Sonido</h3>
+        {showSound() && (<Sound />)}
 
         <h3 id="spaces" onclick={open_Espacios}>Espacios & Asociaciones</h3>
         {showEspacios() && (<Espacios />)}
 
          <h3 id="prod" onclick={open_Prod}>Producción de eventos</h3>
         {showProd() && (<Prod />)}
-
-        <h3 id="movies" onclick={open_Movies}>Filmografía</h3>
-        {showMovies() && (<Movies />)}
 
       </main>
       <Footer />

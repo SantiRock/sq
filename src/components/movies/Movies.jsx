@@ -13,12 +13,15 @@ function Movie ({obj}) {
       {obj.duracion && (<p><span class={styles.bold}>Duración:</span> {obj.duracion}</p>)}
       <p><span class={styles.bold}>Cargo desempeñado:</span> {obj.cargo}</p>
       <p><span class={styles.bold}>Concepto:</span> {obj.concepto}</p>
-      <p><span class={styles.bold}>Equipo:</span></p>  
-      <ul class={styles.ul}>
-        {obj.equipo.map(({id, nombre, cargo}) => (
-          <li key={id} class={styles.list}>{cargo} - {nombre}</li>
-        ))}
-      </ul>
+      {obj.equipo && (
+        <>
+          <p><span class={styles.bold}>Equipo:</span></p>  
+          <ul class={styles.ul}>
+            {obj.equipo.map(({id, nombre, cargo}) => (
+              <li key={id} class={styles.list}>{cargo} - {nombre}</li>
+            ))}
+          </ul>
+      </>)}
       {obj.presentaciones && (
         <>
           <p class={styles.bold}>Presentaciones:</p>
@@ -117,6 +120,7 @@ function Mas () {
 
 
 export function Movies () {
+  const [showMyswa, setShowMyswa] = createSignal(false);
   const [showAguaSalada, setShowAguaSalada] = createSignal(false);
   const [showAndromeda, setShowAndromeda] = createSignal(false);
   const [showBaladaRock, setShowBaladaRock] = createSignal(false);
@@ -125,6 +129,10 @@ export function Movies () {
   const [showJattends, setShowJattends] = createSignal(false);
   const [showArb, setShowArb] = createSignal(false);
   const [showMas, setShowMas] = createSignal(false);
+
+  const open_Myswa = () => {
+    setShowMyswa(prev => !prev);
+  }
 
   const open_AguaSalada = () => {
     setShowAguaSalada(prev => !prev);
@@ -161,6 +169,9 @@ export function Movies () {
     return(
       <div class={styles.container}>
         <ul>
+          <li id="myswa" class={styles.proyecto} onclick={open_Myswa}>Myswa0.0 <span class={styles.type}>Corto Ficción</span> 2025</li>
+          {showMyswa() && (<Movie obj={moviesapi.myswa}/>)}
+
           <li id="aguasalada" class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> 2022</li>
           {showAguaSalada() && (<Movie obj={moviesapi.aguasalada}/>)}
           

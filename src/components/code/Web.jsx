@@ -20,6 +20,7 @@ function Site ({obj}) {
 }
 
 export function Web () {
+  const [showAigallery, setShowAigallery] = createSignal(false);
   const [showZhizhwa, setShowZhizhwa] = createSignal(false);
   const [showPetronico, setShowPetronico] = createSignal(false);
   const [showSkull, setShowSkull] = createSignal(false);
@@ -30,6 +31,10 @@ export function Web () {
   const [showIceCream, setShowIceCream] = createSignal(false);
   const [showWebStudio, setShowWebStudio] = createSignal(false);
   const [showSqpweb, setShowSqpweb] = createSignal(false);
+
+  const open_Aigallery = () => {
+    setShowAigallery(prev => !prev);
+  };
 
   const open_Zhizhwa = () => {
     setShowZhizhwa(prev => !prev);
@@ -78,6 +83,9 @@ export function Web () {
         <li id="zhizhwa" class={styles.proyecto} onclick={open_Zhizhwa}>Zhizhwa / 2025</li>
         {showZhizhwa() && (<Site obj={webapi.zhizhwa}/>)}
 
+        <li id="aigallery" class={styles.proyecto} onclick={open_Aigallery}>AI Gallery / 2025</li>
+        {showAigallery() && (<Site obj={webapi.aigallery}/>)}
+
         <li id="skull" class={styles.proyecto} onclick={open_Skull}>Skull Test / 2025</li>
         {showSkull() && (<Site obj={webapi.skull}/>)}
 
@@ -87,6 +95,9 @@ export function Web () {
         <li id="petronico" class={styles.proyecto} onclick={open_Petronico}>Petronico / 2024</li>
         {showPetronico() && (<Site obj={webapi.petronico}/>)}
 
+        <li id="frontendstudio" class={styles.proyecto} onclick={open_Sqpweb}>Front-End Studio / 2024</li>
+        {showSqpweb() && (<Site obj={webapi.sqpweb}/>)}
+
         <li id="filmoteka" class={styles.proyecto} onclick={open_Filmoteka}>Filmoteka / 2023</li>
         {showFilmoteka() && (<Site obj={webapi.filmoteka}/>)}
         
@@ -95,9 +106,6 @@ export function Web () {
         
         <li id="swapi" class={styles.proyecto} onclick={open_Swapi}>Swapi-Challenge / 2023</li>
         {showSwapi() && (<Site obj={webapi.swapi}/>)}
-
-        <li id="frontendstudio" class={styles.proyecto} onclick={open_Sqpweb}>Front-End Studio / 2024</li>
-        {showSqpweb() && (<Site obj={webapi.sqpweb}/>)}
         
         <li id="icecream" class={styles.proyecto} onclick={open_IceCream}>IceCream / 2022</li>
         {showIceCream() && (<Site obj={webapi.icecream}/>)}

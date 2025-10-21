@@ -65,13 +65,13 @@ export function Sound () {
           <li id="paisajesonoros" class={styles.proyecto} onclick={open_PaisajesSonoros}>Paisajes Sonoros <span class={styles.type}>Sonido</span> / 2019-2022</li>
           {showPaisajesSonoros() && (<Sonido obj={soundapi.paisajes_sonoros} />)}
           
-          <li id="colombiantapes" class={styles.proyecto} onclick={open_ColTapes}>Colombian Tapes <span class={styles.type}>Podcast</span> / 2020-Actualmente</li>
+          <li id="colombiantapes" class={styles.proyecto} onclick={open_ColTapes}>Colombian Tapes <span class={styles.type}>Podcast</span> / 2020-2023</li>
           {showColTapes() && <Sonido obj={soundapi.colombiantapes}/>} 
 
           <li id="abyayala" class={styles.proyecto} onclick={open_AbyaYala}>Sonidos experimentales del Abya Yala <span class={styles.type}>Performance Sonoro</span> / 2018</li>
           {showAbyaYala() && (<Sonido obj={soundapi.abyayalasounds} />)}
           
-          <li id="djselector" class={styles.proyecto} onclick={open_DjSelector}>DJ Selector / 2009-2021</li>
+          <li id="djselector" class={styles.proyecto} onclick={open_DjSelector}>DJ Selector / 2009-2024</li>
           {showDjSelector() && (<Sonido obj={soundapi.djselector} />)}
 
         </ul>

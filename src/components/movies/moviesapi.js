@@ -1,4 +1,13 @@
 export const moviesapi = {
+    myswa : {
+        id: 'myswa',
+        title: 'Myswa 0.0',
+        fecha: '2025/2026',
+        lugar: 'Cali, Colombia',
+        cargo: 'Realizador',
+        concepto: 'Cortometraje de cine abstracto video clip realizado con inteligencia artificial. Premier en 2026.',
+    },
+
     aguasalada : {
         id: 'aguasalada',
         title: 'Agua Salada',
