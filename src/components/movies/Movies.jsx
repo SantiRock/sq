@@ -169,7 +169,7 @@ export function Movies () {
     return(
       <div class={styles.container}>
         <ul>
-          <li id="myswa" class={styles.proyecto} onclick={open_Myswa}>Myswa0.0 <span class={styles.type}>Corto Ficción</span> 2025</li>
+          <li id="myswa" class={styles.proyecto} onclick={open_Myswa}>Myswa0.0 <span class={styles.type}>Corto Ficción</span> 2026</li>
           {showMyswa() && (<Movie obj={moviesapi.myswa}/>)}
 
           <li id="aguasalada" class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> 2022</li>
