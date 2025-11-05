@@ -1,11 +1,13 @@
 export const moviesapi = {
     myswa : {
         id: 'myswa',
-        title: 'Myswa 0.0',
-        fecha: '2025/2026',
+        title: 'Myswa0.0',
+        fecha: '2025',
         lugar: 'Cali, Colombia',
         cargo: 'Realizador',
-        concepto: 'Cortometraje de cine abstracto video clip realizado con inteligencia artificial. Premier en 2026.',
+        concepto: 'Cortometraje de cine abstracto-video clip realizado con inteligencia artificial. Modelo Midjourney V7',
+        duracion: '4:16 min',
+        video:'<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1133305245?h=b3ff6b3e20" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>',
     },
 
     aguasalada : {
