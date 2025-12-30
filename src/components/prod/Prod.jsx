@@ -3,6 +3,7 @@ import styles from "../Components.module.css";
 import { prodapi } from "./prodapi";
 import { Images } from "../images/Images";
 
+export const pc = 2;
 
 function CaribeSound () {
 
@@ -101,7 +102,7 @@ export function Prod () {
         <div class={styles.container}>
           <ul>
             <li id="caribesound" class={styles.proyecto} onclick={open_CaribeSound}>
-              CaribeSound <span class={styles.type}>Festival Interdiciplinar</span>  2019
+              CaribeSound <span class={styles.type}>Festival Interdiciplinar</span> / 2019
             </li>
             {showCaribeSound() && (<CaribeSound/>)}
 

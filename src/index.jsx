@@ -13,6 +13,3 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => <App />, root);
-
-
-console.log("Incluir imgs de background de algunos proyectos")

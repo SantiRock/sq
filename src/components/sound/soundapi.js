@@ -1,4 +1,35 @@
 export const soundapi = {
+
+    pipoca : {
+        title: "Pipoca",
+        fecha: "2026",
+        lugar: "Digital, Cali",
+        concepto: "Proyecto musical que incorpora inteligencia artificial dentro de un proceso creativo guiado por una búsqueda artística sonora y visual. El proyecto se encuentra actualmente en etapa de desarrollo, previa a su lanzamiento oficial, con planes de publicar EPs y singles a partir de principios de 2026 en plataformas digitales. No se adscribe a un género específico, sino que explora fusiones sonoras abiertas. La idea es compartir el material, observar la respuesta del público y del entorno musical, y permitir que el proyecto se defina y crezca de forma orgánica.",
+        sound: "",
+        enlaces: [
+            {
+                id: "ppcinst",
+                enlace: "https://www.youtube.com/@pipocatunes",
+                text: "Instagram"
+            },
+            {
+                id: "ppcbc",
+                enlace: "https://pipocamusic.bandcamp.com/",
+                text: "Bandcamp"
+            },
+            {
+                id: "ppcyt",
+                enlace: "https://www.youtube.com/@pipocatunes",
+                text: "Youtube Channel"
+            },
+            {
+                id: "ppcsndc",
+                enlace: "https://soundcloud.com/pipocamusic",
+                text: "Soundcloud"
+            }
+        ]
+    },
+    
     paisajes_sonoros : {
         title: "Paisajes Sonoros",
         fecha: "2019-2021",
@@ -18,7 +49,7 @@ export const soundapi = {
             },
             {
                 id: "ntsinfinpaskdds",
-                enlace: "https://freesound.org/people/Santi_SF/",
+                enlace: "https://www.nts.live/infinite-mixtapes/field-recordings",
                 text: "NTS Radio, Infinite Mixtapes, Filed Reocrdings"
             }
         ]

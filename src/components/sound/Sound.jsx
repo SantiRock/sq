@@ -3,6 +3,8 @@ import { soundapi } from "./soundapi";
 import styles from "../Components.module.css";
 import { Images } from "../images/Images";
 
+export const sc = Object.keys(soundapi).length;
+
 function Sonido ({obj}) {
   return(
     <div class={`${styles.container} ${styles.cp}`}>
@@ -30,11 +32,16 @@ function Sonido ({obj}) {
 }
 
 export function Sound () {
+  const [showPipoca, setShowPipoca] = createSignal(false);
   const [showPaisajesSonoros, setShowPaisajesSonoros] = createSignal(false);
   const [showMusic, setShowMusic] = createSignal(false);
   const [showColTapes, setShowColTapes] = createSignal(false);
   const [showAbyaYala, setShowAbyaYala] = createSignal(false);
   const [showDjSelector, setShowDjSelector] = createSignal(false);
+
+  const open_Pipoca = () => {
+    setShowPipoca(prev => !prev)
+  }
 
   const open_PaisajesSonoros = () => {
     setShowPaisajesSonoros(prev => !prev)
@@ -59,13 +66,16 @@ export function Sound () {
     return(
       <div class={styles.container}>
         <ul>
+          <li id="pipoca" class={styles.proyecto} onclick={open_Pipoca}>Pipoca <span class={styles.type}>Música</span> / 2026</li>
+          {showPipoca() && <Sonido obj={soundapi.pipoca}/>}
+
           <li id="music" class={styles.proyecto} onclick={open_Music}>Exploraciones Musicales <span class={styles.type}>Música</span> / 2021-Actualmente</li>
           {showMusic() && <Sonido obj={soundapi.exploracionesmusicales}/>}
 
           <li id="paisajesonoros" class={styles.proyecto} onclick={open_PaisajesSonoros}>Paisajes Sonoros <span class={styles.type}>Sonido</span> / 2019-2022</li>
           {showPaisajesSonoros() && (<Sonido obj={soundapi.paisajes_sonoros} />)}
           
-          <li id="colombiantapes" class={styles.proyecto} onclick={open_ColTapes}>Colombian Tapes <span class={styles.type}>Podcast</span> / 2020-2023</li>
+          <li id="colombiantapes" class={styles.proyecto} onclick={open_ColTapes}>Colombian Tapes <span class={styles.type}>Podcast Musical</span> / 2020-2023</li>
           {showColTapes() && <Sonido obj={soundapi.colombiantapes}/>} 
 
           <li id="abyayala" class={styles.proyecto} onclick={open_AbyaYala}>Sonidos experimentales del Abya Yala <span class={styles.type}>Performance Sonoro</span> / 2018</li>

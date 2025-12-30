@@ -3,6 +3,8 @@ import styles from "../Components.module.css";
 import { moviesapi } from "./moviesapi";
 import { Images } from "../images/Images";
 
+export const mc = Object.keys(moviesapi).length + 1;
+
 function Movie ({obj}) {
   return(
     <div class={`${styles.container} ${styles.cp}`}>
@@ -169,28 +171,28 @@ export function Movies () {
     return(
       <div class={styles.container}>
         <ul>
-          <li id="myswa" class={styles.proyecto} onclick={open_Myswa}>Myswa0.0 <span class={styles.type}>Corto Experimental AI</span> 2025</li>
+          <li id="myswa" class={styles.proyecto} onclick={open_Myswa}>Myswa0.0 <span class={styles.type}>Corto Experimental AI</span> / 2025</li>
           {showMyswa() && (<Movie obj={moviesapi.myswa}/>)}
 
-          <li id="aguasalada" class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> 2022</li>
+          <li id="aguasalada" class={styles.proyecto} onclick={open_AguaSalada}>Agua Salada <span class={styles.type}>Corto Ficción</span> / 2022</li>
           {showAguaSalada() && (<Movie obj={moviesapi.aguasalada}/>)}
           
-          <li id="andromeda" class={styles.proyecto} onclick={open_Andormeda}>Andrómeda <span class={styles.type}>Corto Experimental</span> 2016</li>
+          <li id="andromeda" class={styles.proyecto} onclick={open_Andormeda}>Andrómeda <span class={styles.type}>Corto Experimental</span> / 2016</li>
           {showAndromeda() && (<Movie obj={moviesapi.andromeda} />)}
           
-          <li id="baladarock" class={styles.proyecto} onclick={open_BaladaRock}>Balada Rock <span class={styles.type}>Corto Ficción</span> 2014</li>
+          <li id="baladarock" class={styles.proyecto} onclick={open_BaladaRock}>Balada Rock <span class={styles.type}>Corto Ficción</span> / 2014</li>
           {showBaladaRock() && (<Movie obj={moviesapi.baladarock}/>)}
           
-          <li id="ecuador" class={styles.proyecto} onclick={open_Ecuador}>Ecuador <span class={styles.type}>Corto Ficción</span> 2011</li>
+          <li id="ecuador" class={styles.proyecto} onclick={open_Ecuador}>Ecuador <span class={styles.type}>Corto Ficción</span> / 2011</li>
           {showEcuador() && (<Movie obj={moviesapi.equador} />)}
           
-          <li id="kinoclaje" class={styles.proyecto} onclick={open_Kinoclaje}>Kinoclaje <span class={styles.type}>Animación</span> 2005-2009</li>
+          <li id="kinoclaje" class={styles.proyecto} onclick={open_Kinoclaje}>Kinoclaje <span class={styles.type}>Animación</span> / 2005-2009</li>
           {showKinoclaje() && (<Kinoclaje />)}
           
-          <li id="jattends" class={styles.proyecto} onclick={open_Jattends}>J'attends la pluie <span class={styles.type}>Cubrimiento de evento</span> 2019</li>
+          <li id="jattends" class={styles.proyecto} onclick={open_Jattends}>J'attends la pluie <span class={styles.type}>Cubrimiento de evento</span> / 2019</li>
           {showJattends() && ( <Movie obj={moviesapi.jattends} />)}
 
-          <li id="arb" class={styles.proyecto} onclick={open_Arb}>ARB <span class={styles.type}>Institucional</span> 2014</li>
+          <li id="arb" class={styles.proyecto} onclick={open_Arb}>ARB <span class={styles.type}>Institucional</span> / 2014</li>
           {showArb() && (<Movie obj={moviesapi.arb}/>)}
           
           <li id="mas" class={styles.proyecto} onclick={open_Mas}>+</li>

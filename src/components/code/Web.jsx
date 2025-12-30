@@ -2,6 +2,8 @@ import { createSignal } from "solid-js";
 import styles from "../Components.module.css";
 import { webapi } from "./webapi";
 
+export const wc = Object.keys(webapi).length;
+
 function Site ({obj}) {
   return(
     <div class={`${styles.container} ${styles.cp}`} >
