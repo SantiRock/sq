@@ -6,7 +6,7 @@ export const recentapi = {
         enlaces: [
             {
                 id: "ppcinst",
-                enlace: "https://www.youtube.com/@pipocatunes",
+                enlace: "https://www.instagram.com/pipocatunes/",
                 text: "Instagram"
             },
             {

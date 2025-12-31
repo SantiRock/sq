@@ -18,7 +18,7 @@ export function About () {
 
   return(
     <header>
-      <h1>Santiago Quintero</h1>
+      <h1>Santiago Quintero Pinto</h1>
       <h2 class={styles.portafolio}>Portafolio</h2>
       <div class={styles.contact_container}>
         <p class={styles.contact} onClick={copyText}>
