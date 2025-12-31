@@ -45,16 +45,16 @@ export function Recientes () {
     return(
         <div class={styles.container}>
             <ul>
-                <li id="pipoca" class={styles.proyecto} onclick={open_Pipoca}>Pipoca / 2026</li>
+                <li id="pipoca" class={styles.proyecto} onclick={open_Pipoca}>Pipoca <span class={styles.type}>Música</span> / 2026</li>
                 {showPipoca() && (<Recent obj={recentapi.pipoca}/>)}
 
-                <li id="ai" class={styles.proyecto} onclick={open_ai}>AI Generativa / 2025</li>
+                <li id="ai" class={styles.proyecto} onclick={open_ai}>AI Generativa <span class={styles.type}>Image y Video</span> / 2025</li>
                 {showAi() && (<Recent obj={recentapi.ai}/>)}
 
-                <li id="zhizhwa" class={styles.proyecto} onclick={open_Zhizhwa}>Zhizhwa / 2025</li>
+                <li id="zhizhwa" class={styles.proyecto} onclick={open_Zhizhwa}>Zhizhwa <span class={styles.type}>net art</span> / 2025</li>
                 {showZhizwha() && (<Recent obj={recentapi.zhizhwa}/>)}
 
-                <li id="astronativo" class={styles.proyecto} onclick={open_Astronativo}>Astronativo / 2024 - 2025</li>
+                <li id="astronativo" class={styles.proyecto} onclick={open_Astronativo}>Astronativo <span class={styles.type}>AV Performance</span> / 2024 - 2025</li>
                 {showAstronativo() && (<Recent obj={recentapi.astronativo}/>)}
             </ul>
         </div>
