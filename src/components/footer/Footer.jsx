@@ -5,7 +5,7 @@ export function Footer () {
         <footer class={styles.footer}>
             <p class={styles.footer_p}>Desarrollado por 
                 <a class={styles.artista} href='https://www.instagram.com/a1v8visu/' target='_blank'>Santiago Quintero </a> 
-                con <span class={styles.artista}>SolidJS</span> - © 2025 </p>
+                con <span class={styles.artista}>SolidJS</span> - © 2026</p>
         </footer>
     )
 
