@@ -51,7 +51,7 @@ export const recentapi = {
             {
                 id: 'zhizhwaa',
                 enlace: 'https://santirock.github.io/zhizhwa/',
-                text: 'Sitio Web: Zhizhwa'
+                text: 'Zhizhwa'
             }
         ],
     },

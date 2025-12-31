@@ -73,7 +73,7 @@ export const webapi = {
             {
                 id: 'swapisischalsjsnds',
                 enlace: 'https://santirock.github.io/swapi-challenge/',
-                text: 'Sitio Web - SWAPI Challenge'
+                text: 'Sitio Web: SWAPI Challenge'
             },
             {
                 id: 'swapisoficial',
@@ -92,7 +92,7 @@ export const webapi = {
             {
                 id: 'icecreamsjsj',
                 enlace: 'https://santirock.github.io/IceCream/',
-                text: 'Sitio Web - IceCream'
+                text: 'Sitio Web: IceCream'
             }
         ],
     },
@@ -106,7 +106,7 @@ export const webapi = {
             {
                 id: 'webstudioxnn',
                 enlace: 'https://santirock.github.io/Web_Studio/',
-                text: 'Sitio Web - WebSudio'
+                text: 'Sitio Web: WebSudio'
             }
         ],
     },
