@@ -1,9 +1,9 @@
 export const videosApi = {
   a1v8: {
     id: 'a1v8_',
-    title: 'A1V8',
+    title: 'AV8',
     fecha: '2025',
-    concepto: 'A1V8 es un proyecto artístico que investiga la imagen interactiva en tiempo real mediante programación gráfica. Nos interesa crear experiencias estéticas desde el código, explorando el potencial expresivo de esta tecnología como lenguaje visual.',
+    concepto: 'AV8 es un proyecto artístico que investiga la imagen interactiva en tiempo real mediante programación gráfica. Nos interesa crear experiencias estéticas desde el código, explorando el potencial expresivo de esta tecnología como lenguaje visual.',
     reconocimientos: 'Proyecto participante de la exposiciòn colectiva RGB Realidades Generativas Brillantes, muestra AV sobre Vjismo en Colombia en Mayo-Junio 2025 en la Cinemateca de Bogotá.',
     enlaces: [
         {
@@ -13,7 +13,7 @@ export const videosApi = {
         },
         {
             id: 'insta',
-            enlace: 'https://www.instagram.com/a1v8visu/',
+            enlace: 'https://www.instagram.com/av8visual/',
             text: 'Instagram'
         },
         {
