@@ -160,7 +160,7 @@ export function Video () {
   return(
     <div class={styles.container}>
       <ul>
-        <li id="a1v8" class={styles.proyecto} onclick={open_A1V8}>A1V8 <span class={styles.type}>Proyecto Artístico</span> / 2025</li>
+        <li id="a1v8" class={styles.proyecto} onclick={open_A1V8}>AV8 <span class={styles.type}>Proyecto Artístico</span> / 2025</li>
         {showA1V8() && (<VideoProjects obj={videosApi.a1v8}/>)}
 
         <li id="sucursalfest_" class={styles.proyecto} onclick={open_SucursalFest}>Astronativo en el Sucursal Fest <span class={styles.type}>Concierto - Visuales</span> / 2025</li>
